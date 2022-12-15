@@ -1,0 +1,872 @@
+                            CORE JAVA
+							`````````
+							
+
+java full stack corporate trainer from past 15+years 
+salesforce
+mulesoft
+
+
+ for all mncs in pan india
+ 
+ infosys
+ wipro
+ tcs
+ 
+ ...
+ 
+ 
+ 
+ java:
+ `````
+ what is java?
+ 
+ 
+  java is object oriented programming language
+  
+  
+   
+     procedure oriented programming language
+   objet oriented programming-java 
+     modula oriented programming language
+     scripiting oreitned programming langauge
+   
+   
+   
+ purpose of programming lanaguage?
+ 
+   to develop the software/application.
+   
+   
+ what types of applications we have available in the market?
+ 
+    
+    ->desktop application
+	->distributed application 
+	
+	
+ using java, what type of applications we can develop?
+    
+	both types 
+	
+ 
+ java -> 1995 -> james gosling
+ 
+   ->sun microsystem
+   
+   
+ 
+ ->jse-java standard edition(core java)
+      
+	  ->desktop/standalone applications
+ 
+ 
+   acrobatic reader,
+   antivirus,
+   calculator,
+   mspaint
+   
+   standalone applications results are not sharable across the globe.
+   
+   
+   
+   
+ ->jee-java enterprise edition
+ 
+    internet/distibuted applications
+	
+	
+	facebook.com
+	flipkart.com
+	gmail.com
+	 etc..
+	 
+	internet based applications results are sharable across the globe &
+	standalone applications
+	
+	because jee got implemented on top of jse
+	
+
+ ->jme-java micro/mobile edition 
+ 
+    mobile applications/micro applications
+	
+	android -> 
+	
+ 
+ 
+ significance of learning core java:
+ ````````````````````````````````````
+ 
+ ->to develop standalone applications
+ ->to learn advanced java/jee
+ ->to learn some tools like hadoop,tableu,salesforce,mulesoft...
+ 
+ 
+programmers:
+
+  java program 
+  
+   c programmer -> turbo c
+   cpp programmer -> turbo cpp 
+   java programmer ->  jdk (java development kit)
+
+   
+ java is open source
+ 
+ 1995 sunmicrosystem 
+  
+   oracle purchased all the copyrights of sunmicrosystem
+   
+   scjp 
+   ocjp 
+   
+ url: www.oracle.com
+ 
+ 
+how can we downlaod the this jdk :
+```````````````````````````````````
+https://www.oracle.com/in/java/technologies/downloads/#jdk19-windows
+
+go to the above link and download the required jdk software
+
+once it's done, install the jdk 
+
+once installation completed, to check whether it gets installed successfully or not
+
+open the command prompt 
+and type below command 
+
+
+cmd:/>java -version
+
+java version "19.0.1" 2022-10-18
+Java(TM) SE Runtime Environment (build 19.0.1+10-21)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.1+10-21, mixed mode, sharing)
+
+
+java is case sensitive programming language
+
+  we have to follow the cases very strictly.
+  
+steps to follow to write the java program:
+``````````````````````````````````````````
+1.download the jdk software
+2.install the software
+3.select the editor
+4.write the java program
+4.save the java program (.java)
+   syntax: <filename>.java
+   saveas type: all files
+   
+6.compile the java program
+7.run the java program 
+
+
+types of applications
+
+jdk->java development kit
+
+    develop the java program
+	execute the java program
+	
+	jdk provides two environments
+	
+	1.development environment
+	2.runtime environment
+	
+	
+
+jre -> it provies only runtime environment
+
+
+    java runtime environment
+
+    1.we are able to only execute the java applications
+	
+
+jvm -> java virtual machine
+
+
+   dhaaps
+  to connect -> runtime environment
+  
+  rk 
+   ->jvm 
+   
+   jdk = jre + jvm 
+   
+   
+->purpose of learning programming langugage
+->types of applications
+->History of java
+->different editions of java (jse,jee,jme)
+->significance of learning core java
+->how can we download the jdk software and installation process?
+->steps to follow to write the java program 
+->jdk vs jre vs jvm
+
+
+
+
+ 
+ 
+ jdk -> java development kit
+ 
+  to develop java programs and to execute java programsm
+  
+  oracle 
+  
+ www.oracle.com
+ 
+  
+  structure of java program:
+  
+  
+  note: we should not question the syntaxes
+  
+  syntax: it is a rule which is given by language vendor 
+  
+  as a programmer we have to follow otherwise we will get the errors.
+  
+  
+  class <classname>
+  {
+   public static void main(String[] args)
+   {
+     System.out.pritln("welcome to java sessions");
+   }//closing main method
+   
+  }//class closing
+  
+ 
+ what do you mean by compiling the java program?
+ 
+ as a programmer we have to follow syntaxes.
+ 
+ whether syntactially programmer follows correctly or not? 
+ java compiler will check that
+ 
+ 
+   compile time errors.
+   
+   compiler 
+   
+   only programmer wheenver he made mistakes syntactically then only 
+   java compiler gave those errors.
+   
+   java compiler ?
+   
+    java compiler is the system defined java program which is running in the background.
+	
+	C:\Program Files\Java\jdk1.8.0_221\bin
+	
+ 
+ 
+ how can we compile this java program?
+ `````````````````````````````````````
+ 
+   syntax:  javac <filename>.java
+   
+            javac Test.java
+			
+   
+how can we execute the java program:
+`````````````````````````````````````
+
+syntax:  java <classname>
+
+
+         java Demo
+		 
+		 
+
+
+ note:
+ while we are compiling the java program we should always gives filename
+ while we are executing/running the java program we should always 
+ gives classname.
+ 
+ note: can we give both filename and class name are same?
+ 
+  yes
+  
+example:
+``````````
+class Demo
+{
+
+   public static void main(String[] args)
+{
+  //logic
+   System.out.println("welcome to java sessions");
+}
+   
+}
+
+
+ 
+ 
+structure of java program 
+
+ we wrote the program 
+
+  .java
+
+filename.java
+
+compile 
+execute
+
+path:
+`````
+path is the location where java predefined tools are available.
+
+
+C:\Program Files\Java\jdk-19\bin
+
+location where all the java tools are available like 
+javac,javap,javadoc,java etc..
+
+
+operating system couldn't recognize these predefined tools 
+
+to make it this as recognizable application, what we have to do?
+
+we have to set the path 
+
+why should we set the path?
+
+ by default os couldn't recognize java commands, to make it recognize
+ by os we have to set the path(where all java tools are available)
+ 
+how can we set the path?
+
+we do have two ways are there to set the path
+
+
+ 1.temporarily
+ 2.permanently
+
+set path ="C:\Program Files\Java\jdk-19\bin" 
+
+note:
+once we set the path temporarily, till you close the command prompt 
+we can use all the java tools once you close it that session gets closed
+again you will get error.
+
+
+how to set the path permanently in java:
+``````````````````````````````````````````
+->click on start button
+
+->click on edit the system environment variables
+
+->click on environment variables button
+
+->click on new button which is related to uservariables tab
+
+->give the vairable name: path
+           viariable value: C:\Program Files\Java\jdk-19\bin
+		   
+		   
+->click on ok(3 times)
+
+ 
+ if you specify a path as  value for a system variable, that path 
+ should be accessible to all user accounts.
+ 
+ if you set the path only in user variable , it will be effected only 
+ to that particular user itself.
+ 
+ 
+ 
+ compiling the java program?
+ 
+  javac <filename>.java
+  
+  who will compile this java program?
+   java compiler 
+   
+   what is java compiler? 
+   it is a system defined java program 
+   
+   
+ java compiler will cross check all the syntactical mistakes,
+ if programmer will not make any syntactical mistakes what java compiler will do?
+ 
+ 
+    java compiler will generate .class file from .java file
+	
+	.java file ->source code -> developed by java programmer
+	
+	.class file -> byte code -> generated by java compiler.
+	
+what is byte code:
+`````````````````
+byte code can be defined as intermediate code generated by the compiler
+after the compilation of source code(java program).
+
+******
+this intermediate code makes java a platform independent language.
+*******
+
+  .c 
+  .exe
+  windows
+
+  unix operating system 
+  
+    .exe file in his unix os?
+	c programming language -> platform dependent programming language
+	
+	
+	java is platform independent programming language
+	
+	irrespective of any os. we are  allowed to run this .class file 
+	
+	to convert from one o.s -> other o.s
+	
+	
+.class file generated based on the class name not based on the filename
+
+
+.class file code is not human readable code.
+
+who can read or who can understand this code?
+
+ 
+
+ answer: jvm(java virtual machine)
+ 
+ 
+	
+ jre->it is providing runtime environment
+ 
+ jvm 
+ 
+ java compiler input : file (.java)
+ 
+ how can we run this program:
+ ``````````````````````````````
+ what jvm internally did?
+ 
+   jvm input -> class name(byte code)
+   
+  jvm converts byte code into machinelevel code(binary code)
+
+  
+ cd-> change the directory
+ 
+ to move to particular directory
+ 
+ cmd:/> e:
+ 
+ e:/>
+ 
+ cd.. -> move to back one directory
+ 
+ 
+
+characterstics/features/buzzwords of java:
+``````````````````````````````````````````
+
+for notes download use below git link :
+````````````````````````````````````````
+https://github.com/somanapalli/dhaapps
+
+
+-> java -> 1995
+
+
+27years far 
+but still java is maintaining it's popularity
+
+
+1.simple
+2.object oriented
+3.portable
+4.platform independent
+5.secured
+6.Robust
+7.Interpreted
+8.Architectural neutral
+9.High performance
+10.Multithreaded
+11.Distributed
+12.Dynamic
+
+
+ data is getting stored inside an object
+ Garbage collector:
+ it is the system defined java program 
+ which is running periodically 
+ for the purpose of collecting unused memory spaces
+ 
+ 
+ 
+why java is simple?
+
+->syntax is based on c++
+->java has removed some complex concepts such as explicit pointers,
+  operator overloading
+->There is no need to remove unreferenced objects because 
+  there is an automatic garbage collection in java.
+->java syntaxes are very userfriendly.
+
+
+object oriented:
+```````````````
+
+xyz
+ programming language
+ 
+    ->oopl 
+	
+	have to follow some principles?
+	java is also one of the oopl
+	becaue it follows those principles
+	
+	oops principles.->candain organization -> omg
+	
+	 ->inheritance
+	 ->polymorphism
+	 ->abstraction
+	 ->encapuslation
+	 
+everything in java is an object.
+
+software /application 
+it is a combination of different objects that incorporate both data and behaviour.
+
+	 
+	Student
+	
+	
+java is platform independent:
+```````````````````````````````
+ 
+  wora ->write once run/reuse  anywhere
+  
+  irrespective of any o.s we are allowed to execute java programs.
+  
+  bytecode->platform independent code
+  
+  
+Robust:
+````````
+ strong
+ java is strong 
+ 
+ because in postivie scenario
+ 
+ and asweel as in negative scenario
+   
+   
+
+   
+ ->it uses strong memory management
+ ->there is lack of pointer that avoids security problems
+ ->java provides automatic garbage collection wich runs on the jvm to 
+   get rid of objects which are not being used by a java application 
+   any more.
+ ->There are exception handling and the type checking mechanism in jaa.
+ 
+ 
+   any syntatical errors -> compile time errors
+   logically if you do any mistakes -> at runtime by the jvm
+   
+     runtime errors ->exceptions
+	 
+	 
+	 
+   atm machine 
+   
+     account-> 5000
+	 
+	 withdraw -> 7000 rs
+	 
+	 java.lang.Exception on the console
+	 
+	 
+	 atm console: insufficeint funds
+	 
+ 
+architectural neutral:
+``````````````````````
+int -> 4 bytes
+
+32 bit -> 64 bit
+
+ int -> 2 bytes -> 32 bit 
+ int -> 4 bytes -> 64 bit
+ 
+ 
+ portable:
+ ``````````
+  portable = pi + an
+  
+ distributed:
+`````````````````
+
+RMI
+EJB
+ spring ,springboot,microservices 
+ 
+
+  -> DISTRIBUTED APPLICATIONS
+  
+  this feature of java makes us able to access files by calling 
+  the methods from any machine on the internet.
+  
+  facebook.com 
+  
+ 
+multithreaded:
+````````````````
+
+multiple threads
+
+thread:
+separate progam executing parallely.
+
+1 programmer -> 20 days
+
+20 programmers -> 1 day
+
+we can write java programs that deal with many tasks at once 
+by defining multiple threads.
+
+the main advantage of multi threading is that it doesn't occupy memory 
+for each thread.
+it shares a  common memory area.
+
+threads are important for multimideia , web applications etc.
+
+
+
+dynamic:
+````````
+it supports the dynamic loading of classes.
+
+  class supposed to be loaded in to the jvm 
+  class loader subsystem 
+    ->jvm
+	
+	   ->main memory 
+	      ->RAM
+		  
+		  
+
+-high performance
+
+
+->secured
+
+
+java is object oriented programming language
+
+ because it follows oops principles
+ 
+    inheritance
+	polymorphism
+	abstraction
+	encapuslation
+	  -omg organization 
+	  
+	in java language, how can we achieve the above principles?
+
+by using these two concepts
+	class 
+	object 
+	
+note:
+every java program should starts with by defining the class.
+
+	
+class:
+``````
+class is a collection of 
+
+ -variables
+ -methods into a single unit.
+ 
+ 
+main() is mandatory to execute the java program 
+because java execution starts from main() only.
+
+jvm will internally call this main()
+
+note:
+
+without main() we can compile the java program but we can't execute 
+the java program 
+ since java execution / jvm internally calls the main() when you 
+ execute the java program.
+ 
+ 
+variables:
+``````````
+ 100 in some specified user defined name
+ inetrnally java will allocate some address (system defined address)
+ 
+ 
+   it is highly recommended to store the data in our own variable names
+   
+   we can easily access whenever you want.
+   
+   readability will be improved.
+   
+   
+ purpose of variable:
+
+    to store the data.
+
+  stid =100;//valid or invalid
+
+
+  
+ java is strongly typed programming language
+ 
+  we have to specify the datatype.
+  
+  datatype:
+  
+   what type of data we are storing we should specify that type 
+   while we are storing the data.
+   
+   int stid = 100;
+   
+   
+syntax of varialbe declaration:
+
+   <datatypename> <variablename> = <value>;
+
+java is case sensitive programming language
+we have to take care about upper case and lower case variables.
+
+
+ rules to declare the variable name:
+``````````````````````````````````````
+1.variable name should always starts with alphabet 
+  it should not start with numeric 
+
+2.no special characters are allowed except $ and _(underscore)  
+
+3.we are not allowed to use varaible names as java reserved words.
+
+4.variable names are case sensitive.
+
+5.blank spaces are not allowed while we are declaring the variables.
+
+
+<datatypename> <variablename> = <value>;
+
+different datatypes are available in java.
+
+
+
+   4 categories of datatypes 
+   
+   1. integer
+   
+   2. characters
+   
+   3.float category
+   
+   4.boolean category
+   
+
+integer category datatypes:
+```````````````````````````
+
+  are used to store numeric values.
+  
+  we have 4 different integer datatypes are availble in java
+  
+  1.byte  -> 1 byte ->  8  bits
+  2.short -> 2 bytes -> 16 bits
+  3.int   -> 4 bytes -> 32 bits
+  4.long  -> 8 bytes -> 64 bits
+  
+the above datatypes are predefined datatypes /prmitive datatypes
+which are given by sunmicrosystem
+
+
+note:
+`````
+A primitive type is predefined by the language and is named by a reserved keyword.
+
+note:
+
+all the java reserved keywords must be always in lower case only.
+
+ 
+ 
+note:
+every datatype is maintaining two things
+
+
+ 1.range
+ 
+ 2.memory size
+ 
+ based on the value or range of data we are storing we are selecting 
+ the corresponding datatype.
+ 
+ 
+byte b = 100
+
+to calculate any datatype range i have one formula
+
+ -2^n-1 to (2^n-1) - 1
+ where n -> no.of bits occupied by the datatype
+ 
+ range of the byte datatype.
+ 
+ byte -> 1 byte - > 8 bits
+ 
+ -2^7 to (2^7) -1
+ 
+ -128 to 127
+ is the range of the byte datatype.
+ 
+ byte b =128;
+ 
+character category:
+````````````````````
+to store single character we have to use character category data.
+note:
+to store single character it is mandatory to store with in single quotes.
+
+note: char is the datatype 
+memory size: 2 bytes of memory 
+
+because java internally follows unicode 
+java supports 18 international languages
+
+
+	class Demo
+{
+
+public static void main(String[] args)
+{
+	//invalid : int 5stid=100;
+	//valid : int st$id=100;
+	//invalid: int st*id=100
+	
+	//invalid : int int = 100;
+	//invalid: int st id=100;
+	//int stid=100;
+	
+	//invalid :byte stid = 128;
+	
+	//int  stid = 100;
+	
+	char stname ='r';
+	
+	System.out.println(stname);
+	
+}
+   
+}						   
