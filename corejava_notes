@@ -870,3 +870,583 @@ public static void main(String[] args)
 }
    
 }						   
+
+java is object oriented programming language
+ 
+  ->since it follows oops principles which are given by omg 
+  organization .
+  
+  1.inheritance
+  2.polymorphism
+  3.abstraction
+  4.encapuslation
+  
+  
+to achieve above principles we are using two concepts in java
+ 1. class
+ 2. object
+ 
+ 
+class:
+``````
+class is a collectio of variables and methods into a single unit. 
+that single unit is known as class. 
+
+
+every java program should starts with by defining the class only.
+
+ class <classname>
+ {
+  //vairables
+   
+   //methods
+  
+ }
+ 
+java doesn't support non member variables and non member methods
+
+ 
+
+
+variable:
+
+  variable is used to store the data
+  
+  <datatypename> <variablename> = <value>;
+  
+  int stid = 100;
+  
+
+class is 
+
+  -variables
+  -methods
+  
+
+method:
+``````
+method is the place where we are writing the logic
+to perform some operation based on the requirement.
+
+note
+if you want to define your own logic , define your own method.
+
+
+syntax
+```````
+[accessmodifier] <returntype> <methodname>([if any parameters])
+{
+  
+   //logic
+}
+
+
+ex:
+
+  public void display()
+  {
+   System.out.println("iam from display");
+   }
+   
+ if a method is not returning any value to represent that we are using one return type i.e void 
+
+
+int getAge()
+{
+return 23;
+} 
+
+if a method is returning any value, using return keyword we are allowed to return the value.
+
+note:
+return type and return value must be compatible with each other
+
+
+
+
+
+public void sum(int x, int y)
+{
+System.out.println(x+y);
+}
+
+
+
+  sum(4,5);
+  
+  
+public int sum(int x, int y)
+{
+return x+y;
+}
+
+
+->define the method which returns name of the student?
+
+
+  String getStudentName()
+  {
+    return "rama";
+  }
+
+->define the method whcih returns age of the student?
+
+
+  public int getStudentAge()
+  {
+  return 78;
+  }
+
+
+->define the method which takes two integer parameters and return the sum value?
+
+int getSum(int x,int y)
+{
+return x+y
+}
+
+->define the method which takes two string parameters and gives 
+concatination of the string?
+
+
+  String getConcatination(String x, String y)
+  {
+   return x+y;
+   }
+   
+getConcatination("rama","krishna");
+
+ramakrishna
+
+example:
+`````````
+class Student
+{
+  //variable declaration 
+   static int stid=100;
+   static String stname ="Rama";
+   
+   //method definition 
+   public static void display()
+   {
+     System.out.println(stid);
+	 System.out.println(stname);
+	 
+	 
+   }
+   
+   public static void main(String[] args)
+   {
+	   //calling display()
+	   display();
+	   
+   }
+
+}
+
+example on Employee class:
+````````````````````````````
+/*define the class Employee which declares empid and empname and display their details?*/
+
+
+
+class Employee
+{
+ static int empId =100;
+ static String empName="manikbasha";
+ //define the method
+ 
+ public static void getDetails()
+ { 
+ System.out.println(empId);
+ System.out.println(empName);
+ }
+ public static void main(String[] arg)
+ {
+ getDetails();
+ } 
+ }
+ 
+
+class is a collection of 
+
+
+ -variables
+ -& methods into a single unit.
+
+ 
+java is object oriented programming language
+  -> class
+  
+     
+	 
+  -> object
+  
+  
+  
+  when we define a class, there is no memory space created
+  for the properties which we are declaring inside the class.
+  
+  
+object:
+``````
+instance of a class is known as object.
+
+instance:
+````````
+allocating suffficeint amount of memory space for the 
+properties of the class.
+
+for a single class, how many objects we can create?
+
+  as many as we want based on the requirement
+  
+  
+ how can we create the object :
+ 
+ 
+ syntax:
+ 
+ <classname> <objectname> = new <classname>();
+ 
+ 
+  Student obj = new Student();
+  
+  Student -> name of the class 
+  obj -> object name
+  = -> assignment operator
+  new ->dynamic memory allocation operator
+  Student() -> constructor 
+  
+
+  the object for Employee
+  
+
+->define Account class with variables accountId,accountName
+  and display their details by using object?
+  
+  
+  
+  
+  
+  
+  
+  
+  hpw to define the class
+  how to create the object
+  
+  class-
+   collection of 
+    variables and methods into a single unit.
+	
+	object
+	 -instance of a class is known as object
+	 -allocating sufficient amount of memeory space for the 
+	  properties of the class.
+	  
+	  
+  jvm 
+  
+java program execution starts from main() 
+who will call main();
+  
+   jvm will call this main()
+   
+
+note:
+using object, we can access the properties and as well as 
+we can update the values based on the requirement.
+
+example:
+``````````
+class Product
+{
+ int productId = 100;
+ String productName ="soap";
+ 
+ public void getProductDetails()
+ {
+   System.out.println("Product id: " + productId);
+   System.out.println("Product Name: " + productName);
+   
+ }
+ 
+ public static void main(String[] args)
+ {
+	 //create the object for my class (Product)
+	 Product p = new Product();
+	 
+	 //using object we are chanigng the values
+	 p.productId=101;
+	 p.productName="laptop";
+	 
+	 p.getProductDetails();
+	 
+	 
+ }
+ 
+}
+  
+  
+
+
+
+
+
+define Student class with stid, stname and update the values 
+with your own name using object?
+
+
+
+we can create multiple objects for a single class, where each object is having their own address.
+
+example:
+````````
+class Product
+{
+ int productId = 100;
+ String productName ="soap";
+ 
+ public void getProductDetails()
+ {
+   System.out.println("Product id: " + productId);
+   System.out.println("Product Name: " + productName);
+   
+ }
+ 
+ public static void main(String[] args)
+ {
+	 //create the object for my class (Product)
+	 Product p1 = new Product();
+	 
+	 Product p2 = new Product();
+	 
+	 Product p3 = new Product();
+	 
+	 System.out.println(p1);
+	 System.out.println(p2);
+	 System.out.println(p3);
+	 
+	 
+ }
+ 
+}
+
+College 
+ 
+  1000 students 
+  
+     1 object is not enough to store 1000 students information 
+	 1000 objects are required
+	 
+
+
+note:
+`````
+
+object name is always must be unique, you can't declare multiple 
+objects with the same name.
+
+example:
+`````````
+class Employee
+{
+	
+	//variables
+   int empId=100;
+    String empName="rama";
+   double empSalary=9878.87;
+   
+   //method 
+   public  void getEmpDetails()
+   {
+	   System.out.println("====================");
+    System.out.println("employee id  is: " + empId);
+	System.out.println("employee name is : " + empName);
+	System.out.println("employee salary is: " + empSalary);
+   }
+
+  //main method
+   public static void main(String[] args)
+   {
+     
+	//create the object for the Employee class
+	Employee obj1 = new Employee();
+	 
+	//create the object for the Employee class
+	Employee obj2 = new Employee();
+	
+	System.out.println(obj1);
+	System.out.println(obj2);
+}
+}
+
+using object name, i want to change the values?
+
+is it possible or not?
+
+
+
+yes it is possible, please observe below program 
+
+
+class Employee
+{
+	
+	//variables
+   int empId=100;
+    String empName="rama";
+   double empSalary=9878.87;
+   
+   //method 
+   public  void getEmpDetails()
+   {
+	   System.out.println("====================");
+    System.out.println("employee id  is: " + empId);
+	System.out.println("employee name is : " + empName);
+	System.out.println("employee salary is: " + empSalary);
+   }
+
+  //main method
+   public static void main(String[] args)
+   {
+     
+	//create the object for the Employee class
+	Employee obj1 = new Employee();
+	 
+	//change the values using object name
+	
+	obj1.empId=101;
+	obj1.empName="manik";
+	obj1.empSalary=8989.99;
+	
+	//call the method
+	obj1.getEmpDetails();
+ 
+   }
+}
+
+instance(non static) vs static:
+`````````````````````````````````
+
+
+ int a;//a is non static variable 
+ 
+ static int a;//a is static variable 
+ 
+ 
+ public void m1()//non static method or instance method
+ {
+ //instance area
+ }
+ 
+ public static void m1()//static method 
+ {
+    //static area
+ }
+ 
+ by default main method is static or non static?
+ 
+ 
+the area which belongs to non-static method is known 
+as non-static area or instance area
+
+the area which belongs to static method is known as static area.
+
+ 
+by default main method area is also static area 
+
+
+note1:
+``````
+from static area, to access non-static properties using object name  we can access
+
+note2:
+``````
+from static area or non-static area, to access static properties using 
+below way we can access
+
+1.directly we can access
+2.using classname we can access
+
+
+note:
+``````
+whenever we create the object, memory locations will be created for 
+non-static or instance properties not for static properties.
+
+
+q?
+when should we declare any property as static property?
+
+answer: if a property is common to all , then go and declare that 
+property as static 
+
+once we declare any property as static , then memory will be created 
+only once by the classloader subsystem
+it is the sub part of jvm.
+
+
+example:
+````````
+class Employee
+{
+	
+	//non-static variables
+   int empId=100;
+   String empName="rama";
+   double empSalary=9878.87;
+   
+   //static property 
+   static String companyName="infosys";
+   
+   //instance method or non-static method 
+   public void getEmployeeDetails()
+   {
+	   //instance area
+	   
+	   System.out.println("-------------------");
+	   System.out.println("employee id : " + empId);
+	   System.out.println("employee name: " + empName);
+	   System.out.println("employee salary: " + empSalary);
+	   System.out.println("employee company name:  " + companyName);
+	   
+	   
+   }
+   
+  //main method
+   public static void main(String[] args)
+   {
+     //static area
+	 Employee obj = new Employee();
+	 System.out.println("employee id: " + obj.empId);
+	 System.out.println("employee name: " + obj.empName);
+	 System.out.println("employee salary:" + obj.empSalary);
+	 
+	 System.out.println("employee company name: " +companyName);
+	 
+	 companyName="TCS";
+	 
+	 System.out.println("employee company name: " +Employee.companyName);
+	 
+	 //call the method using obect name 
+	 
+	 obj.getEmployeeDetails();
+ 
+   }
+}
+
+
+ 
+ 
+ 
+ 
+ 
+  
+  
+
+
+
+
+
+
