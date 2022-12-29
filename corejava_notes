@@ -1437,11 +1437,231 @@ class Employee
 }
 
 
+introduce ide:
+integrated development environment 
+
+  eclipse is one of the open source ide.
+  
+  myeclipse
+  netbeans
+  intellij
+  etc..
+  
+how to download eclipse and install in your machine?
+````````````````````````````````````````````````````
+linK:
+https://www.eclipse.org/downloads/
+
+ctrl+ -> is to increase the font size 
+ctrl - -> is to decrease the font size 
+
+
+how can we create the java project:
+
+click on file
+|
+new
+|
+project
+|
+java project 
+
+|
+project name: corejava
+|
+uncheck module-info.java
+|
+click on finish 
+
+once we create the java project define the java class 
+by right click under src folder 
+click on new 
+
+|
+class
+|
+name: Test1
+|
+click on finish 
+
+
+one important advantage of writing the code in eclipse:
+
+  whatever the code we are writing inside eclipse is autocompiled
+  
+  we no need to compile the code separately 
+  
+  
+advantages of writing the code in eclipse:
+````````````````````````````````````````````
+note:
+the code which you are writing inside ide, it is autocompiled 
+code or precompiled code.
+
+
+1. Using IDE will cost you less time and effort .
+
+2.Navigation is made easier.
+
+3.Auto completion- one of the best features , you don’t have to remember all.
+
+4.Refactoring
+
+5.Error debugging is easy , you can easily navigate to Error line.
+
+6.All files can be viewed and managed at same screen.
+
+7.Organizing you imports.
+
+8.Downloading requires packages at ease.
+
+In addition to these specific Eclipse advantages are:
+
+It is free and open source.
+Industrial level of development
+It supports many other languages other than JAVA.
+Framework integration like Junit and TestNG and other plugins can be done easily.
+Since Eclipse tools are open source, they are quickly updated with the latest technology that can be integrated into existing code.
+
+ 
+constructor:
+`````````````
+ example without constructor:
+ ````````````````````````````
+ 
+public class Student {
+	
+	//varaibles declaration 
+	int stid;
+	String stname;
+	
+
+	void setValues()
+	{
+		stid=100;
+		stname="Rama";
+		
+	}
+	
+	void display()
+	{
+		System.out.println("student id is : " + stid);
+		System.out.println("Student name is : " + stname);
+	}
+	
+	//defining main method 
+	public static void main(String[] args) {
+		
+		
+		Student obj  = new Student();
+		
+		obj.setValues();
+		obj.display();
+		
+		
+	}
+}
+
+constructor:
+````````````
+constructor is a special member method 
+
+->it must be similar to class name 
+->it doesn't return anything even void also.
+
+purpose:
+`````````
+to initialize the object
+
+object ->data
+to initalize the data 
+
+int a;//variable declaration 
+a=100;//assigning the value
+
+int a=100;//variable initialization 
+
+variable initialization= variable declaration + assigning the value.
+
+
+ 
+ in our class, if we don't have any constructor, if you create the object using default constructor then java compiler first check 
+ whether in our class constructors are there or not 
+ if not , java compiler automatically generates one default constructor  known as system generated default constructor.
+ 
+ purpose of system generated default constructor:
+ 
+ it will intilize the default values 
+ based on the datatype we have default values are there 
+ 
+  for integer category datatypes default value is 0
+  for String datatype default value is null
+  
+  for float -> 0.0
+  for character -> single space
+  
+ 
+note:
+whenever we create the object corresponding constructor will be 
+invoked to intilzie the values.
+
+it is not like normal method 
+
+
+example :
+`````````
+
+public class Student {
+	
+	//varaibles declaration 
+	int stid;
+	String stname;
+	
+	//system generated default constructor 
+	//purpose: it will assign the default values
+	
+	/*public Student()
+	{
+	stid=0;
+	stname=null;
+	}*/
+	
+	//user defined default constructor
+	
+	Student()
+	{
+		stid=100;
+		stname="Rama";
+	}
+	
+	public void display()
+	{
+		System.out.println("Student id is : " + stid);
+		System.out.println("Student name is: " + stname);
+	}
+  
+	
+	//defining main method 
+	public static void main(String[] args) {
+		
+		Student obj = new Student();
+		
+		obj.display();
+		
+		
+	}
+}
+
  
  
  
+ types of constructors:
  
- 
+  default constructor
+  parameterized constructor
+  this keyword in java 
+  
+  
   
   
 
