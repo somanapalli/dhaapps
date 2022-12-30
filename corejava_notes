@@ -1874,6 +1874,50 @@ saying that recursive constructor invocation is not possible.
 
 
 
+when we have 3 constructors:
+
+
+public class Student {
+
+   public Student()
+   {
+	   //call the double paramterized constructor
+	   
+	   this(100,200);
+	  System.out.println("iam default constructor");
+   
+   }
+  public Student(int x)
+   {
+	
+	   System.out.println("iam parameterized cosntructor");
+   }
+  
+  public Student(int x, int y)
+  {
+	  //call the single paramterized constructor
+	  
+	  this(100);
+	  System.out.println("iam double parameterized constructor");
+  }
+	
+  //defining main method 
+	public static void main(String[] args) {
+		
+		//create the object for default constructor
+		
+		Student obj = new Student();
+		
+		
+		
+	}
+}
+
+note:
+
+constructor call always must be the top to bottom but execution 
+happen from bottom to top.
+
 
 
 
