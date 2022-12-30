@@ -1655,15 +1655,229 @@ public class Student {
  
  
  
- types of constructors:
+types of constructors:
+`````````````````````````
+ ->default constructor 
  
-  default constructor
-  parameterized constructor
-  this keyword in java 
+ ->parameterized constructor 
+ 
+ 
+  
+default constructor is again two types 
+
+   1.system defined default constructor
+      -to intilize default values 
+	  
+   2.user defined default constructor
+   
+      -to initliize our own values 
+	  
+	  
+2.parameterized constructor:
+  
+   constructor which takes parameters is known as 
+   parameterized constructor.
+   
+   
+example on parameterized constructor:
+``````````````````````````````````````
+
+public class Student {
+	
+	//varaibles declaration 
+	int stid;
+	String stname;
+	
+	
+	//define parameterized constructor
+	public Student(int x, String y)
+	{
+		stid=x;
+		stname=y;
+		
+	}
+	public void display()
+	{
+		System.out.println("Student id is : " + stid);
+		System.out.println("Student name is: " + stname);
+	}
+  
+	
+	//defining main method 
+	public static void main(String[] args) {
+		
+		Student obj = new Student(100,"rama");
+		
+		obj.display();
+		
+		
+	}
+}
+
+
+advantage of parameterized constructor:
+````````````````````````````````````````
+while we are creating the object only we can initilize the values.
+
+
+can we define both default and parameterized constructor inside 
+a single class?
+
+ note:
+ default constructor is always availble in only one form 
+ but we can define multiple parameterized constructors
+ 
+ default constructor we can define only once.
+ 
+
+example:
+````````
+
+public class Student {
+	
+	//user defined default constructor
+	public Student()
+	{
+	 System.out.println("iam user defined default constructor");
+	}
+	
+	//parameterized constructor
+	public Student(int x)
+	{
+		System.out.println("iam single parameterized constructor");
+	}
+	
+	
+	//defining main method 
+	public static void main(String[] args) {
+		
+		//create the object using default constructor
+		
+		Student obj = new Student();
+		
+		//create the object using parameterized cosntructor
+		
+		Student obj1 = new Student(3);
+		
+		
+		
+		
+	}
+}
+
+
+i have 100 constructors are there inside my class, so to execute 
+these 100 constructors how many objects we have to create?
+
+
+this:
+````
+'this' is a java reserved keyword used for the following 
+two purposes.
+
+
+purpose: 
+it is always pointing to current class object.
+
+1.it is used to differntiate class level variables and method level or 
+cosntructor level when both are same.
+
+example:
+``````````
+
+public class Student {
+	
+	int stid;
+	String stname;
+	
+	public Student(int stid, String stname)
+	{
+		this.stid=stid;
+		this.stname=stname;
+	}
+	public void display()
+	{
+		System.out.println("student id is: " + this.stid);
+		System.out.println("student name is : " +this.stname);
+	}
+	//defining main method 
+	public static void main(String[] args) {
+		
+		//create the object using parameterized constructor
+		
+		Student obj = new Student(100,"rama");
+		
+		
+		//calling display()
+		obj.display();
+		
+		
+	}
+}
+
+
+
+constructor chaining:
+
+ from one constructor if we call another constructor is the concept 
+ of constructor chaining 
+ 
+ it is possible by using following syntax using this keyword.
+ 
+ 
+  this() -> to call current class default constructor 
+  
+  this(...) -> to call current class parameterized constructor
   
   
+example:
+````````
+
+public class Student {
+
+   public Student()
+   {
+	   //call the parameterized constructor of the same class
+	   
+	   this(100);
+	   
+	   System.out.println("iam default constructor");
+	   
+   }
+   
+   public Student(int x)
+   {
+   
+	   System.out.println("iam parameterized cosntructor");
+   }
+	
+  //defining main method 
+	public static void main(String[] args) {
+		
+		//create the object for default constructor
+		
+		Student obj = new Student();
+		
+		
+		
+	}
+}
+
   
-  
+note:
+cosntructor call must be the first executable statement inside a  
+constructor otherwise we will get compile time error. 
+
+note:
+if we keep on calling the constructors we will get compile time error 
+saying that recursive constructor invocation is not possible. 
+
+
+
+
+
+
+
 
 
 
