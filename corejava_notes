@@ -1923,6 +1923,325 @@ happen from bottom to top.
 
 
 
+control statements/conditional statements
+``````````````````````````````````````````
+java compiler executes the code from top to bottom.
+
+
+The statements in the code are executed according to the order
+in which they appear.
+
+
+
+However, java provides statements that can be used to control the 
+flow of the java code. such statements are called control statements
+
+
+java provides three types of control statements 
+
+
+1.Decision making statements
+2.loop statements
+3.jump statements
+
+
+1.Decision making statements:
+`````````````````````````````
+
+as the name suggests, decision making statements decide which statement
+to execute and when.
+
+
+Decision making statements evoluate boolean expression and 
+control the progrma flow depending upon the result of the condition 
+provided.
+
+There are two types of decision making statemetns in java, i.e 
+   -if 
+   -switch
+   
+   
+if statement:
+``````````````
+this staement is used to evoluate a condition.
+
+the condition of the if statement gives a boolean value either true 
+or false.
+
+in java, there are four types of if statements 
+
+ 1.simple if statement
+ 2.if-else statement
+ 3.if-elseif ladder
+ 4.nested if statement 
+ 
+ 
+
+1.simple if statement:
+``````````````````````
+syntax:
+
+ if(condition)
+ {
+   //statemetns
+ }
+ 
+example:
+````````
+
+public class Student {
+
+	
+	public static void main(String[] args) {
+		
+		int x=10,y=20;
+		
+		if(x+y>20) {
+			System.out.println("x+y is greater than 20");
+		}
+		
+	}
+}
+
+2.if-else statement:
+````````````````````
+a block is a concept of in between { and }
+
+ if
+ {
+ 
+ }
+
+if else staement is an extension of if statement, which uses 
+another block of code. i.e catch block.
+
+The catch block is executed if the condition of the if block is 
+evlouated as false.
+
+
+syntax:
+  
+     if(condition){
+	   //statement1;//executes when condition is true
+	   }
+	 else{
+	   statement2 ;//executes when condition is false.
+	 }
+
+
+example:
+`````````
+
+public class Student {
+
+	
+	public static void main(String[] args) {
+		
+		int x=10,y=20;
+		
+		
+		
+		if(x+y<20) {
+			System.out.println("x+y is less than 20");
+		}
+		else
+		{
+			System.out.println("x+y is greater than 20");
+		}
+	}
+}
+
+if-else-if ladder:
+`````````````````````
+
+it contains 
+
+ 1 if block
+ 
+ multiple else if blocks 
+ 
+ 1 else block 
+ 
+ syntax:
+ 
+  if(condition1)
+  {
+    statement1;//executes when condition 1 is true
+  }
+  else if(condition2)
+  {
+    statement2;//executes when condition2 is true
+  }
+  else if(condition3)
+  {
+    statement3;//executes when conditio3 is true
+  }
+  else
+  {
+    statement4;//executes when all the condistions are false.
+  }
+  
+example:
+`````````
+
+public class Student {
+
+	
+	public static void main(String[] args) {
+		
+		String city="Agra";
+		
+		if(city=="Chennaih") {
+			System.out.println("city is chenniah");
+		}
+		else if(city=="Hyderabad")
+		{
+			System.out.println("city is Hyderabad");
+		}
+		else if(city=="pune")
+		{
+			System.out.println("city is pune");
+		}
+		else
+		{
+			System.out.println(city);
+		}
+			
+	}
+}
+
+
+nested if statement:
+```````````````````
+in nested if statement, the if staetment can contain a if 
+
+
+syntax:
+
+
+  if(condition1)
+  {
+    staetment1;//executes when condition1 is true
+	
+	 if(condition2)
+	 {
+	    statement2;//executes when condition2 is true
+	 }
+	 else
+	 {
+	    statement3;//executes when condition2 is false.
+		
+	 }
+  }
+  
+
+example:
+`````````
+
+public class Student {
+
+	
+	public static void main(String[] args) {
+		
+		int a=10,b=20;
+		if(a==10)
+		{
+			if(b!=20)
+			{
+				System.out.println("dhaaps");
+			}
+			else
+			{
+				System.out.println("ramakrishna");
+			}
+			
+		}
+	}
+}
+
+
+switch statement:
+````````````````
+
+switch statement executes one statement from multiple conditions. 
+it is like if-else-if ladder statement.
+
+
+1.there can be one or n number of case values for a switch expression.
+
+2.the case value must be of switch expression type only.
+  the case value must be literal or constant.it doesn't allow 
+  variables.
+  
+3.the case value must be unique, in case of duplicate value it will give you compile time error.
+
+
+4.java switch expression type must be of byte,short,int,long(with its 
+wrapper type),enums and string.
+
+5.each case statement can have a break statement which is optional.
+
+syntax:
+```````
+ switch(expression)
+ {
+ 
+   case value1:
+   //code to be executed
+   break;//optional
+   
+   case value2:
+   //code to be executed
+   break;//optional 
+   
+   ....
+   
+   default:
+   //code to be executed if all case values are not matched
+   
+ 
+ }
+
+
+ 
+example:
+````````
+
+public class Student {
+
+	
+	public static void main(String[] args) {
+		
+		int number=40;
+		
+		switch(number)
+		{
+		
+		//case statements
+		
+		case 10:System.out.println("10");
+		break;
+		case 20:System.out.println("20");
+		break;
+		case 30:System.out.println("30");
+		break;
+		default:System.out.println("not in 10,20 or 30");
+		}
+	}
+}
+
+
+if statement
+ 4 types 
+    simple if
+	if else
+	if -else-if ladder
+	nested if 
+	
+switch statement 
+
+
+
 
 
 
