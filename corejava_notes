@@ -2231,14 +2231,263 @@ public class Student {
 }
 
 
-if statement
- 4 types 
-    simple if
-	if else
-	if -else-if ladder
-	nested if 
-	
-switch statement 
+loop statements:
+`````````````````
+Loops in Java is a feature used to execute a particular part of the program repeatedly if a given condition evaluates to be true.
+
+
+   -for loop
+   -while loop 
+   -do while loop
+   
+for loop:
+`````````
+purpose:
+
+this for loop is used to iterate a part of the program several/multiple times.
+
+when should you use for loop?
+
+if the number of iteration is fixed, it is recommended to use
+for loop.
+
+ -simple for loop
+ -for each or enhanced for loop
+ -labelled for loop
+
+ simple for loop:
+ ````````````````
+ we can initilize the variable,
+ check the condition ,
+ increment/decrement the value 
+ 
+ it consitsts of four parts
+ 
+ 1.initialization -it is an optional condition 
+ 
+ 2.condition 
+ 
+ 3.increment/decrement
+ 
+ 4.statement
+ 
+syntax:
+
+ for(initialization;condition;increment/decrement)
+ {
+  //statement 
+ }
+ 
+example:
+```````
+//program for displaying first 10 numbers using for loop
+public class Test1 {
+
+   public static void main(String[] args) 
+	{
+      int i=1;
+       for(i=1;i<=10;i++)
+       {
+    	   System.out.println(i);
+       }
+	    
+	}
+}
+
+//program to displaying first 10 numbers in reverse order?
+
+example:
+`````````
+//program for displaying first 10 numbers using for loop
+public class Test1 {
+
+   public static void main(String[] args) 
+	{
+      int i=10;
+       for(;i>=1;i--)
+       {
+    	   System.out.println(i);
+       }
+	    
+	}
+}
+
+
+display even numbers from 1 to 10 using for loop and if statement?
+
+2
+
+4
+
+6
+
+8
+
+10
+
+example:
+``````````
+//program for displaying first 10 numbers using for loop
+public class Test1 {
+
+   public static void main(String[] args) 
+	{
+		
+		  for(int i=1;i<=10;i++) { 
+			  if(i%2==0)
+			  {
+				 System.out.println(i); 
+			  }
+		  
+		  }
+		 
+	   // % operator is giving you reminder
+	   
+	   
+	}
+}
+
+display odd numbers from 1 to 10 using for loop and if statement?
+
+
+example:
+````````
+//program for displaying first 10 numbers using for loop
+public class Test1 {
+
+   public static void main(String[] args) 
+	{
+		
+		  for(int i=1;i<=10;i++) { 
+			  if(i%2!=0)
+			  {
+				 System.out.println(i); 
+			  }
+		  
+		  }
+		 
+	   // % operator is giving you reminder
+	   
+	   
+	}
+}
+
+nested for loop:
+````````````````
+defining for loop inside another for loop. 
+
+
+if we have a for loop inside another for loop, it is known as 
+nested for loop.
+
+The inner for loop executes completely whenever outer for loop 
+executes.
+
+once control comes from outerfor loop to inner for loop, it executes inner for loop until the condition became false, once condition false 
+again it goes back to outerfor loop then comes to inner loop like this 
+flow is going on.
+
+
+
+example:
+````````
+//program on nested for loop
+public class Test2 {
+
+	public static void main(String[] args) {
+
+		// loop of i
+
+		for (int i = 1; i <= 3; i++) {
+			// loop of j
+			for (int j = 1; j <= 3; j++) {
+				System.out.println(i + " " + j);
+			}
+		}
+
+        
+	}
+}
+
+/*output:
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+3 1
+3 2
+3 3*/
+
+
+
+output:
+````````
+*
+* *
+* * *
+* * * *
+* * * * *
+
+example:
+`````````
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		
+		//define the outer for loop
+		
+		//outer for loop
+		for(int i=1;i<=5;i++)
+		{
+			//inner for loop
+			
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("*");
+			}
+			
+			System.out.println();
+			
+		}
+	}
+}
+
+
+output:
+````````
+* * * * * *
+* * * * *
+* * * *
+* * * 
+* * 
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
