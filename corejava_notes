@@ -2252,6 +2252,7 @@ if the number of iteration is fixed, it is recommended to use
 for loop.
 
  -simple for loop
+ -nested for loop
  -for each or enhanced for loop
  -labelled for loop
 
@@ -2476,23 +2477,274 @@ output:
 
 
 
+for each loop or enhanced for loop:
+````````````````````````````````````
+
+this enhanced for loop introduced from java 1.5 version onwards.
+
+purpose:
+``````````
+it provides an alternative approach to traverse the array or collection in java.
 
 
+it is mainly used to traverse the array or collection elements.
+
+how the values will be stored inside an array variable?
+  
+  based on the index 
+  
+  array index starts from 0th location .
+  
+  
+ int a[]={100,200,300};
+ 
+  sysout(a[0]);
+  sysout(a[1]);
+  
+  
+note:
+if the array length is 'n' 
+maximum index is 'n-1'
+because array index starts from 0 th location
+
+  
+
+syntax of foreach loop:
+````````````````````````
+it consistes of datatype with the varaible followed by a colon (:) , then array or collection varaible.
+
+  for(datatype variable:actualvaraible)
+  {
+  
+     /body of for each loop
+  }
 
 
+int a[]={10,20,30,40,50};
 
 
+  for(int b:a)
+  {
+    System.out.println(b);
+  }
+
+example:
+`````````
+class Test4
+{
+	
+	public static void main(String[] args) {
+		
+		int a[]= {10,20,30,40,50};
+		
+		System.out.println(a[0]);
+		System.out.println(a[1]);
+		System.out.println(a[2]);
+		System.out.println(a[3]);
+		System.out.println(a[4]);
+		
+		System.out.println("=======using for loop displaying array elements============");
+		
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.println(a[i]);
+		}
+		
+		System.out.println("======using for each loop displaying array elements===");
+		
+		for(int b:a)
+		{
+			System.out.println(b);
+		}
+		
+	}
+}
 
 
+//using for each loop calculate total of array elements
+  int a[] ={1,2,3,4};
+  
+answer:
+```````
+
+public class Test5 {
+	
+	public static void main(String[] args) {
+		
+		int a[]= {1,2,3,4};
+		int sum=0;
+		for(int b:a)
+		{
+			sum=sum+b;
+		}
+		
+		System.out.println("sum of array elements is : " + sum);
+	}
+
+}
 
 
+java labelled for loop:
+```````````````````````
+we can have a name of each java for loop.
+To do so, we used label before the for loop.
+it is useful while using the nested for loop as we can break/continue
+specific for loop.
+
+syntax:
+
+  labelname:
+  
+   for(intialization;condition;increment/decrement)
+   {
+     //code to be executed
+    }
+	
+example:
+`````````
+//program on nested for loop
+public class Test2 {
+
+	public static void main(String[] args) {
+
+		// using label for outer for loop
+	aa:
+		for (int i = 1; i <= 3; i++) {
+			// using label for inner forloop of j
+			
+	bb:
+			for (int j = 1; j <= 3; j++) {
+				
+				if(i==2&&j==2) {
+					break aa;
+				}
+				System.out.println(i + " " +j);
+			}
+		}
+
+	}
+}
+
+/*output:
+1 1
+1 2
+1 3
+2 1
+*/
+
+java while loop:
+`````````````````
+the java while loop is used to iterate a part of the program 
+repeatedly until the specified condition is true.
+
+as soon as the condition becomes false, the loop automatically stops.
+
+the while loop is considered as a repeating if statement. 
+if the number of iternation is not fixed, it is recommended to used the  while loop.
 
 
+syntax:
+```````    
+    while(condition)
+	{
+	  //code to be executed;
+	  increment/decrement ;
+	}
+
+write one java program displaying 1 to 10 numbers using while loop?
+
+example:
+````````
+
+public class Test6 {
+	
+	public static void main(String[] args) {
+		
+		//initialization 
+		int i=1;
+		//while loop
+		
+		while(i<=10)
+		{
+			System.out.println(i);
+			i++;
+		}
+	}
+
+}
+
+do this program to display the 1 to 10 numbers in reverse order?
 
 
+public class Test6 {
+	
+	public static void main(String[] args) {
+		
+		//initialization 
+		int i=10;
+		//while loop
+		
+		while(i>=1)
+		{
+			System.out.println(i);
+			i--;
+		}
+	}
+
+}
 
 
+do while loop:
+``````````````
+do while loop is used to iterate a part of the program repeatedly,until the specified condition is true.
 
+if the number of iteration is not fixed and you must have to execute
+the loop at least once, it is recommended to use a do-while loop.
+
+do while loop is called an exit control loop.
+
+java do while loop is executed at least once because condition is 
+checked after loop body.
+
+
+syntax:
+```````
+  do{
+  
+    //code to be executed/loop body
+	//update staetment
+  
+  } while(condition);
+  
+  
+example:
+````````
+
+public class Test7 {
+	
+	public static void main(String[] args) {
+		
+		int i=1;
+		do {
+			System.out.println(i);
+			i++;
+			
+		} while (i>=10);
+		
+	}
+
+}
+
+looping statements:
+
+ for loop 
+ 
+   -simple for loop, for each loop , nested for loop , labelled for loop
+   
+   -while loop 
+   
+   -do while loop
+ 
 
 
 
