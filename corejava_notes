@@ -2735,16 +2735,582 @@ public class Test7 {
 
 }
 
-looping statements:
+jump statements:
+````````````````
+Jump statements are one of the types of control statements in Java that directs the flow of execution in a program.
 
- for loop 
+
+ break 
+ continue
  
-   -simple for loop, for each loop , nested for loop , labelled for loop
-   
-   -while loop 
-   
-   -do while loop
+break statement:
+````````````````
+it is encountered inside a loop, 
+the loop is immediately terminated and the program control resumes at the next statement following the loop.
+
+
+break statement is used to break loop or switch statement.
+
+
+it breaks the current flow of the program at specified condition.
+
+in case of inner loop, it breaks only inner loop.
+
+
+we can use java break statement in all types of loops such as
+
+ -for loop,
+ -while loop 
+ -do while loop
  
+ syntax:
+ 
+      jump-statement;
+	  break;
+	  
+	  
+example:
+````````
+
+public class Test8 {
+	
+	public static void main(String[] args) {
+		
+		
+		//using for loop
+		for(int i=1;i<=10;i++)
+		{
+			if(i==5) {
+				//breaking the loop
+				break;
+			}
+			System.out.println(i);
+		}
+		
+	
+	}
+
+}
+
+
+ break statement with inner loop:
+ 
+ it breaks inner loop only if you use break statement inside 
+ the inner loop.
+ 
+ 
+example:
+`````````
+
+public class Test8 {
+	
+	public static void main(String[] args) {
+		
+		
+		//using for loop
+		for(int i=1;i<=3;i++)
+		{
+			//inner loop
+			for(int j=1;j<=3;j++)
+			{
+				if(i==2&&j==2)
+				{
+					break;
+				}
+				System.out.println(i + " " +j);
+			}
+			
+		}
+		
+	
+	}
+
+}
+
+
+
+3 assignments:
+
+use break statement inside labelled for loop?
+
+use break statement inside while loop?
+
+use break statement inside do-while loop?
+
+
+continue statement:
+````````````````````
+it is used in loop control structure when you need to jump 
+to the next iteration of the loop immediately.
+
+it can be used with all types of loops such as for,while and dowhile 
+
+
+
+purpose: it is used to continue the loop.
+
+note:
+
+it continues the current flow of the program and skips the remaining 
+code at the specified condition .
+
+
+   for(int i=1;i<=10;i++)
+   { 
+      if(i==5){
+	  continue;
+	  }
+	  sysout(i)
+   }
+1
+2
+3
+4
+6
+7
+8
+9
+10
+
+in case of an inner loop, it continues the inner loop only.
+
+
+syntax:
+
+     jump-statement;
+	 continue;
+	 
+example:
+````````
+`
+public class Test8 {
+	
+	public static void main(String[] args) {
+		
+		
+		//using for loop
+		for(int i=1;i<=10;i++)
+		{
+			if(i==5)
+			{
+				continue;
+			}
+			System.out.println(i);
+			
+		}
+		
+	
+	}
+
+}
+
+example of continue statement with inner for loop:
+`````````````````````````````````````````````````````
+
+public class Test8 {
+	
+	public static void main(String[] args) {
+		
+		
+		//using for loop
+		for(int i=1;i<=3;i++)
+		{
+			//inner loop
+			for(int j=1;j<=3;j++)
+			{
+				if(i==2&&j==2) {
+					continue;
+				}
+				System.out.println(i + " " + j);
+			}
+			
+		}
+		
+	
+	}
+
+}
+
+assignment:
+```````````
+use continue statement in labelled for loop?
+use continue statement in while loop?
+use continue staetment in do while loop?
+
+	 
+
+
+
+type casting in java:
+`````````````````````
+in java, type casting is a method or process 
+that converts a datatype into another datatype.
+in both ways 
+
+ -manually 
+ -automatically
+ 
+ the automatic conversion is done by the java compiler 
+ manual conversion is done by the programmer .
+ 
+ 
+ there are two types of type castings 
+ 
+   1.widening type casting 
+   2.narrowing type casting 
+   
+1.widening type casting:
+
+converting a lower data type into a higher datatype is called
+widening type casting.
+
+it is also known as implicity conversion.
+
+it is done automatically.
+
+it is safe because there is no chance to lose the data. 
+
+
+widening type casting:
+``````````````````````````
+byte -> short -> int -> long -> float -> double 
+
+example:
+`````````
+
+public class Test9 {
+	
+	public static void main(String[] args) {
+		
+		int x=7;
+		//automatically converts the integer type into long type
+		long y = x;
+		
+		//automatically converts the long type into float type
+		float z = y;
+		
+		System.out.println("before conversion , int value " + x);
+		System.out.println("after conversion, long value: " + y);
+		System.out.println("after conversion, float value: " +z);
+		
+		
+	}
+
+}
+
+
+
+narrwoing type casting:
+```````````````````````````
+
+note:
+in case of narrowing type casting, we might get a chance to lose the data in the explicit conversion .
+
+
+double->float->long->int->short->byte
+
+converting a higher data type into a lower data type is called 
+narrowing type casting.
+
+it is also called as explicit conversion 
+
+it is done manually by the programmer.
+
+if we do not perform casting then the compiler gives you compile time 
+error.
+
+
+
+
+   
+example:
+``````
+
+public class Test9 {
+	
+	public static void main(String[] args) {
+		
+		double d= 234.5656;
+		
+		//converting double datatype into long data type
+		long l =(long)d;
+		
+		//converting long datatype into int datatype
+		
+		int i = (int)l;
+		
+		System.out.println("before conversion , double value " + d);
+		System.out.println("after conversion, long value: " + l);
+		System.out.println("after conversion, int value: " +i);
+		
+		
+	}
+
+}
+
+oops principles:
+````````````````
+ ->inheritance
+ ->polymoprhism
+ ->abstraction 
+ ->encapsulation 
+ 
+ 
+inheritance:
+```````````
+inheritane is the process of taking the properties from one class 
+to another class 
+
+
+
+class 
+ i have some logic is there
+ 
+ the same logic if i wanted to use in anotehr class.?
+ 
+ if we redefine code duplication/redundancy will be increased
+ 
+ memory consumption also gets increased
+ 
+ performamnce of the application will be degraded
+ 
+ 
+
+instead of redefining the logic, try to reuse it
+
+
+
+parent class/base class/super class:
+
+it is the class which is giving the properties
+
+child class/sub class/derived class:
+it is the class  which is taking the properties
+
+
+using "extends" keyword we can achieve the concept of inheritance.
+
+
+note:
+whenever we applied the concept of inheritance, it is highly 
+recommended to create the object for child class not for parent class
+
+if we create the object for parent class, memory locations will be created only for parent class properties.
+
+so that , with the parent class object we are allowed to access only 
+parent class properties
+
+whenever we crete the object for child class, memory locations will 
+be created for both parent and child class properties. 
+
+so with this child class object, we are allowed to access 
+both parent and child class proeprties.
+
+what is the primary advanatage of inheritance:
+
+ 1.reusability 
+ 2.code redundancy will be decreased 
+ 3.performance of the application will be improved.
+ 
+ 
+types of inheritances:
+`````````````````````
+in java, we have 5 types of inheritances
+
+1.single /simple inheritance
+2.multilevel inheritance
+3.multiple inheritance
+4.hierarchical inheritance
+5.hybrid inheritance
+
+single / simple inheritace:
+
+  it is the inheritance which contains
+     -single base class/parent class
+	 -single child class
+	 
+	A
+	|
+	B
+
+multilevel inheritance:
+
+it contains 
+
+  single parent clas 
+  
+  multiple intermediate base classes 
+  
+  single child class 
+  
+  
+  A
+  |
+  B
+  |
+  C
+
+hierarchy:
+````````` 
+  class A
+  {
+  }
+  class B extends A
+  {
+  }
+  class C extends B
+  {
+  }
+  
+
+in one context, B class is acting as sub class or child class 
+
+but in anotehr context, same B class is acting as super class or 
+parent class. 
+
+such kind of classes are known as intermediate parent classe(s).
+
+multiple inheritance:
+`````````````````````
+ 
+   mutliple inhertiance contains 
+   
+   1.multiple parent classes
+   2.single child class 
+   
+   
+       A B C D ....
+	   
+	       Z
+ 
+hierarchy:
+```````````
+ class Z extends A,B,C,D,...
+ {
+ }
+ in java, through classes multiple inheritance is not possible 
+ 
+ why?
+ 
+ class A{
+    sum()
+ }
+ class B {sum();}
+ 
+ z obj = new z();
+ obj.sum();
+ 
+ 
+ Interface concept -> multiple inheritance.
+ 
+ 
+hierarchical inheritance:
+
+   single parent class/base
+   
+   mutliple child classe(s)
+   
+    A
+	
+B  C  D E ....
+
+hierarchy:
+`````````
+class A
+{
+}
+class B extends A
+{}
+class C extends A{}
+class D extends A{}
+....
+
+
+hybrid inheritance:
+````````````````````
+it is the combination of any two possible inheritance 
+types.
+
+
+ A
+ |
+ B
+ |
+C  D  E
+  
+ SINGLE + HIERARCHICAL = HYBRID INHERITANCE 
+ 
+hierarchy:
+``````````
+ 
+ class A{}
+ class B extends A{}
+ class C extends B{}
+ class D extends B{}
+ class E extends B{}
+ 
+ 
+assignments:
+do one one program on top of each and every 
+inheritance type.
+
+
+ note:
+ when you apply inheitance concept, it is 
+ highly recommende to create the object for 
+ child class. 
+ 
+ 
+A.java:
+```````
+//parent class cum business logic class
+public class A {
+	public A()
+	{
+		System.out.println(this.hashCode());
+	}
+	public void sum(int x, int y)
+	{
+		System.out.println("sum is : " +  (x+y));
+	}
+
+}
+
+B.java
+````````
+//child class cum business logic class cum executin logic class
+public class B extends A {
+	
+	public void sub(int x, int y)
+	{
+		System.out.println("substraction: " +(x-y));
+	}
+	
+	public static void main(String[] args) {
+		
+		//child class object creation 
+		
+		B obj = new B();
+		
+		obj.sum(2, 3);
+		obj.sub(5, 4);
+		
+	}
+
+}
+note:
+using extends keyword, we are allowed to extend from single class 
+to single class only not from more than 1 parent class,if we try for that, we will get compile time error. 
+
+
+
+
+
+
+
+
+
+
 
 
 
