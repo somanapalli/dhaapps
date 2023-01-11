@@ -3303,6 +3303,277 @@ using extends keyword, we are allowed to extend from single class
 to single class only not from more than 1 parent class,if we try for that, we will get compile time error. 
 
 
+polymoprhism:
+`````````````
+ 
+ one of the oop principle.
+ 
+ defintion: 
+
+Polymorphism is one of the core concepts of object-oriented programming (OOP) and describes situations in which something occurs in several different forms. 
+
+
+In computer science, it describes the concept that you can access objects of different types through the same interface
+
+  
+  polymoprhism -> many forms
+
+how can we achieve this polymoprhism:
+
+we have two conecpts , 
+
+  1.method overloading
+  2.method overriding
+  
+  
+method overloading:
+```````````````````
+method name is same
+but signature is different
+
+signature:
+
+    chanigng type of parameters
+	changing in no.of parameters
+	changin in order of parameters atleast
+	
+	
+	void sum(int x, float y)
+	{
+	}
+	
+	void sum(float x, int y)
+	{
+	}
+	void sum(double x, double y)
+	{
+	}
+	
+	void sum(int x, int y , int z)
+	{
+	}
+	
+how can we overload the method?
+
+  by defining the method name as same 
+  and by changing signature.
+  
+  
+advantage:
+
+ readability of the code improves.
+
+ Method overloading increases the readability of the program. 
+ 
+ This provides flexibility to programmers so that they can call the same method for different types of data.
+ 
+
+example:
+`````````
+
+public class Demo1 {
+	
+	public void sum(int x, int y)
+	{
+		System.out.println("integer sum is : "  +(x+y));
+	}
+	public void sum(double x, double y)
+	{
+		System.out.println("double sum is : " +(x+y));
+	
+	}
+	public static void main(String[] args) {
+		Demo1 obj = new Demo1();
+		
+		obj.sum(10,20);
+		
+		obj.sum(2.3,3.4);
+		
+		
+		
+	}
+
+}
+
+note:
+to achieve the concept of method overloading one class is enough.
+
+we don't require more than one class.
+
+assignment:
+
+rewrite the above program or overload sum() method by changing 
+
+  -no.of parameters
+  -order of parameters
+  
+  
+method overriding:
+````````````````````
+
+method name is same
+
+but logic is different from parent class to child class. 
+
+
+
+note:
+to achieve the concept of method overriding minimum we require
+two classes with parent-child relation.
+
+
+note:
+why should we go for this method overriding?
+
+answer:
+
+if i don't want to use existing logic or original logic which is available inside parent class, 
+then i should go for method overriding because inside the child class 
+we will get a chance to override the exisitng logic 
+
+                 or
+if i want my own logic then i can go for method overriding.
+
+
+what is @Override annotation?
+
+
+The @Override annotation denotes that the child class method overrides the base class method.
+
+ For two reasons, the @Override annotation is useful.
+
+ If the annotated method does not actually override anything, the compiler issues a warning. 
+ 
+ It can help to make the source code more readable.
+ 
+ 
+A.java:
+````````
+//PARENT CLASS
+public class A {
+	
+	 public void sum(int x, int y)
+	 {
+		 System.out.println("sum is : " + (x+y));
+	 }
+
+}
+
+B.java:
+```````
+
+//child class
+public class B extends A{
+	
+	@Override
+	public void sum(int x, int y)
+	{
+		System.out.println("substraction: " +(x-y));
+	}
+	
+	public static void main(String[] args) {
+		
+	B obj = new B();
+	obj.sum(4, 3);
+	}
+
+}
+
+
+polymorphism 
+
+  method overloading
+  method overriding 
+  
+  
+  
+
+  in java, we have two types of polymoprhisms
+  
+   1.compile timepolymoprhism
+   2.runtime polymoprhism
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
