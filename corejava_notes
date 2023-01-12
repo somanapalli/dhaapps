@@ -3490,8 +3490,133 @@ polymorphism
 
   in java, we have two types of polymoprhisms
   
-   1.compile timepolymoprhism
+   1.compiletime polymoprhism
+   
+     ->polymorphism can be decided at compiletime is known as
+	 compiletime polymoprhism
+	 
+	 ->method calling is binded or associated with specific method at compiletime by using reference varaible only not based on the 
+	 object type.
+	 
+	 ->method overloading is the best example to achieve the concept 
+	 of compiletime polymoprhism.
+	 
+example:
+````````
+
+public class Demo1 {
+	
+	public void sum(int x, int y)
+	{
+		System.out.println("integer sum is : "  +(x+y));
+	}
+	public void sum(double x, double y)
+	{
+		System.out.println("double sum is : " +(x+y));
+	}
+	public static void main(String[] args) {
+		
+		//object declaration 
+		Demo1 obj ;//available at compiletime
+		
+		/*
+		 * object referencing:
+		 * the address of the memory location
+		 *  where the object is allocated)	 * 
+		 */
+		obj= new Demo1();//available at runtime
+		
+		obj.sum(10,20);
+		
+		obj.sum(2.3,3.4);
+		
+		
+		
+	}
+
+}
+
+	 
+	 
+	 
+	 
+	 ->using method overloading , we are achieveing the concept of 
+	 compile time polymoprhism
+	 
+	 
+	 
    2.runtime polymoprhism
+   
+   ->the polymoprhism can be decided at runtime based on the object type not based on the reference varaible. 
+   
+   ->method overriding is the best example to achieve the concept of
+    runtime polymoprhism.
+	
+   ->method calling is associated to a particular method based on the 
+   object type not based on the reference variable.
+   
+   
+note:
+whenever we call any method, if that method is not available inside 
+child class, automatically control will look for that method inside 
+parent class this is the behaviour.
+
+note:
+````
+which class object we are creating, that class method will be executing is the concept of runtime polymoprhism.
+
+A.java:
+```````
+//PARENT CLASS
+public class A {
+	
+	 public void sum(int x, int y)
+	 {
+		 System.out.println("sum is : " + (x+y));
+	 }
+
+}
+
+B.java:
+```````
+
+//child class
+public class B extends A{
+	
+	@Override
+	public void sum(int x, int y)
+	{
+		System.out.println("substraction: " +(x-y));
+	}
+	
+	public static void main(String[] args) {
+		
+	   //case 1:A obj = new A();
+	   //obj.sum(2, 3);
+		
+		//case 2: B obj = new B();
+		//obj.sum(4, 3);
+		
+		//case:3
+		//child object type to parent object type conversion 
+		//automatic conversion 
+		//upcasting
+		//obj is of A type
+		A obj;//obj is available at compiletime
+		
+		//obj is pointing to B class object
+		obj= new B();
+		
+		obj.sum(4, 3);
+	
+	   
+	}
+
+}
+
+
+
+  
    
    
 
@@ -3571,6 +3696,17 @@ polymorphism
 
 
 
+
+what is debugging:
+`````````````````
+Debugging is the process of finding and resolving defects 
+or problems with in a computer program that prevent correct
+operation of computer software or a system.
+
+It's a must have skill for any developer because it helps to find bugs that are not visible during code reviews or that only happens when a specific condition occurs.
+
+Debugging helps the developers in control flow analysis, 
+unit testing, integration testing, monitoring at the application execution flow etc..
 
 
 
