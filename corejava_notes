@@ -3614,89 +3614,6 @@ public class B extends A{
 
 }
 
-
-
-  
-   
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-   
-    
-
-
-
-
-
-
-
-
-
-
-
 what is debugging:
 `````````````````
 Debugging is the process of finding and resolving defects 
@@ -3709,15 +3626,228 @@ Debugging helps the developers in control flow analysis,
 unit testing, integration testing, monitoring at the application execution flow etc..
 
 
+abstraction:
+````````````
+
+abstraction is one of the object oriented programming principle.
+
+
+it is the process of retrieving the required details 
+by ignoring irrelevant details.
+
+
+
+advantage:
+   using this we can achieve the concept of security 
+   
+
+->abstract class
+->interface 
+
+
+abstract class:
+
+it is a java class which contains atleast one abstract method
+undefined method 
+unimplemented method 
+no body method 
+
+it contains only method heading 
+no method body/logic.
+
+
+  abstract class Test{
+  
+     //method declaration -only method heading 
+	 //abstract method/undefined method /unimplemeented method
+     public abstract void sum(int x, int y);
+	
+  }
+  
+
+ 
+ purpose:
+ `````````
+ Java Abstract class is used to provide common method implementation to all the subclasses or to provide default implementation
+
+which method is recommended to declare as an abstract method:
+
+
+ can we create the object for an abstract class?
+ 
+ no we can't create the object for an abstract class.
+ 
+ 
+ where should we define the logic for an abstract method?
+ inside implementation class 
+ 
+  
+  
+Demo1.java:
+``````````
+//abstract class
+public abstract class Demo1 {
+  public abstract void sum(int x, int y);
+
+}
+
+Demo2.java:
+`````````````
+
+
+//implementation class or sub class
+public class Demo2 extends Demo1{
+
+	@Override
+	public void sum(int x, int y) {
+		System.out.println("sum is: " +(x+y));
+		
+	}
+	
+	
+}
+
+Demo3.java:
+```````````
+//implementaion class of Demo1
+public class Demo3 extends Demo1 {
+
+	@Override
+	public void sum(int x, int y) {
+		System.out.println("substraction is: " +(x-y));
+
+	}
+
+}
+
+Demo4.java(execution logic class):
+``````````````````````````````````
+//execution logic class
+public class Demo4 {
+	
+	public static void main(String[] args) {
+		//runtime polymorphism
+		Demo1 obj = new Demo3();
+		
+		obj.sum(3, 4);
+		
+	}
+
+}
+
+
+note:
+``````
+when we inherit the abstract class, in the implemenation class we
+have to implement all the abstract methods,if we didn't provide 
+atleast for one abstract method our implemenation class also 
+will become abstract class.
+
+
+can we define the constructor inside an abstract class?
+
+yes we can define and we can make it execute also by using super()
+syntax.
+
+
+ super:
+```````
+super is oen of the java reserved keyword 
+
+ super is pointing always parent class properties
+ 
+
+we can use super keyword at three levels
+
+ 1.super at variable level 
+ 2.super at method level 
+ 3.super at constructor level
+ 
+super at variable level:
+`````````````````````````
+//parent class
+public  class Demo1 {
+ 
+  int x=100;
+  
+}
+
+//child class
+//Demo2.java
+
+
+//child or sub class
+public class Demo2 extends Demo1{
+int x = 200;
+
+public void display()
+{
+	System.out.println(x);
+	System.out.println(super.x);
+}
+}
+
+//Demo3.java
+//execution logic class
+public class Demo3 {
+	
+	public static void main(String[] args) {
+		
+		Demo2 obj = new Demo2();
+		
+		obj.display();
+		
+	}
+
+}
+
+
+super at method level:
+```````````````````````
+//parent class
+public  class Demo1 {
+ 
+  public void display()
+  {
+	  System.out.println("superclass-display");
+  }
+  
+}
+
+//Demo2.java:
+``````````````
+
+
+//child or sub class
+public class Demo2 extends Demo1{
+
+public void display()
+{
+	System.out.println("child class-display");
+	
+	//call the parent class method using following syntax
+	
+	super.display();
+}
+}
+
+Demo3.java:
+```````````
+//execution logic class
+public class Demo3 {
+	
+	public static void main(String[] args) {
+		
+		Demo2 obj = new Demo2();
+		
+		obj.display();
+		
+	}
+
+}
 
 
 
 
 
-
-
-
-
-
-
-
+  
