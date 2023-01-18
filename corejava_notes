@@ -3847,6 +3847,257 @@ public class Demo3 {
 }
 
 
+super at constructor level:
+````````````````````````````
+super -> to refer the parent class proeprties from the child class 
+context.
+
+->constructor should not be inherited.
+
+->constructor and class name must be same.
+
+class A
+{
+  public A()
+  {
+  }
+}
+class B extends A
+{
+ public B()
+ {
+ }
+  
+}
+
+If we inherit the constructor, we are violating the rule saying 
+that constructor name and class name must be same.
+
+
+this() -> is used to call current class default constructor 
+super() -> is used to call parent class default constructor 
+
+
+this(..) -> is used to call current class parameterized constructor 
+super(..) -> is used to call parent class parameterized constructor.
+
+
+note:
+writing the super() is optional to call the parent class 
+default constructor.
+
+writing the super(..) is mandatory to call the parent class 
+parameterized constructor.
+
+
+Demo1.java:
+```````````
+//parent class
+public  class Demo1 {
+ //user defined default constructor
+ public Demo1()
+ {
+	
+	 System.out.println("iam default const-Demo1");
+ }
+  
+}
+
+Demo2.java:
+````````````
+
+
+//child or sub class
+public class Demo2 extends Demo1{
+
+ public Demo2()
+ {
+	 
+	 //call the super class default constructor 
+	 //super();
+	 System.out.println("default constructor -Demo2");
+ }
+
+}
+
+note:
+for every constructor , java compiler will add super() as a first 
+statement.
+
+
+writing the super keyword is mandatory to invoke parent class 
+parameterized constructor if parent class doesn't contains any 
+default constructor.
+
+Demo1.java:
+````````````
+//parent class
+public  class Demo1 {
+ public Demo1(int x)
+ {
+	 System.out.println("parameterized constructor-Demo1");
+ }
+  
+ 
+}
+
+Demo2.java:
+```````````
+
+
+//child or sub class
+public class Demo2 extends Demo1{
+
+	//user defined default constructor
+ public Demo2()
+ {
+	 
+	 //call the super class parameterized constructor 
+	 super(100);
+	 System.out.println("default constructor -Demo2");
+ }
+
+}
+
+Demo3.java:
+```````````
+//execution logic class
+public class Demo3 {
+	
+	public static void main(String[] args) {
+		
+		//create the object for child class - Demo2
+		
+		Demo2 obj = new Demo2();
+		
+		
+	}
+
+}
+
+
+
+interface:
+``````````
+interface is a collection of only abstract methods.
+
+using interface , we can achieve 100% abstraction.
+
+syntax:
+
+   interface <interfacename>
+   {
+     //abstract methods;
+   }
+   
+when can you define any method as an abstract method?
+
+answer: if that method is common to all , then it is recommended to make 
+that method as abstract method.
+
+
+note:
+by default interface methods are public abstract, we no need to use 
+these keywords explicitly.
+
+by default interface variables are public static final.
+
+
+
+how can we take the properties from class to class ?
+
+ using extends keyword
+ 
+how can we take the properties from interface to class?
+
+ using 'implements' keyword.
+ 
+q: can we create the object for interface?
+
+  we can't create the object for interface.
+  
+
+Bank.java:
+```````````
+
+public interface Bank {
+	
+	//method declaration
+	double getRateOfInterest();
+	
+
+}
+
+
+Icici.java:
+````````````
+
+public class Icici implements Bank{
+
+	@Override
+	public double getRateOfInterest() {
+		// TODO Auto-generated method stub
+		return 6.5;
+	}
+
+}
+
+CityBank.java:
+`````````````
+
+public class CityBank implements Bank {
+
+	@Override
+	public double getRateOfInterest() {
+		// TODO Auto-generated method stub
+		return 5.5;
+	}
+
+}
+
+Demo3.java:
+``````````
+//execution logic class
+public class Demo3 {
+	
+	public static void main(String[] args) {
+		
+		//runtime polymorphism
+		Bank obj = new Icici();
+		System.out.println("icici rateof interest is : " + obj.getRateOfInterest());
+		
+		Bank obj1 = new CityBank();
+		System.out.println("citybank rate of interst is : " + obj1.getRateOfInterest());
+	}
+
+}
+
+
+to take the properties from either class to class or interface to 
+interface we are using extends keyword
+
+to take the proeperties from interface to class 
+we have to use implements keyword.
+
+
+inside the interface , can we define the constructor?
+
+  no, we can't define the constructor inside the interface.
+  
+  
+
+super at constructor level 
+interface 
+
+
+
+
+
+
+
+
+
+
 
 
 
