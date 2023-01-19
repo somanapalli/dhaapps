@@ -4084,12 +4084,230 @@ inside the interface , can we define the constructor?
 
   no, we can't define the constructor inside the interface.
   
-  
+note:
 
-super at constructor level 
-interface 
+if the method is not available inside child class, then immediately 
+java compiler will look for that particular method inside parent class.
 
 
+
+
+
+
+
+Object class is acting as super class in java for every class 
+whether it is predefined or userdefined class.
+
+what are the different methods we have inside Object class?
+
+11 methods 
+   clone()
+   finalize()
+   hashCode()
+   equals()
+   toString()
+   getClass()
+   wait()(3)
+   notify()
+   notifyAll()
+ 
+
+every class in java, is an example of what type of inheritance?
+
+ single/simple inheritance
+
+class Test1 
+{
+}
+ 
+note:
+if you are just displaying any java class object internally it invokes
+toString() accordingly we will get the output.
+
+toString() of Object class is giving you 
+
+classname@hexa value of hashCode
+
+
+example:
+````````
+package com.infotech.object;
+//example on Object class few methods
+public class Test1 {
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		Test1 obj1 = new Test1();
+		
+		
+		
+		//toString()-returns string reprsentation of the Object
+		System.out.println(obj.toString());//com.infotech.object.Test1@515f550a
+		//ctrl+shift+t
+		
+		System.out.println(obj);
+		
+		System.out.println(obj.hashCode());
+		System.out.println(obj1.hashCode());
+		
+		System.out.println(obj.getClass());
+		
+        System.out.println(obj.equals(obj1));
+		
+		
+		
+	}
+
+}
+
+
+note:
+``````
+for every new object, hashcode value is different
+
+
+encapsulation:
+``````````````
+it is the process of wrapping up of variables and methods into a
+single unit. 
+
+purpose: to achieve the concept of data hiding .
+
+
+by declaring my variables inside the class as private.
+
+
+how can we make normal class as an encapsulated class?
+
+ ->we have to declare private variables 
+ ->we have to define public setters and getters methods for each and   every variable.
+ 
+ 
+ setter method purpose is to set the data into an object
+ or to update the existing data.
+ 
+ getter method purpose is to get the data from the object 
+ 
+ make sure these two methods must be public.
+ 
+ 
+Student.java:
+``````````````
+
+//encapsulated class
+public class Student {
+//private variables
+
+	private int stid;
+	private String stname;
+
+	public int getStid() {
+		return stid;
+	}
+
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+
+	public String getStname() {
+		return stname;
+	}
+
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+
+}
+
+Test10.java:
+````````````
+
+public class Test10 {
+	
+	public static void main(String[] args) {
+		
+		Student st = new Student();
+		
+		
+		//set the student id and student name value into my student object
+		//by calling setter methods
+		
+		st.setStid(100);
+		st.setStname("Ram");
+		
+		//by calling getter methods we are able to access the stid & stname
+		System.out.println("student id is : " + st.getStid());
+		System.out.println("student name is : " +st.getStname());
+	}
+
+}
+
+
+overriding toString() method to get the desired result:
+
+Student.java:
+``````````````
+package com.infotech.object;
+
+public class Student {
+
+	
+	
+	private int stid;
+	private String stname;
+	
+	
+	public int getStid() {
+		return stid;
+	}
+	
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+	public String getStname() {
+		return stname;
+	}
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return stid + " " +stname;
+		
+	}
+	
+}
+
+Test2.java:
+```````````
+package com.infotech.object;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		Student obj1 = new Student();
+		obj1.setStid(100);
+		obj1.setStname("khan");
+		
+		System.out.println(obj1);
+		
+	}
+
+}
+
+note:
+`````
+whenever we display any java class object, internally it invokes 
+toString() , if we override toString() inside our class then it will be executed otherwise Object class toString() gets executed which gives 
+classname@hashcode value.
+
+-Object class and it's few methods
+-overriding toString() of Object class
+-Encapsulation 
 
 
 
