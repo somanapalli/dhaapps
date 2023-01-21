@@ -4305,9 +4305,518 @@ whenever we display any java class object, internally it invokes
 toString() , if we override toString() inside our class then it will be executed otherwise Object class toString() gets executed which gives 
 classname@hashcode value.
 
--Object class and it's few methods
--overriding toString() of Object class
--Encapsulation 
+
+
+
+
+
+exception handling:
+```````````````````
+if you make any mistakes in java syntactically , what will happen?
+
+ then java compiler gives error, those errors are what we call 
+ compile time errors.
+ 
+ 
+while we are running / executing the java program, jvm is giving us
+some errors those errors are called runtime errors. 
+
+technical name of runtime error is known as exception.
+
+why are we getting the exceptions?
+
+because of logical mistakes.
+ 
+  division of two numbers 
+  
+    100/20 if you pass valid input - valid output
+	
+	 100/0 -> error (logical mistake) ->
+
+
+if you pass any invalid input -> jvm won't process 
+->error -> exceptions
+
+
+
+when we get the exception what will happen?
+
+
+->control terminated abnormally
+
+->jvm will give system error messages
+
+
+
+ 1000 lines 
+--
+--
+-- int x = 100/0;
+--
+--
+--
+--
+ 997 lines of code won't executed
+ 
+java.lang.ArithmeticException 
+
+we have to avoid the above drawbacks for this what we have to 
+do as a programmer?
+
+
+  we need to handle the exceptions.
+  
+ 
+types of exceptions:
+
+ 
+    pre-defined exceptions 
+	
+	user -defined exceptions
+	
+	100/0 ->ArithmeticException (java.lang) 
+	
+	100 
+	abc -> InputMismatchException(java.lang)
+	
+	IOException (java.io)
+	ClassNotFoundException(java.lang)
+	FileNotFoundException(java.io)
+	InterreputedException(java.lang)
+	
+	...
+	
+
+predefined exceptions:
+
+
+  can be again categorized into two types
+  
+  -asynchronous exceptions-> java.lang.Error
+    due to hardware related failures 
+	
+	OutOfMemoryException 
+	StackOverFlowError
+	VirtualMachineError. 
+	etc..
+	
+	
+  
+  -synchronous exceptions -java.lang.Exception 
+  
+     
+  
+     -due to programatical errors
+	 
+	 
+	   1.un-checked exceptions - java.lang.RuntimeException 
+	   2.checked exception -  java.lang.Exception 
+	   
+checked exceptions:
+````````````````````
+checked exceptions are checked by java compiler	to escape from 
+Runtime erros(exceptions) 
+
+
+
+  ClassNotFoundException
+  IOException 
+  FileNotFoundException 
+  SQLException ... 
+  
+  
+  
+    ssc -> before you are attending public exam 
+	
+	our partents  are worrying more
+	
+	mother/father -> 
+	
+	  checking child is carrying hallticket or not?
+	  
+	        HallTicketNotFoundException 
+			
+	  child is carrying pen or not?
+	  ...
+	        PenNotFoundException 
+			
+			
+  mother/father ->java compiler
+  
+  
+  super class for all the checked exceptions -> java.lang.Exception
+  
+ 
+un-checked exceptions:
+````````````````````````
+unchecked exceptions are checked by jvm only occures because of 
+logical mistakes
+
+ ArithmeticException
+ NumberFormatException 
+ ArrayIndexOutOfBoundsException 
+ etc..
+ 
+ 
+ for all the unchecked exceptions, super class is java.lang.RuntimeException
+ 
+ 
+ hierarchy:
+ `````````
+ class ArithmeticException extends RuntimeException extends Exception extends Throwable extends Object
+ {
+ }
+ 
+	
+
+ class VirtualMachineError 	extends Error extends Throwable extends 
+ Object
+ {
+ }
+ 
+how can we handle the exceptions?
+
+ in java, we have 5 java reserved keywords are there
+ 
+  1.try
+  2.catch
+  3.finally
+  
+  4.throws
+  5.throw
+
+example on without handling the exception:
+``````````````````````````````````````````
+package com.dhaaps.exceptions;
+
+public class Test1 {
+	
+	public static void main(String[] args) {
+		
+		int x=100;
+		int y = 0;
+		int z = x/y;
+		System.out.println("division is : " + z);
+		System.out.println("Rest of the statements");
+		System.out.println("Rest of the statements");
+	}
+
+}
+
+
+try:
+````
+try block is used to keep the problematic statements which are causes 
+problems at runtime.
+
+
+syntax:
+```````
+  try{
+     //problematic statement(s)
+  }
+
+catch:
+`````
+catch block is  used to catch the exception and to provide user friendly 
+message.
+
+
+atm machine 
+ account =5k 
+  withdraw - 6k
+  
+insufficient funds
+
+
+syntax:
+
+
+               catch(exceptionclassname <referencevariablename>)
+			   {
+			     //user friendly message
+			   }
+
+
+
+whenever we get the exception, control terminated abnormally that's why 
+we can't maintain normla flow of the execution, 
+to maintain we have to handle the exceptions
+
+java is robust(strong), meaning that in every case means postive case 
+or negative case our project should be in a postition to give the support
+to the end users otehrwise no one will use our product.
+
+example of exception handling using try and catch along with 
+Scanner class:
+``````````````````````````````````````````````````````````````
+package com.infotech.exceptions;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Test1 {
+	
+	public static void main(String[] args) {
+		try {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("enter the first number");
+		
+		int fno = s.nextInt();
+		System.out.println("enter the second number");
+		int sno = s.nextInt();
+		
+		int division = fno/sno;
+		
+		System.out.println("division is : " + division);
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("don't enter zero as a denominator");
+		}
+		catch(InputMismatchException im)
+		{
+			System.out.println("please pass only numeric values");
+		}
+	
+		System.out.println("rest of the statements");
+		System.out.println("rest of the statements");
+		System.out.println("rest of the statements");
+		
+	}
+
+}
+
+
+
+try
+catch 
+
+
+finally
+throws
+throw
+
+packages 
+accessmodifiers
+
+
+
+
+
+
+finally block:
+``````````````
+finally block is used to keep closing releated logic like 
+closing the file, closign the database connection etc.. 
+
+if you keep that closing related logic, in both valid and invalid case 
+the code gets executed . 
+
+so that data leakage issues won't occure if you keep closing related 
+logic inside finally block.
+
+note:
+while we are handling the exceptions the order must be from 
+specific to general not from general to specific because if you mention 
+like that code will be unreachable by the java compiler getting compile time error.
+
+example:
+````````
+package com.infotech.exceptions;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Test1 {
+	
+	public static void main(String[] args) {
+		try {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("enter the first number");
+		
+		int fno = s.nextInt();
+		System.out.println("enter the second number");
+		int sno = s.nextInt();
+		
+		int division = fno/sno;
+		
+		System.out.println("division is : " + division);
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println();
+		}
+		catch(RuntimeException re)
+		{
+			System.out.println(re);
+		}
+		
+		
+		//RuntimeException re = new ArithmeticExceptioni();
+		
+		
+		finally
+		{
+			System.out.println("finally block executed always");
+		}
+	
+		System.out.println("rest of the statements");
+		System.out.println("rest of the statements");
+		System.out.println("rest of the statements");
+		
+	}
+
+}
+
+
+throws:
+```````
+throws is a java reserved keyword 
+
+purpose: it will give you the instruction or warning to calling function 
+to keep the called function under try and catch block.
+
+
+example:
+````````
+package com.infotech.exceptions;
+
+//called program
+public class Test2 {
+	
+	//called function
+	public void division() throws ArithmeticException
+	{
+		int z = 100/0;
+		System.out.println("division is: " + z);
+	}
+
+}
+
+Test3.java:
+````````````
+package com.infotech.exceptions;
+//calling program
+public class Test3 {
+	
+	//calling function 
+	public static void main(String[] args) {
+		
+		Test2 obj = new Test2();
+		
+		try {
+		obj.division();
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("please check division method logic");
+		}
+		
+		System.out.println("rest of the statements executed");
+		
+	}
+
+}
+
+throw:
+```````
+
+using throw keyword, we can throw an exception explictly.
+
+
+  100/0 
+  
+     ArithmeticException -> jvm->implicitly
+
+based on our condition, if the condition met, if we want to throw 
+any exception explictly then we have to use throw keyword.
+
+syntax:
+
+    throw new <exceptionclassname>();
+
+using throw keyword, we can implmenet our own exceptions 
+or customized exception.
+
+
+   ->ecommerce application 
+
+   ->checking the product based on the product weight
+
+   ->if product weight is < 100 it is valid else < 100 
+     throw the InvalidProductException .
+
+note:
+every exception in java is a class whether it is predefined exception or 
+user defined exception.
+
+	 
+	 
+	 
+
+Test4.java:
+``````````
+package com.infotech.exceptions;
+//business logic class
+public class Test4 {
+	
+	public void checkProduct(int weight)
+	{
+		if(weight > 100)
+		{
+			System.out.println("product is valid");
+		}
+		else
+		{
+			try {
+			throw new InvalidProductException();
+			}
+			catch(InvalidProductException ip)
+			{
+				System.out.println("product weight must be greater than 100");
+			}
+			
+		}
+	}
+
+}
+
+InvalidProductException.java:
+```````````````````````````````
+package com.infotech.exceptions;
+
+//it is an user defined exception class
+public class InvalidProductException extends Exception {
+
+}
+
+
+Test5.java:
+```````````
+package com.infotech.exceptions;
+
+//execution logic class
+public class Test5 {
+
+	
+	public static void main(String[] args) {
+		
+		
+		Test4 obj = new Test4();
+		
+		obj.checkProduct(20);
+		
+	}
+}
+
+
+
+
+
+
 
 
 
