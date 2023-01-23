@@ -4579,6 +4579,11 @@ public class Test1 {
 		{
 			System.out.println("please pass only numeric values");
 		}
+		catch(InputMismatchException im)
+		{
+			System.out.println("please pass only numeric values");
+		}
+		
 	
 		System.out.println("rest of the statements");
 		System.out.println("rest of the statements");
@@ -4589,33 +4594,26 @@ public class Test1 {
 }
 
 
-
-try
-catch 
-
-
-finally
-throws
-throw
-
-packages 
-accessmodifiers
-
-
-
+note:
+`````
+for a single try block, we can define multiple catch block(s) based 
+on the requirement, even we have multiple catch blocks at a time 
+only one catch block gets executed based on the invalid data. 
 
 
 
 finally block:
 ``````````````
 finally block is used to keep closing releated logic like 
-closing the file, closign the database connection etc.. 
+closing the file, closing the database connection etc.. 
 
 if you keep that closing related logic, in both valid and invalid case 
 the code gets executed . 
 
-so that data leakage issues won't occure if you keep closing related 
+so that data leakage issues won't occur if you keep closing related 
 logic inside finally block.
+
+
 
 note:
 while we are handling the exceptions the order must be from 
@@ -4721,6 +4719,10 @@ public class Test3 {
 
 }
 
+
+
+
+
 throw:
 ```````
 
@@ -4737,6 +4739,17 @@ any exception explictly then we have to use throw keyword.
 syntax:
 
     throw new <exceptionclassname>();
+	
+note:
+internally whether it is predefined exception or user defined exception 
+it is a java class.
+
+to make normal java class as an exception class, make sure it should be 
+extended from Exception class.
+
+
+	
+	
 
 using throw keyword, we can implmenet our own exceptions 
 or customized exception.
@@ -4746,8 +4759,9 @@ or customized exception.
 
    ->checking the product based on the product weight
 
-   ->if product weight is < 100 it is valid else < 100 
-     throw the InvalidProductException .
+   ->if product weight is > 100 it is valid else < 100 
+   
+     throw the InvalidProductException() .
 
 note:
 every exception in java is a class whether it is predefined exception or 
