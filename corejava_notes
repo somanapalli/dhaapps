@@ -4829,6 +4829,547 @@ public class Test5 {
 
 
 
+package:
+````````
+package is a collection of 
+
+ -classe(s)
+ -interface(s)
+ -&sub package(s) 
+ 
+ 
+note:
+it is highly recommended to keep either classes/interfaces anything 
+inside the package only .
+
+why? what is the reason?
+
+advantages of package(s)?
+
+1.reusability
+2.to avoid naming conflicts
+
+
+types of package(s):
+
+  in java, we have two types of packages are available 
+  
+   1.pre-defined pacakage(s)-sunmicrosystem 
+   
+       pre-defined classes/interfaces 
+	   
+	   
+   2.user-defined package(s)-developed by programmers
+   
+       user defined classe/interfaces
+	   
+	   
+   
+as part of core java/jse, we have some predefined packages 
+are available in java.
+
+
+list of predefined core java/jse packages:
+`````````````````````````````````````````````
+
+all the core java pacakges starts with java.
+
+all the advanced java packages starts with javax.
+
+note:
+by default to every java application one package by default it will be imported that package name is java.lang
+
+
+
+
+java.applet
+java.awt
+java.awt.color
+java.awt.datatransfer
+java.awt.dnd
+java.awt.event
+java.awt.font
+java.awt.geom
+java.awt.im
+java.awt.im.spi
+java.awt.image
+java.awt.image.renderable
+java.awt.print
+java.beans
+java.beans.beancontext
+java.io
+java.lang
+java.lang.annotation
+java.lang.instrument
+java.lang.invoke
+java.lang.management
+java.lang.ref
+java.lang.reflect
+java.math
+java.net
+java.nio
+java.nio.channels
+java.nio.channels.spi
+java.nio.charset
+java.nio.charset.spi
+java.nio.file
+java.nio.file.attribute
+java.nio.file.spi
+java.rmi
+java.rmi.activation
+java.rmi.dgc
+java.rmi.registry
+java.rmi.server
+java.security
+java.security.acl
+java.security.cert
+java.security.interfaces
+java.security.spec
+java.sql
+java.text
+java.text.spi
+java.util
+java.util.concurrent
+java.util.concurrent.atomic
+java.util.concurrent.locks
+java.util.jar
+java.util.logging
+java.util.prefs
+java.util.regex
+java.util.spi
+java.util.zip
+
+official webstite:
+````````````````
+https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Integer.html
+ 
+   
+user defined packages:
+``````````````````````
+developed by java programmers just to keep their own classes or 
+interfaces
+
+syntax to define the package:
+`````````````````````````````
+
+  package <pacakagename>;
+  
+how can we import the package:
+
+syntax:
+  import <packagename>.<classname>/<interfacename>;
+  
+  import <packagename>.*;
+  
+  * represents everything inside the pacakge.
+  
+note:
+package statement must be the first executable statement in java otherwise it will give you compile time error.
+
+Test1.java:
+```````````
+package com.techm.jse.packages;
+
+public class Test1 {
+	
+	public void sum(int x, int y)
+	{
+		System.out.println("sum is: " +(x+y) );
+	}
+
+}
+
+Test2.java:
+``````````
+package com.infy.jse.packages;
+
+import com.techm.jse.packages.Test1;
+
+//execution logic class
+public class Test2 {
+	
+	public static void main(String[] args) {
+	
+		Test1 obj = new Test1();
+		//ctrl+shift+o -> to organize imports
+		
+		obj.sum(2, 3);
+	}
+
+}
+
+note:
+````
+package name always must be in lower case letters only.
+
+naming convention to give user defined package name:
+`````````````````````````````````````````````````````
+<reverse of company website url>.<projectname>.<modulename>
+
+example:
+
+ com.wipro.banking.withdrawl;
+ com.infosys.ecommerce.addcart;
+ ....
+ 
+note:
+package statement must be always first executable statement 
+otherwise it gives you compile time error.
+
+
+note:
+`````
+in different ways we can import:
+
+short cut key to import the package in eclipse is 
+
+ ctrl + shift + o 
+ 
+
+
+
+avoiding naming conflicts:
+
+we can define multiple classes with the same name by differentiating 
+with package names.
+
+
+
+Test1.java:
+````````````
+package p1;
+
+public class Test1 {
+	
+	public void sum(int x, int y)
+	{
+		System.out.println(x+y);
+	}
+
+}
+
+Test1.java:
+````````````
+package p2;
+
+public class Test1 {
+	
+	public void sub(int x, int y)
+	{
+		System.out.println(x-y);
+	}
+
+}
+
+
+Test2.java:
+```````````
+package p3;
+//import p1.Test1;
+
+
+//execution logic class
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		p1.Test1 obj = new p1.Test1();
+		obj.sum(2, 3);
+		
+		//object creation using fully qualified naming approach
+	    p2.Test1 obj1 = new p2.Test1();
+	    obj1.sub(4, 3);
+		
+		
+		
+	}
+
+}
+
+
+
+
+subpackage:
+```````````
+
+  note:
+  
+  by importing main package, only we are able to access 
+  main package belonging classes, interfaces but we can't access
+  sub package belonging properties.
+  
+  if you want sub package belonging classes,interfaces we have to
+  import sub pacakge explicitly.
+  
+  
+Test1.java:
+````````````
+package p1;
+
+public class Test1 {
+	
+	public void sum(int x, int y)
+	{
+		System.out.println(x+y);
+	}
+
+}
+
+Test2.java:
+```````````
+package p1.p2;
+
+public class Test2 {
+
+	 public void sub(int x, int y)
+	 {
+		 System.out.println("substraction is : " +(x-y));
+	 }
+}
+
+Test3.java:
+````````````
+package p3;
+
+import p1.Test1;
+import p1.p2.Test2;
+
+//execution logic class
+public class Test3 {
+	
+	public static void main(String[] args) {
+		
+		//create the object for Test1
+		
+		Test1 obj = new Test1();
+		obj.sum(2, 3);
+		
+		Test2 obj1 = new Test2();
+		
+		obj1.sub(4, 3);
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ access modifiers:
+ `````````````````
+ 
+ we have 4 access modifiers in java
+ 
+  1.private
+    2.default
+  3.protected
+  4.public
+  
+purpose:
+```````
+it controls the visibility of the data 
+over the packages.
+
+
+private access modifier:
+`````````````````````````
+
+private properties 
+
+we can access only with in the class in which class you defined. 
+
+we can't access from other classes of same pacakge
+we can't access from other package other classes .
+
+Test1.java:
+````````````
+package p1;
+
+public class Test1 {
+	
+	//private property
+	private void sum(int x, int y)
+	{
+		System.out.println(x+y);
+	}
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		obj.sum(2, 3);
+	}
+
+}
+
+Test2.java:
+```````````
+package p1;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		//error: obj.sum(2,3);
+	}
+
+}
+
+
+default access modifier:
+````````````````````````
+  default is not a keyword like other 
+  access modifiers.
+  
+  if we are not using any access modifier keyword
+  it will consider as default property.
+  
+within the package from any class, we are able to access 
+default properties.
+
+shall we try in other package?
+
+from other packages, we are not able to access default properties.
+
+if we try for that, we will get compile time error saying that 
+property not visible.
+
+
+
+protected access modifier:
+```````````````````````````
+with in the class -> yes
+with in the same package -> yes
+
+other package indepenedent class -> no
+
+other package child class -> yes
+
+Test1.java:
+``````````
+package p1;
+
+public class Test1 {
+	
+	//protected property
+	protected void sum(int x, int y)
+	{
+		System.out.println(x+y);
+	}
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		obj.sum(2, 3);
+	}
+
+}
+
+Test2.java:
+````````````
+package p1;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		obj.sum(2,3);
+	}
+
+}
+
+Test3.java:
+````````````
+package p2;
+
+import p1.Test1;
+//other package child class
+public class Test3 extends Test1 {
+	
+	public static void main(String[] args) {
+		
+		Test3 obj = new Test3();
+		obj.sum(3, 2);
+		
+	}
+
+}
+
+public:
+````````
+there is no restriction for this access modifier
+if you define anything as public access modifier 
+we can access from anywhere. 
+
+ ->universal access modifier.
+ 
+ 
+ with in the class -> yes
+ with in the same package - yes
+ 
+ other pacakge indepenedent class ->yes
+ other package sub class -> yes
+ 
+Test1.java:
+```````````
+package p1;
+
+public class Test1 {
+	
+	//public property
+	public void sum(int x, int y)
+	{
+		System.out.println(x+y);
+	}
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		obj.sum(2, 3);
+	}
+
+}
+
+Test2.java:
+````````````
+package p1;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		obj.sum(2,3);
+	}
+
+}
+
+Test3.java:
+```````````
+package p2;
+
+import p1.Test1;
+//other package independent class
+public class Test3  {
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		obj.sum(3, 2);
+		
+	}
+
+}
+
+
 
 
 
