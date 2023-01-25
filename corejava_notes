@@ -5369,6 +5369,587 @@ public class Test3  {
 
 }
 
+FileHandling/iostreams:
+```````````````````````
+
+stream : flow of the data in between primary memory to secondary memory 
+and viceversa.
+
+
+
+  while we are working on top of files, make sure we have to import 
+  one predefined package i.e java.io 
+  
+  
+  why files ->to store the data
+  
+  how can we create the file in java?
+  
+  using one predefined class File 
+  
+  
+default imported package to every java program is
+java.lang 
+
+otherthan this package, if we want to use any other classes/interfaecs
+make sure we have to import corresponding package 
+
+example to create the file using File class of java.io package:
+````````````````````````````````````````````````````````````````
+package com.infotech.files;
+import java.io.File;
+import java.io.IOException;
+public class Test1 {
+	
+	public static void main(String[] args) {
+		
+		
+		//create the file using File class
+		
+		File f = new File("abc.txt");
+		try {
+		f.createNewFile();
+		}
+		catch(IOException io)
+		{
+			System.out.println(io);
+		}
+		
+		System.out.println(f.exists());
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+On top of files, we can perform different operations 
+
+ 1.read operation 
+ 
+ 2.write operation 
+ 
+ stream ->  it is a flow of data in between primary memory to secondary memory or viceversa.
+ 
+ write opeation: 
+ 
+   meaning that we are trying to insert the data into file.
+   
+ read operation: 
+ 
+   meaning that we are trying to read the data from the file.
+   
+
+in iostreams, we have two types of streams 
+are available in java.
+ 
+  1.byte stream 
+  2.character stream 
+  
+ if the data flow in the form byte by byte - bytestream 
+ if the data flow in the form of character by character - character stream 
+
+in java.io package we have different classes which belongs to 
+byte stream, character stream 
+
+
+read() -read the data from the file 
+
+ where exactly file is available-inside our hard disk/secondary memory
+ 
+ primary memory 
+ 
+ from secondary memory to primary memory.
+ 
+write() -> data flow is happening from primary memory to secondary memory.
+
+when should we use bytestream related classes?
+
+If we have a file that contains binary data, then it will be appropriate to use Byte stream.
+
+when should we use character stream related clases?
+
+Character stream is useful when we want to process text files
+
+
+
+
+
+
+
+ 
+character stream related classes:
+`````````````````````````````````
+
+   java.io package 
+   
+   write operation 
+   
+   while we are peforming write operation data flow is happening 
+   from primary memory to secondary memory.
+   
+   
+FileWriter
+BufferedWriter
+PrintWriter
+
+  -majorly we are using three classes which are of character stream type 
+  classes for the purpose of writing the data into the file.
+  
+  
+  
+FileWriter:
+````````````
+FileWriter is a character stream related class, which is used to write 
+the character data into the file.
+
+example:
+````````
+package com.infotech.files;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Test2 {
+	
+	public static void main(String[] args) throws IOException {
+		//write operation 
+		//create the object of FileWriter 
+		FileWriter fw = new FileWriter("abc.txt");
+		
+		//write the data
+		
+		
+		
+		fw.write("abc\n");
+		
+		fw.write("rama\n");
+		
+		fw.write(100);
+		
+		fw.flush();
+		
+		
+		
+		System.out.println("write operation successfully done");
+		
+		
+		
+	}
+
+}
+
+drawbacks:
+``````````
+1.using this we can't insert the different types of data, even though if we try it gets converted into corresponding unicode character.
+
+2./n we have to use for the line separator and it may or may not work in all operating systems because it got implemented in c language.
+
+that's why we will go from FileWriter to BufferedWriter
+
+
+BufferedWriter:
+```````````````
+while we are creating the object of BufferedWriter , we have to pass the 
+object of Writer class implemenation class object. 
+
+ BufferedWriter bw = new BufferedWriter(Writer w);
+
+example:
+````````
+package com.infotech.files;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class Test3 {
+	
+	public static void main(String[] args) throws Exception {
+		
+		//create the object of FileWriter
+		
+		FileWriter fw = new FileWriter("abc.txt");
+		//create the object of BufferedWriter
+		
+		BufferedWriter bw =
+				new BufferedWriter(fw);
+		
+		bw.write("abc");
+		bw.newLine();
+		bw.write("rama");
+		bw.newLine();
+		bw.write(100);
+		
+		bw.flush();
+		
+		System.out.println("write opearation done");
+	}
+
+}
+
+
+drawaback:
+we can't write differnt types of data but we can achieve the line separator problem by using a new method newLine() of BufferedWriter class.
+which will work in any operating systems because it got implemented in java language.
+
+to avoid the above problem, we have to move from BufferedWriter class 
+to PrintWriter class.
+
+
+PrintWriter:
+``````````````
+PrintWriter is the class available in java.io package for the purpose 
+of writing the character data very effectively.
+
+example:
+````````
+package com.infotech.files;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Test4 {
+	
+	public static void main(String[] args)throws IOException{
+		
+		
+		//create the object of PrintWriter class
+		
+		PrintWriter pw = new PrintWriter("abc.txt");
+		
+		pw.println("abc");
+		pw.println("Rama");
+		pw.println(100);
+		pw.println(3.4f);
+		pw.println(false);
+		pw.print(56.78);
+		
+		pw.flush();
+		
+		System.out.println("write operation has done");
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+read operation:
+``````````````
+  we are reading the data from the file 
+  data flow is happening from secondary memory to primary memory.
+  
+  
+FileReader
+
+   read() 
+   
+   
+example on FileReader:
+```````````````````````
+package com.infotech.files;
+
+import java.io.FileReader;
+
+public class Test5 {
+	
+	public static void main(String[] args) throws Exception {
+		
+		//create the object of FileReader
+		
+		FileReader fr = new FileReader("abc.txt");
+		
+		int x = fr.read();	
+		
+		while(x!=-1)
+		{
+			System.out.print((char)x);
+			x= fr.read();
+		}
+	}
+
+}
+
+In FileReader, since we have only read(), 
+using this we can read the data character by character because of this 
+in between secondary memory to primary memory huge network traffic or 
+to and fro calls gets increased, so it may be  become the cause of 
+performance degradataion 
+
+that's why we have to move from FileReader class to next level character stream related class i.e BufferedReader
+
+if we use BufferedReader, we can perform the read operation line by line 
+instead of character by character .
+
+
+   
+BufferedReader:
+````````````````
+
+example:
+`````````
+package com.infotech.files;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.Reader;
+
+public class Test6 {
+	
+	public static void main(String[] args) throws Exception{
+		
+		
+		//create the Reader class implementation class object
+		
+		Reader r = new FileReader("abc.txt");
+		
+		//create the object for BufferedReader class
+		
+		BufferedReader br = new BufferedReader(r);
+		
+		
+		String s = br.readLine();
+		
+		while(s!=null)
+		{
+			System.out.println(s);
+			s=br.readLine();
+		}
+		
+	}
+
+}
+
+
+
+
+
+
+
+ 
+bytestream related classes:
+```````````````````````````
+
+   to read or write the binary data.
+   
+   
+FileInputStream 
+
+   -read operation 
+   
+FileOutputStream 
+
+   -write operation 
+   
+  
+example on read and write operation on binary data using bytestream 
+related clasess:
+``````````````````````````````````````````````````````````````````````
+
+package com.infotech.files;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Test7 {
+	
+	public static void main(String[] args) {
+		try {
+			//create the object for FileInputStream for reading the binary data
+		FileInputStream fis = new FileInputStream("encapsulation.jpg");
+		
+		//create the object for FileOutputStream for writing the binary data
+		FileOutputStream fos = new FileOutputStream("naveesh.jpg");
+		
+		
+		int x;
+		while((x=fis.read())!=-1) {
+			
+			fos.write(x);
+		}
+		System.out.println("image created succesfully");
+		}
+		
+		catch(IOException ioe)
+		{
+			System.out.println(ioe);
+		}
+	}
+
+}
+
+
+serialization & desererialization 
+``````````````````````````````````
+serialziation:
+``````````````
+
+the process of writing the object data  into network suppored format 
+is known as serialization.
+
+because by default network won't support object format data to transfer 
+from one machine to another machine.
+
+desserialization:
+````````````````
+
+the process of reading the object data from the network supported file 
+is known as deserizliation.
+
+
+
+   
+
+ ->ObjectInputStream 
+     predefined class 
+	 java.io 
+	 purpose: to read the object data 
+	 method: readObject()
+	 
+ ->ObjectOuputStream 
+     predefined class
+	 java.io
+	 purpose: to write the object data 
+	 
+	 method: writeObject()
+	 
+ 
+
+Student.java:
+```````````````
+package com.infotech.files;
+
+import java.io.Serializable;
+
+public class Student implements Serializable{
+	
+	private int stid;
+	private String stname;
+	
+	public int getStid() {
+		return stid;
+	}
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+	public String getStname() {
+		return stname;
+	}
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+	
+	public Student(int stid, String stname)
+	{
+		this.stid=stid;
+		this.stname=stname;
+		}
+	
+	public Student()
+	{
+		
+	}
+	
+	public String toString()
+	{
+		return stid + " " +stname;
+	}
+
+}
+
+example for serialziation:
+`````````````````````````````
+package com.infotech.files;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+//serialization
+public class Test8 {
+	
+	public static void main(String[] args) throws Exception{
+		
+		
+		//create the object for FileOutputStream 
+		FileOutputStream fos = new FileOutputStream("ram.txt");
+		
+		//create the object for ObjectOutputStream 
+		
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		
+		
+		Student st= new Student(100,"ram");
+		
+		
+		oos.writeObject(st);
+		
+		System.out.println("serialization process has done");
+		
+		
+	}
+
+}
+
+example for desererialization:
+`````````````````````````````
+package com.infotech.files;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+//deserialization
+public class Test9 {
+
+	
+	public static void main(String[] args) throws Exception {
+		
+		//create the object of FileInputStream 
+		
+		FileInputStream fis = new FileInputStream("ram.txt");
+		//create the object of ObjectInputStream 
+		
+		ObjectInputStream ois = new ObjectInputStream(fis);
+		
+		
+		Object obj = ois.readObject();
+		//convert Object type to Student type
+		//convert parent type to child type -down casting
+		
+		
+		
+		Student stu = (Student)obj;
+		
+		System.out.println(stu);
+		
+	
+	}
+}
+
+ 
+ 
+note:
+every java class we can't serialize, to make it happen corresponding 
+java class must be implementing from Serializable marker interface 
+which is available in java.io package otherwise we will get exception 
+saying that java.io.NotSerialziable 
+
+ 
+transient keyword:
+```````````````````
+transient is a variables modifier used in serialization. At the time of serialization, if we don't want to save value of a particular variable in a file, then we use transient keyword. When JVM comes across transient keyword, it ignores original value of the variable and save default value of that variable data type
+
 
 
 
