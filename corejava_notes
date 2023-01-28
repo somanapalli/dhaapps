@@ -1,624 +1,753 @@
+                            CORE JAVA
+							`````````
+							
 
-20th december - 20th jan
+java full stack corporate trainer from past 15+years 
+salesforce
+mulesoft
 
 
-java is beoming very essential knowledge
-
-  
+ for all mncs in pan india
+ 
+ infosys
+ wipro
+ tcs
+ 
+ ...
+ 
+ 
+ 
+ java:
+ `````
  what is java?
  
-   java is object oriented programming language
-   we have different programming languages are there 
-   
-     1.procedure oriented 
-	 2.object oriented 
-	 3.scripting oriented
-	 4.modula oriented
-	 
-	 
-python
-.net
-php....
-   
-   
-  java got released in the year of 1995 
-
-  almost 27 years completed
-
-  still it is maintaining it's popularity 
-
-  how it is possible?
-
-   answer: because of java is maintaining unique features
-   /charactersitics/buzzwords
-   
-   1.simple
-   2.platform indepenedent
-   3.architectural neutral
-   4.portable
-   5.object oriented
-   6.robust
-   7.interpreted
-   8.high performance
-   9.secured
-   10.distributed
-   11.dynamic
-   12.mulithreaded
-   
-   
-
-java developer
-.net developer
-php developer 
-   
-   
-   goal ->to develop software/application
-   
- what type of applications we have in the market?
-
- ->desktop applications
- ->distributed applications
  
-   
-  desktop application/standalone application:
-
-it is an application in which machine
-we instlled in that machine only we are able 
-to consume the services.
-
-the results of the desktop applications are 
-not sharable
-
-
-ex:
-acroabatic reader,
-antivirus,
-mspaint,
-calucator
- etc..
- link to access the notes:
- https://github.com/somanapalli/3ttech
-   
- 
-distributed application/network based application:
-````````````````````````````````````````````````````
-it is also an applcation which we can able to access from any where 
-make sure that machine should be connected to a proper internet.
-
-ex: facebook, gmail, yahhoo. .. etc..
- 
-   
-   the results of the distributed applications are sharable 
-   across the globe.
-   
-   
-why should we learn core java or significance of learning core java?
-
-
-->using core java knowledge, we are able to develop standalone
-  applications/desktop applications.
-
-->using core java knowledge,we  are able to learn advaned java
-
-->to learn high end tools like salesforce, pega,bigdata, mulesoft 
-  we need core java knowledge
-  
-  
-java got released in the year of 1995
-
- by jamesgosling and his team (14 members)
- 
-   he is the author 
-
-from sunmicrosystem
-
-   he releaed into three editions
-   
-   1.jse-java standard editions-core java
-   
-          we can develop standalone /desktop applications
-		  
-   2.jee-java enterprise editions-adv java
-   
-          we can develop enterprise/distributed applcations
-		  using this we also can develop desktop applications
-		  
-		  
-		  
-   3.jme-java micro/mobile applications
-   
-         we can develop micro/mobile related applications 
-		 
-		   ex: android
-		   
-		   
-if you are programmer
-
- -to devlop the software/application
-
- -we have to write the programs
- 
-prerequistes to write a java program?
-````````````````````````````````````
-
-c progam -> turbo c software -> 
-cpp program -> turbo cpp software ->
-
-java program -> jdk sofware 
-  jdk -Java development kit
-  
- 1.download the jdk software
- 2.install the software
- 3.select the editor(notepade,notepad++,editplus,eclipse,myeclipse..)
- 4.write the java program 
- 5.save the java program (.java)
-   note: extension always must be .java and that to 
-   it must be in lower case letters.
- 
- 6.compile the java program 
- 
- 7.run/execute the java program 
- 
- 
- 
-
-
-
-
-
-from where we can download the jdk software?
-
- official website: www.oracle.com
- 
- sunmicrosystem -organization 
- 
- oracle purchase all copyrights of sunmicrosystem
- 
- 
-  scjp ->sun certified  java programmer
-  
-  ocjp -> oracle certified java programmer
-  
-  
-after software got installed how can we cross check whether it is 
-installed suceesfuly or not?
- open command prompt 
- 
- and pass the below command
- 
- 
- cmd:/>java -version
- 
- java version "19.0.1" 2022-10-18
- Java(TM) SE Runtime Environment (build 19.0.1+10-21)
- Java HotSpot(TM) 64-Bit Server VM (build 19.0.1+10-21, mixed mode, sharing)
-
-
-topics:
-```````
-->what is java
-->list of features of java
-->significance of learning core java
-->types of applications
-->history of java 
-->download and install jdk software?
-->prerequisites to write the java program
-->different java editions 
-
-   
-   
-structure of the java program:
-````````````````````````````````
-
-every java program should starts with by defining the class.
-
-
-  class <classname>
-  {
-  
-  
-  }
-
-ex:
-
-  class Student
-  {
-  
-  
-  }
-
-
-compile the java program:
-
-for this open command prompt and give below command
-
- cmd:/> javac <filename>.java
- 
- 
- example:
- ``````````
- C:\Users\LENOVO>javac Demo.java
-error: file not found: Demo.java
-Usage: javac <options> <source files>
-use --help for a list of possible options
-
-C:\Users\LENOVO>e:
-
-E:\>cd 3ttech
-
-E:\3ttech>dir
- Volume in drive E is study
- Volume Serial Number is EC97-9253
-
- Directory of E:\3ttech
-
-21-12-2022  10:07    <DIR>          .
-21-12-2022  10:07             4,585 corejava_notes
-21-12-2022  10:07                18 Demo.java
-               2 File(s)          4,603 bytes
-               1 Dir(s)  76,667,604,992 bytes free
-
-E:\3ttech>javac Demo.java
-
-E:\3ttech>
-
-
-we have to execute/run the program
-
-cmd:/> java <classname>
-
-   note:
-   every java program execution starts from main() only.
-   
-    public static void main(String[] args)
-	{
-	
-	
-	}
-   
-   
-  without main() can we compile the java program?
-
-   yes, we can compile
-   
-  without main() can we execute the java program?
-  no, we can't because execution of the java program should always 
-  starts from main() only.
-  
-  
-  we are always write the logic inside the method(s) whether it is 
-  user defined method or predefined method.
-  
-  
-E:\3ttech>javac Demo.java
-
-E:\3ttech>java Welcome
-welcome to java sessions
-
-E:\3ttech>
-
- 
-  
-  
-  
-  
-  
- why should we compile the java program?
-
- 
-  who will compile the java program?
-  
-   what is  java compiler?
-   
-   C:\Program Files\Java\jdk-19\bin
-	
-	
- where all the java tools are available like javac, java, javap, javadoc , javaw etc.
-
- 
- when we compile the  java progarm what will happen?
-
- java compiler will check syntactical mistakes 
-
-programmer follows correct syntaxes or not?
-
- 
-  if programmer follows everything syntactically it is good?
-  
-  java compiler will generate one .class file based on the class name
-  
-  .class file contains byte code, which is not human readable code.
-
-  which can be understandable by java interpreter which is jvm 
-  (java virtual machine)
-
-  
-   what will happen when we execute the java progarm?
-   
-   who will execute the java program?
-   
-     java interpretor (jvm) -> bin folder
-	 
-	 it will take .class file as an input and converts this byte code
-	 into machine level code(binary code 0's and 1's)
-	 
-	 
-	execute
-	
-	java Welcome
-	
-   
- q) is it possible to give both file name and class name are same?
-
-  
-   
-jdk-
-
-   it provides two environments
-   
-   1.developer environment -we can develop the java programs
-   2.runtime environment- we can run the java applications 
-   
-jre
-    -java runtime environment
-	
-    -it provides runtime environment.
-
-
-
-jvm
-   -java interpretor (jvm)
-   -java virtual machine
-   
-  jdk = jre + jvm 
+  java is object oriented programming language
   
   
    
-   zoom-> runtime environment
-   
-    myself -> jvm 
-	
-	
-   COMPILATION VS EXECUTION 
-   STRUCTURE OF THE JAVA PROGRAM 
-   JDK VS JRE VS JVM 
+     procedure oriented programming language
+   objet oriented programming-java 
+     modula oriented programming language
+     scripiting oreitned programming langauge
    
    
-   .JAVA 
-      -> .CLASS FILE -> BYTE CODE
-	  
-	  JAVA INTERPRETOR (JVM ) - BYTE CODE -> MACHINE LEVEL CODE 
-	  
- note:
-java supports member variables and member methods
-
-
-inside the clas if we declare variable s-> member vairables
-inside the class if we define the methods:-> member methods
-
-class names always unique
-package(s)
-
+   
+ purpose of programming lanaguage?
  
-JAVA IS OBJECT ORIENTED PROGRAMMING LANGUAGE
- 
-    ->since it follows oops principles
-	
-	
-	inheritance
-	polymoprhism
-	abstraction 
-	encapsulation 
-	
- 
- in java, to achieve the above 4 principles we are using 
- two concepts 
- 
-  1.class
-  2.object
-  
- 
- 
- class:
- ``````
- 
- every java program should starts with 
- by defining the class.
- 
- class is a collection 
- 
-   -variables 
-   -& method(s)
+   to develop the software/application.
    
    
- every java reserved keyowrd alwyas must be in 
- lower case.
- 
- 
- 
- variable:
- ``````````
- 
-   variable is like a data container 
-   
- 
- definition: 
- purpose: to store the data
- syntax:
- 
-    <datatypename> <variablename> = <value>;
-	
- 
- String stname = "ramakrishna";
- int stid=100;
- double marks = 78.5;
+ what types of applications we have available in the market?
  
     
-	variable is the name which we are given to memory location .
+    ->desktop application
+	->distributed application 
 	
 	
-	in java, while we are stroing any value inside an variable 
-	we have to use datatype also.
+ using java, what type of applications we can develop?
+    
+	both types 
 	
-what type of datatypes are available in java:
-
- majorly we do have 4 categories 
-
-
-
-primitive datatypes.
-
-
-1.integer
-
-  -to store integer values
-  
-  byte
-  short
-  int
-  long
-  
-  
-  
-  
-2.charcter
-
-   -to store single character informatin 
-   
-   -char
-   
-3.float
-  -to store decimal values
-  
-  -float
-  -double
-  
-  
-4.boolean 
-
-   -to store logical values either true/false.
-   
-   -boolean 
-   
-   
-1.byte - 1 byte - 8 bits
-2.short - 2 bytes - 16 bits
-3.int - 4 bytes
-4.long - 8 bytes
-
-5.char - 2 bytes
-
-6.float  -  4 bytes
-7.double  - 8 bytes
-
-8.boolean  - undefined by the sunmicrsosystem 
-
-
-
-
-   every datatype has two things
-   
-   1.memory size
-   2.range of the value
-   
-   
-
- byte range 
  
-  byte -> 1 byte -> 8 bits 
-  
-  we have one formula 
-  
-  -2^n-1 to (2^n-1) - 1
-  
-  -2^7 to 2^7 - 1
-  
-  -128 to 127
-  
-    range of the byte datatype
+ java -> 1995 -> james gosling
+ 
+   ->sun microsystem
+   
+   
+ 
+ ->jse-java standard edition(core java)
+      
+	  ->desktop/standalone applications
+ 
+ 
+   acrobatic reader,
+   antivirus,
+   calculator,
+   mspaint
+   
+   standalone applications results are not sharable across the globe.
+   
+   
+   
+   
+ ->jee-java enterprise edition
+ 
+    internet/distibuted applications
+	
+	
+	facebook.com
+	flipkart.com
+	gmail.com
+	 etc..
+	 
+	internet based applications results are sharable across the globe &
+	standalone applications
+	
+	because jee got implemented on top of jse
 	
 
- 130
+ ->jme-java micro/mobile edition 
  
- byte b  = 130;
+    mobile applications/micro applications
+	
+	android -> 
+	
  
  
- short -> 2 bytes -> 16 bits
+ significance of learning core java:
+ ````````````````````````````````````
  
- -2^15 to 2^15 -1 
+ ->to develop standalone applications
+ ->to learn advanced java/jee
+ ->to learn some tools like hadoop,tableu,salesforce,mulesoft...
  
-to store character data, it must be enclosed with in the 
-single quotation. otherwise it gives compile time error.
+ 
+programmers:
 
-
-float 
-double
-
-by default float type data can be considered as double type.
-
-to specifiy any decimal value as float type, after the data 
-specify f letter so that it can considered as float type.
-
-difference between float and double?
-
- float - 4 bytes
- double -> 8 bytes
-
-  3.454545
-  5.34535345353534535335
+  java program 
   
- float can take upto 7 digits as precesion size where 
- as double can take upto 15 digits as precision size.
- 
- 
-boolean category:
-```````````````````
-to store logical values either true or false.
+   c programmer -> turbo c
+   cpp programmer -> turbo cpp 
+   java programmer ->  jdk (java development kit)
 
-all the primitive datatypes must be in lower case only.
-
-  boolean b = True;
+   
+ java is open source
+ 
+ 1995 sunmicrosystem 
   
-  true and false are the java reserved keywords 
-  all the java reserved keywords must be in lower case .
+   oracle purchased all the copyrights of sunmicrosystem
+   
+   scjp 
+   ocjp 
+   
+ url: www.oracle.com
+ 
+ 
+how can we downlaod the this jdk :
+```````````````````````````````````
+https://www.oracle.com/in/java/technologies/downloads/#jdk19-windows
+
+go to the above link and download the required jdk software
+
+once it's done, install the jdk 
+
+once installation completed, to check whether it gets installed successfully or not
+
+open the command prompt 
+and type below command 
+
+
+cmd:/>java -version
+
+java version "19.0.1" 2022-10-18
+Java(TM) SE Runtime Environment (build 19.0.1+10-21)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.1+10-21, mixed mode, sharing)
+
+
+java is case sensitive programming language
+
+  we have to follow the cases very strictly.
+  
+steps to follow to write the java program:
+``````````````````````````````````````````
+1.download the jdk software
+2.install the software
+3.select the editor
+4.write the java program
+4.save the java program (.java)
+   syntax: <filename>.java
+   saveas type: all files
+   
+6.compile the java program
+7.run the java program 
+
+
+types of applications
+
+jdk->java development kit
+
+    develop the java program
+	execute the java program
+	
+	jdk provides two environments
+	
+	1.development environment
+	2.runtime environment
+	
+	
+
+jre -> it provies only runtime environment
+
+
+    java runtime environment
+
+    1.we are able to only execute the java applications
+	
+
+jvm -> java virtual machine
+
+
+   dhaaps
+  to connect -> runtime environment
+  
+  rk 
+   ->jvm 
+   
+   jdk = jre + jvm 
+   
+   
+->purpose of learning programming langugage
+->types of applications
+->History of java
+->different editions of java (jse,jee,jme)
+->significance of learning core java
+->how can we download the jdk software and installation process?
+->steps to follow to write the java program 
+->jdk vs jre vs jvm
+
+
+
+
+ 
+ 
+ jdk -> java development kit
+ 
+  to develop java programs and to execute java programsm
+  
+  oracle 
+  
+ www.oracle.com
+ 
+  
+  structure of java program:
+  
+  
+  note: we should not question the syntaxes
+  
+  syntax: it is a rule which is given by language vendor 
+  
+  as a programmer we have to follow otherwise we will get the errors.
+  
+  
+  class <classname>
+  {
+   public static void main(String[] args)
+   {
+     System.out.pritln("welcome to java sessions");
+   }//closing main method
+   
+  }//class closing
   
  
+ what do you mean by compiling the java program?
+ 
+ as a programmer we have to follow syntaxes.
+ 
+ whether syntactially programmer follows correctly or not? 
+ java compiler will check that
+ 
+ 
+   compile time errors.
+   
+   compiler 
+   
+   only programmer wheenver he made mistakes syntactically then only 
+   java compiler gave those errors.
+   
+   java compiler ?
+   
+    java compiler is the system defined java program which is running in the background.
+	
+	C:\Program Files\Java\jdk1.8.0_221\bin
+	
+ 
+ 
+ how can we compile this java program?
+ `````````````````````````````````````
+ 
+   syntax:  javac <filename>.java
+   
+            javac Test.java
+			
+   
+how can we execute the java program:
+`````````````````````````````````````
+
+syntax:  java <classname>
+
+
+         java Demo
+		 
+		 
+
+
+ note:
+ while we are compiling the java program we should always gives filename
+ while we are executing/running the java program we should always 
+ gives classname.
+ 
+ note: can we give both filename and class name are same?
+ 
+  yes
+  
 example:
-`````````
+``````````
 class Demo
 {
-	
-	public static void main(String[] args)
-	{
-	
-	  byte b = 127;
-	  char c = 'a';
-	  float f = 5.67656757656567576f;
-	  double d = 5.6767757575775646456;
-	  
-	  boolean e = false;
-	  
-	  int st$id2=100;
-	  
-	  
-	  
-	  System.out.println(b);
-	  System.out.println(c);
-	  System.out.println(f);
-	  System.out.println(d);
-	  System.out.println(e);
-	  
-	  System.out.println(st$id2);
-	}
 
+   public static void main(String[] args)
+{
+  //logic
+   System.out.println("welcome to java sessions");
 }
+   
+}
+
+
+ 
+ 
+structure of java program 
+
+ we wrote the program 
+
+  .java
+
+filename.java
+
+compile 
+execute
+
+path:
+`````
+path is the location where java predefined tools are available.
+
+
+C:\Program Files\Java\jdk-19\bin
+
+location where all the java tools are available like 
+javac,javap,javadoc,java etc..
+
+
+operating system couldn't recognize these predefined tools 
+
+to make it this as recognizable application, what we have to do?
+
+we have to set the path 
+
+why should we set the path?
+
+ by default os couldn't recognize java commands, to make it recognize
+ by os we have to set the path(where all java tools are available)
+ 
+how can we set the path?
+
+we do have two ways are there to set the path
+
+
+ 1.temporarily
+ 2.permanently
+
+set path ="C:\Program Files\Java\jdk-19\bin" 
+
+note:
+once we set the path temporarily, till you close the command prompt 
+we can use all the java tools once you close it that session gets closed
+again you will get error.
+
+
+how to set the path permanently in java:
+``````````````````````````````````````````
+->click on start button
+
+->click on edit the system environment variables
+
+->click on environment variables button
+
+->click on new button which is related to uservariables tab
+
+->give the vairable name: path
+           viariable value: C:\Program Files\Java\jdk-19\bin
+		   
+		   
+->click on ok(3 times)
+
+ 
+ if you specify a path as  value for a system variable, that path 
+ should be accessible to all user accounts.
+ 
+ if you set the path only in user variable , it will be effected only 
+ to that particular user itself.
+ 
+ 
+ 
+ compiling the java program?
+ 
+  javac <filename>.java
+  
+  who will compile this java program?
+   java compiler 
+   
+   what is java compiler? 
+   it is a system defined java program 
+   
+   
+ java compiler will cross check all the syntactical mistakes,
+ if programmer will not make any syntactical mistakes what java compiler will do?
+ 
+ 
+    java compiler will generate .class file from .java file
 	
+	.java file ->source code -> developed by java programmer
+	
+	.class file -> byte code -> generated by java compiler.
+	
+what is byte code:
+`````````````````
+byte code can be defined as intermediate code generated by the compiler
+after the compilation of source code(java program).
+
+******
+this intermediate code makes java a platform independent language.
+*******
+
+  .c 
+  .exe
+  windows
+
+  unix operating system 
+  
+    .exe file in his unix os?
+	c programming language -> platform dependent programming language
+	
+	
+	java is platform independent programming language
+	
+	irrespective of any os. we are  allowed to run this .class file 
+	
+	to convert from one o.s -> other o.s
+	
+	
+.class file generated based on the class name not based on the filename
+
+
+.class file code is not human readable code.
+
+who can read or who can understand this code?
+
+ 
+
+ answer: jvm(java virtual machine)
+ 
+ 
+	
+ jre->it is providing runtime environment
+ 
+ jvm 
+ 
+ java compiler input : file (.java)
+ 
+ how can we run this program:
+ ``````````````````````````````
+ what jvm internally did?
+ 
+   jvm input -> class name(byte code)
+   
+  jvm converts byte code into machinelevel code(binary code)
+
+  
+ cd-> change the directory
+ 
+ to move to particular directory
+ 
+ cmd:/> e:
+ 
+ e:/>
+ 
+ cd.. -> move to back one directory
+ 
+ 
+
+characterstics/features/buzzwords of java:
+``````````````````````````````````````````
+
+for notes download use below git link :
+````````````````````````````````````````
+https://github.com/somanapalli/dhaapps
+
+
+-> java -> 1995
+
+
+27years far 
+but still java is maintaining it's popularity
+
+
+1.simple
+2.object oriented
+3.portable
+4.platform independent
+5.secured
+6.Robust
+7.Interpreted
+8.Architectural neutral
+9.High performance
+10.Multithreaded
+11.Distributed
+12.Dynamic
+
+
+ data is getting stored inside an object
+ Garbage collector:
+ it is the system defined java program 
+ which is running periodically 
+ for the purpose of collecting unused memory spaces
+ 
+ 
+ 
+why java is simple?
+
+->syntax is based on c++
+->java has removed some complex concepts such as explicit pointers,
+  operator overloading
+->There is no need to remove unreferenced objects because 
+  there is an automatic garbage collection in java.
+->java syntaxes are very userfriendly.
+
+
+object oriented:
+```````````````
+
+xyz
+ programming language
+ 
+    ->oopl 
+	
+	have to follow some principles?
+	java is also one of the oopl
+	becaue it follows those principles
+	
+	oops principles.->candain organization -> omg
+	
+	 ->inheritance
+	 ->polymorphism
+	 ->abstraction
+	 ->encapuslation
+	 
+everything in java is an object.
+
+software /application 
+it is a combination of different objects that incorporate both data and behaviour.
+
+	 
+	Student
+	
+	
+java is platform independent:
+```````````````````````````````
+ 
+  wora ->write once run/reuse  anywhere
+  
+  irrespective of any o.s we are allowed to execute java programs.
+  
+  bytecode->platform independent code
+  
+  
+Robust:
+````````
+ strong
+ java is strong 
+ 
+ because in postivie scenario
+ 
+ and asweel as in negative scenario
+   
+   
+
+   
+ ->it uses strong memory management
+ ->there is lack of pointer that avoids security problems
+ ->java provides automatic garbage collection wich runs on the jvm to 
+   get rid of objects which are not being used by a java application 
+   any more.
+ ->There are exception handling and the type checking mechanism in jaa.
+ 
+ 
+   any syntatical errors -> compile time errors
+   logically if you do any mistakes -> at runtime by the jvm
+   
+     runtime errors ->exceptions
+	 
+	 
+	 
+   atm machine 
+   
+     account-> 5000
+	 
+	 withdraw -> 7000 rs
+	 
+	 java.lang.Exception on the console
+	 
+	 
+	 atm console: insufficeint funds
+	 
+ 
+architectural neutral:
+``````````````````````
+int -> 4 bytes
+
+32 bit -> 64 bit
+
+ int -> 2 bytes -> 32 bit 
+ int -> 4 bytes -> 64 bit
+ 
+ 
+ portable:
+ ``````````
+  portable = pi + an
+  
+ distributed:
+`````````````````
+
+RMI
+EJB
+ spring ,springboot,microservices 
+ 
+
+  -> DISTRIBUTED APPLICATIONS
+  
+  this feature of java makes us able to access files by calling 
+  the methods from any machine on the internet.
+  
+  facebook.com 
+  
+ 
+multithreaded:
+````````````````
+
+multiple threads
+
+thread:
+separate progam executing parallely.
+
+1 programmer -> 20 days
+
+20 programmers -> 1 day
+
+we can write java programs that deal with many tasks at once 
+by defining multiple threads.
+
+the main advantage of multi threading is that it doesn't occupy memory 
+for each thread.
+it shares a  common memory area.
+
+threads are important for multimideia , web applications etc.
+
+
+
+dynamic:
+````````
+it supports the dynamic loading of classes.
+
+  class supposed to be loaded in to the jvm 
+  class loader subsystem 
+    ->jvm
+	
+	   ->main memory 
+	      ->RAM
+		  
+		  
+
+-high performance
+
+
+->secured
+
+
+java is object oriented programming language
+
+ because it follows oops principles
+ 
+    inheritance
+	polymorphism
+	abstraction
+	encapuslation
+	  -omg organization 
+	  
+	in java language, how can we achieve the above principles?
+
+by using these two concepts
+	class 
+	object 
+	
+note:
+every java program should starts with by defining the class.
+
+	
+class:
+``````
+class is a collection of 
+
+ -variables
+ -methods into a single unit.
+ 
+ 
+main() is mandatory to execute the java program 
+because java execution starts from main() only.
+
+jvm will internally call this main()
+
+note:
+
+without main() we can compile the java program but we can't execute 
+the java program 
+ since java execution / jvm internally calls the main() when you 
+ execute the java program.
+ 
+ 
+variables:
+``````````
+ 100 in some specified user defined name
+ inetrnally java will allocate some address (system defined address)
+ 
+ 
+   it is highly recommended to store the data in our own variable names
+   
+   we can easily access whenever you want.
+   
+   readability will be improved.
+   
+   
+ purpose of variable:
+
+    to store the data.
+
+  stid =100;//valid or invalid
+
+
+  
+ java is strongly typed programming language
+ 
+  we have to specify the datatype.
+  
+  datatype:
+  
+   what type of data we are storing we should specify that type 
+   while we are storing the data.
+   
+   int stid = 100;
+   
+   
+syntax of varialbe declaration:
+
+   <datatypename> <variablename> = <value>;
+
+java is case sensitive programming language
+we have to take care about upper case and lower case variables.
 
 
  rules to declare the variable name:
- ````````````````````````````````````
- 
-
+``````````````````````````````````````
 1.variable name should always starts with alphabet 
   it should not start with numeric 
 
@@ -626,2040 +755,1173 @@ class Demo
 
 3.we are not allowed to use varaible names as java reserved words.
 
-  
-  
-
 4.variable names are case sensitive.
 
-5.blank spaces are not allowed while we are declaring the variables. 
- 
+5.blank spaces are not allowed while we are declaring the variables.
+
+
+<datatypename> <variablename> = <value>;
+
+different datatypes are available in java.
+
+
+
+   4 categories of datatypes 
+   
+   1. integer
+   
+   2. characters
+   
+   3.float category
+   
+   4.boolean category
+   
+
+integer category datatypes:
+```````````````````````````
+
+  are used to store numeric values.
   
-examples:
-`````````
-    //invalid : int 5stid=100;
+  we have 4 different integer datatypes are availble in java
+  
+  1.byte  -> 1 byte ->  8  bits
+  2.short -> 2 bytes -> 16 bits
+  3.int   -> 4 bytes -> 32 bits
+  4.long  -> 8 bytes -> 64 bits
+  
+the above datatypes are predefined datatypes /prmitive datatypes
+which are given by sunmicrosystem
+
+
+note:
+`````
+A primitive type is predefined by the language and is named by a reserved keyword.
+
+note:
+
+all the java reserved keywords must be always in lower case only.
+
+ 
+ 
+note:
+every datatype is maintaining two things
+
+
+ 1.range
+ 
+ 2.memory size
+ 
+ based on the value or range of data we are storing we are selecting 
+ the corresponding datatype.
+ 
+ 
+byte b = 100
+
+to calculate any datatype range i have one formula
+
+ -2^n-1 to (2^n-1) - 1
+ where n -> no.of bits occupied by the datatype
+ 
+ range of the byte datatype.
+ 
+ byte -> 1 byte - > 8 bits
+ 
+ -2^7 to (2^7) -1
+ 
+ -128 to 127
+ is the range of the byte datatype.
+ 
+ byte b =128;
+ 
+character category:
+````````````````````
+to store single character we have to use character category data.
+note:
+to store single character it is mandatory to store with in single quotes.
+
+note: char is the datatype 
+memory size: 2 bytes of memory 
+
+because java internally follows unicode 
+java supports 18 international languages
+
+
+	class Demo
+{
+
+public static void main(String[] args)
+{
+	//invalid : int 5stid=100;
 	//valid : int st$id=100;
-	//valid: int st_id=100;
 	//invalid: int st*id=100
 	
 	//invalid : int int = 100;
 	//invalid: int st id=100;
+	//int stid=100;
 	
- 
- 
- method:
- method is the place where we are writing the logic to perfrom 
- some operation based on the requirement?
- syntax
-  
-  <returntype> <methodname>()
-  {
-  //logic
-  }
-  
-  
-q:
-define the method which accepts two integer parameters and returns their sum?
-
-
-              int getSum(int x, int y)
-			  {
-			    returns x+y;
-			  }
- 
- 
- 
-q:
-define the method which accepts one integer parameter and String paramteer and display their values?
-
-
-                      void getDetails(int x, String y)
-					  {
-					    System.out.println(x);
-						System.out.println(y);
-					  }
- 
- q:
-define the method which accepts student information like 
-student id, studentname and student marks and display their 
-details?
-
-
-             void getStudentDetails(int stid, String stname,double stmarks)
-			 {
-			    System.out.println("student id: " + stid);
-				System.out.println("student name:" + stname);
-				System.out.println("student marks: " + stmarks);
-				
-			 }
-
-
-q:
-define the method which accepts first name and last name and returns their full name?
-
-
-              String getFullName(String firstName,String lastName)
-			  {
-			  return firstName+lastName;
-			  }
-
-
-q:
-define the method which accepts radious as input parameter 
-and returns area of the circle?
-
-                area of the circle formular 
-				A = PI * r * r
-				
-				
-		            double getCircleArea(double radious)
-                    {
-                      return 3.14*radious*radious;
-                    }					  
-
-q:
-define the method which accepts student marks subject wise and return their total marks?
+	//invalid :byte stid = 128;
+	
+	//int  stid = 100;
+	
+	char stname ='r';
+	
+	System.out.println(stname);
+	
+}
    
-             telugu,hindhi,english
+}						   
 
-			  
-			  double getTotalMarks(double telugu,double hindhi,double english)
-			  {
-			    return telugu+hindhi+english;
-			  }
-			  
-			  
-q:
-define the method which accepts currency as input parameter and returns productname such as soap?
-
-                      String getProduct(double currency)
-					  {
-					    return "santoor";
-					  }
-     
- single character
- String -group of character
+java is object oriented programming language
  
-	
+  ->since it follows oops principles which are given by omg 
+  organization .
+  
+  1.inheritance
+  2.polymorphism
+  3.abstraction
+  4.encapuslation
+  
+  
+to achieve above principles we are using two concepts in java
+ 1. class
+ 2. object
+ 
+ 
+class:
+``````
+class is a collectio of variables and methods into a single unit. 
+that single unit is known as class. 
+
+
+every java program should starts with by defining the class only.
+
+ class <classname>
+ {
+  //vairables
+   
+   //methods
+  
+ }
+ 
+java doesn't support non member variables and non member methods
+
+ 
+
+
+variable:
+
+  variable is used to store the data
+  
+  <datatypename> <variablename> = <value>;
+  
+  int stid = 100;
+  
+
+class is 
+
+  -variables
+  -methods
+  
+
+method:
+``````
+method is the place where we are writing the logic
+to perform some operation based on the requirement.
+
+note
+if you want to define your own logic , define your own method.
+
+
+syntax
+```````
+[accessmodifier] <returntype> <methodname>([if any parameters])
+{
+  
+   //logic
+}
+
+
+ex:
+
+  public void display()
+  {
+   System.out.println("iam from display");
+   }
+   
+ if a method is not returning any value to represent that we are using one return type i.e void 
+
+
+int getAge()
+{
+return 23;
+} 
+
+if a method is returning any value, using return keyword we are allowed to return the value.
+
+note:
+return type and return value must be compatible with each other
+
+
+
+
+
+public void sum(int x, int y)
+{
+System.out.println(x+y);
+}
+
+
+
+  sum(4,5);
+  
+  
+public int sum(int x, int y)
+{
+return x+y;
+}
+
+
+->define the method which returns name of the student?
+
+
+  String getStudentName()
+  {
+    return "rama";
+  }
+
+->define the method whcih returns age of the student?
+
+
+  public int getStudentAge()
+  {
+  return 78;
+  }
+
+
+->define the method which takes two integer parameters and return the sum value?
+
+int getSum(int x,int y)
+{
+return x+y
+}
+
+->define the method which takes two string parameters and gives 
+concatination of the string?
+
+
+  String getConcatination(String x, String y)
+  {
+   return x+y;
+   }
+   
+getConcatination("rama","krishna");
+
+ramakrishna
+
+example:
+`````````
+class Student
+{
+  //variable declaration 
+   static int stid=100;
+   static String stname ="Rama";
+   
+   //method definition 
+   public static void display()
+   {
+     System.out.println(stid);
+	 System.out.println(stname);
+	 
+	 
+   }
+   
+   public static void main(String[] args)
+   {
+	   //calling display()
+	   display();
+	   
+   }
+
+}
+
+example on Employee class:
+````````````````````````````
+/*define the class Employee which declares empid and empname and display their details?*/
+
+
+
+class Employee
+{
+ static int empId =100;
+ static String empName="manikbasha";
+ //define the method
+ 
+ public static void getDetails()
+ { 
+ System.out.println(empId);
+ System.out.println(empName);
+ }
+ public static void main(String[] arg)
+ {
+ getDetails();
+ } 
+ }
+ 
 
 class is a collection of 
 
-   -variables
-   -& methods
 
+ -variables
+ -& methods into a single unit.
+
+ 
+java is object oriented programming language
+  -> class
+  
+     
+	 
+  -> object
+  
+  
+  
+  when we define a class, there is no memory space created
+  for the properties which we are declaring inside the class.
+  
+  
+object:
+``````
+instance of a class is known as object.
+
+instance:
+````````
+allocating suffficeint amount of memory space for the 
+properties of the class.
+
+for a single class, how many objects we can create?
+
+  as many as we want based on the requirement
+  
+  
+ how can we create the object :
+ 
+ 
+ syntax:
+ 
+ <classname> <objectname> = new <classname>();
+ 
+ 
+  Student obj = new Student();
+  
+  Student -> name of the class 
+  obj -> object name
+  = -> assignment operator
+  new ->dynamic memory allocation operator
+  Student() -> constructor 
+  
+
+  the object for Employee
+  
+
+->define Account class with variables accountId,accountName
+  and display their details by using object?
+  
+  
+  
+  
+  
+  
+  
+  
+  hpw to define the class
+  how to create the object
+  
+  class-
+   collection of 
+    variables and methods into a single unit.
+	
+	object
+	 -instance of a class is known as object
+	 -allocating sufficient amount of memeory space for the 
+	  properties of the class.
+	  
+	  
+  jvm 
+  
+java program execution starts from main() 
+who will call main();
+  
+   jvm will call this main()
+   
+
+note:
+using object, we can access the properties and as well as 
+we can update the values based on the requirement.
 
 example:
 ``````````
-class Student
+class Product
 {
-
-  //variables
-  
- static int stid =100;
- static String stname="rama";
-  
-  //methods
-  public static void displayDetails()
-  {
-	   System.out.println("student id: " + stid);
-	   System.out.println("student name: " + stname);
-  }
-
-   public static void main(String[] args)
-   {
-	   //call the methods
-	   displayDetails();
-   }
-
-}
-
-   java is object oriented programming language
-   
-    -since it follows oops principles
-	
-	  inheritance
-	  polymoprhism
-	  abstraction
-	  encapsulation
-	  
-	  to achieve above principles in java, we are using 
-	  two concepts
-	  
-	  1.class
-	  2.object
-	  
-class:
- class is a collection of vairables
- and methods into a single unit. 
+ int productId = 100;
+ String productName ="soap";
  
-object:
-``````
-
-object is an instance of a class. 
-
- whenever we define the class, memory spaces 
- will not be created for the properties of the class.
-  
- instance:
- allocating sufficient amount of memory space for the instance 
- proeprties of the class.
- 
- 
-syntax for object creation:
-```````````````````````````
-<classname> <objectname> = new <classname>();
-
-
-Student obj = new Student();
-
-  Student -> name of the class
-  obj -> name of the object
-   = -> assignment operator 
-   
-   new -> dynamic memory allocation operator
-   Student() -> constructor
-   
-   
-example:
-`````````
-class Student
-{
-
-  //variables
-  
- int stid =100;
-  String stname="rama";
-  
-  //methods
-  public void displayDetails()
-  {
-	  System.out.println("===================");
-	   System.out.println("student id: " + stid);
-	   System.out.println("student name: " + stname);
-  }
-
-   public static void main(String[] args)
-   {
-	   //create the object for Student class
-	   
-	   Student obj  = new Student();
-	   
-	   System.out.println(obj.stid);
-	   System.out.println(obj.stname);
-	   
-	   //call the method
-	   
-	   obj.displayDetails();
-	   
-	   
-   }
-
-}
-
-
-for a single class how many object(S) we can create?
-
- ansewr:
- as many as we want based on the requirement
- 
- Student obj1 = new Student();
- Student obj2 = new Student();
- 
- objct name is always unique.
- 
- 
-why we need to create multiple objects for a single class?
-
-college
-
-  1000 students
-  
-     to store 1000 students information /data
-	 how many objects are required?
-	 
-	   every object is having a specific student information 
-	   
-	   1000 objects
-	   
-<classname> <objectname> = new <classname>();
-
-
-using object name, we are able to access the 
-variables and as well as methods.
-
-using object, how can we update the values?
-
-example:
-`````````
-class Student
-{
-
-  //variables
-  
- int stid =100;
-  String stname="rama";
-  
-  //methods
-  public void displayDetails()
-  {
-	  System.out.println("===================");
-	   System.out.println("student id: " + stid);
-	   System.out.println("student name: " + stname);
-  }
-
-   public static void main(String[] args)
-   {
-	   //create the object for Student class
-	   
-	   Student obj  = new Student();
-	   
-	   //updating the values using object name
-	   obj.stid=101;
-	   obj.stname="sridevi";
-	   
-	   //call the methods
-	   obj.displayDetails();
-   
-   }
-}
-
-
-
-
-
-example:
-`````````
-class Student
-{
-
-  //variables
-  
- int stid =100;
-  String stname="rama";
-  
-  //methods
-  public void displayDetails()
-  {
-	  System.out.println("===================");
-	   System.out.println("student id: " + stid);
-	   System.out.println("student name: " + stname);
-  }
-
-   public static void main(String[] args)
-   {
-	   //create the object for Student class
-	   
-	   Student obj1  = new Student();
-	   
-	   Student obj2 = new Student();
-	   Student obj3 = new Student();
-	   
-	   System.out.println(obj1);
-	   System.out.println(obj2);
-	   System.out.println(obj3);
-    
-   }
-
-}
-
-note:
-every new object is having a specific new address
-
-non static (instance) vs static:
-```````````````````````````````````
- int a;//non static variable or instance variable
- 
- static int a;//static variable
- 
- how can we make non static proeprty as static 
- property?
- 
-   by using one java reserved keyword 'static'.
-   
-   //non static or instance method 
-  void m1()
-  {
-   //logic
-  }
-  
-  //static method 
-  static void m2()
-  {
-  //static area
-    //logic
-  }
-  
-
-the area which belongs to non static method is known as 
-instance area or non-static area
-
-the area which belongs to static method is known as 
-static area .
-
-
-note:
-from the static area, if we want to access
-nonstatic properties we can access using 
-object name.
-
-from the static area and non-static area,  if we want to access  
-static properties we can access in following ways
-
-1.we can access directly 
-2.we can access using classname 
-3.we can access using object name (not recommended)
-
-
-
-when can you make a normal proeprty as 
-static property?
-
- if a property is common to multiple objects
- 
- once we declare any property as static , 
- memory wil be created only once at the time 
- class loading 
- 
- 
-example:
-``````
-class Student
-{
-
-  //instance variables
-  
- int stid =100;
-  String stname="rama";
-  static String collegeName="jntu";
-  
-  
-  //instance methods
-  public void displayDetails()
-  {
-	  //instance area 
-	   System.out.println("===================");
-	   System.out.println("student id: " + stid);
-	   System.out.println("student name: " + stname);
-	   System.out.println("college name: " + collegeName);
-	   System.out.println("collegeName:" + Student.collegeName);
-  }
-
-//static method 
-   public static void main(String[] args)
-   {
-	   //static area 
-	   //create the object for Student class
-	   
-	   Student obj1  = new Student();
-	   
-	   System.out.println(obj1.stid);
-	   System.out.println(obj1.stname);
-	   //call the non static method 
-	   
-	   obj1.displayDetails();
-	   
-	   //accessing static property from the static area
-	   
-	   System.out.println(collegeName);
-	   System.out.println(Student.collegeName);
-	  
-	   
-   }
-
-}
-
-
-do one program 
-on top of instane vs static?
-
-  
-
-constructor:
-```````````
- constructor is a special member method 
- 
- 1.it must be similar to the class name 
- 
- purpose: to initilize the object.
- 
-
-ide(integrated development environment)
-
--eclipse, myeclipse, netbeans, intellij, etc.. 
-
-official website to download eclipse ide:
-
-https://www.eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers
-
-
-
-
-constructor:
-
- purpose: to initialize the object 
- 
- object contains data
- 
- to initialize the data.
- 
- 
-int a ;//variable declaration 
-
-a=100;//assigning the value 
-
-int a = 100;//variable initilization 
-
-
-
-
-without constructors:
-````````````````````````
-
-public class Test1 {
-	
-	int a,b;
-	
-	public void setValues()
-	{
-		a=100;
-		b=200;
-	}
-	public void display()
-	{
-		System.out.println(a);
-		System.out.println(b);
-	}
-
-	
-	public static void main(String[] args)
-	{
-		//create the object
-		Test1 obj = new Test1();
-		
-		//call the setValues()
-		
-		obj.setValues();
-		//call the methods
-		
-		obj.display();
-		
-	}
-}
-
-in case of normal methods, explictly we have to call those 
-otherwise we will not get desired values.
-
-1.constructor is a special member method 
-2.it must be similar to class name.
-3.constructor should not return any thing even void also. 
-4.constructor should not be static
-5.constructor should not be inherited.
-
-
-in case of constructor, explictly we no need to call 
-the constructor 
-
-when constructor will be invoked?
-whenever we create the object 
-
-how many no.of times constructor will be invoked?
-answer:
-  how many no.of times you create the object, those many no.of times
-  corresponding constrcutor will be invoked.
-  
-  
-example:
-`````````
-
-public class Test1 {
-	
-	int a,b;
-	
-	//constructor
-	public Test1()
-	{
-	  a=100;
-	  b=200;
-	}
-	
-	public void display()
-	{
-		System.out.println(a);
-		System.out.println(b);
-	}
-
-	
-	public static void main(String[] args)
-	{
-		//create the object
-		Test1 obj = new Test1();
-		//call the diplay method 
-		obj.display();
-		
-	}
-}
-
-types of constructor:
-``````````````````````
-1.default constructor 
-
-  ->constructor whihc doesn't takes any parameters 
-  
-  again this is of two types 
-  
-   1.user defined default constructor 
-       ->this is for initializing our own values
-   2.system defined default constructor 
-       ->this is for initializing default values based on the datatype.
-	   
-	   
-2.parameterized constructor:
-
-   ->constructor which takes parameters 
-   
-   
-
-note:
-in case of default constructor first default values 
-will be initlized later those values will be replaced with our 
-own values.
-
-note:
-in case of parameterized constructor, directly our own values will 
-be initlized while you creating the object. 
-
-q:
-can we define both default and parmaterized cosntructor 
-in a class?
-example on parameterized constructor:
-
-
-public class Test1 {
-
-	//class level variables 
-	int a, b;
-  
-	
-	//parameterized constructor
-	public Test1(int x, int y)
-	{
-		a=x;
-		b=y;
-	}
-	
-
-	public void display() {
-		System.out.println(a);
-		System.out.println(b);
-	}
-
-	public static void main(String[] args) {
-		// create the object
-		Test1 obj = new Test1(100,200);
-		// call the diplay method
-		obj.display();
-
-	}
-}
-
-
-example on both default and parameterized constructor:
-```````````````````````````````````````````````````````
-
-public class Test1 {
-
-	//class level variables 
-	int a, b;
-  
-	//default constructor 
-	public Test1()
-	{
-		a=1000;
-		b=2000;
-	}
-	//parameterized constructor
-	public Test1(int x, int y)
-	{
-		a=x;
-		b=y;
-	}
-	
-
-	public void display() {
-		System.out.println(a);
-		System.out.println(b);
-	}
-
-	public static void main(String[] args) {
-		// create the object
-		Test1 obj = new Test1(100,200);
-		// call the diplay method
-		obj.display();
-		
-		//create the object using default constructor
-		 Test1 obj1 = new Test1();
-		 obj1.display();
-	
-	}
-}
-
-this keyword in java:
-``````````````````````
-'this' is the java reserved keyword using for two 
-purposes.
-
-1.whenever class level variables and method level 
-parameters are same 
-to differentiate those we will use this keyword
-
-example:
-```````
-
-public class Test1 {
-
-	//class level variables 
-	int a, b;
-	//parameterized constructor
-	public Test1(int a, int b)
-	{
-		this.a=a;
-		this.b=b;
-	}
-	
-
-	public void display() {
-		System.out.println(this.a);
-		System.out.println(this.b);
-	}
-
-	public static void main(String[] args) {
-		// create the object
-		Test1 obj = new Test1(100,200);
-		// call the diplay method
-		obj.display();
-
-	}
-}
-
-
-2.even though we have multiple constructors are there in our application to execute all those constructors by creating 
-single object it is possible 
-
-  ->constructor chaining 
-  
-  syntax:
-     
-	  this() -> it is for caling current class default constructor 
-	  
-	  this(..) -> it is for calling current class parameterized constructor 
-	  
-	  
-example:
-`````````
-
-public class Test1 {
-
-	
-	//parameterized constructor
-	public Test1(int a, int b)
-	{
-		
-		System.out.println("parameterized constructor");
-	}
-	
-	//default constructor
-	public Test1()
-	{
-		//call the parameterized constructor
-		this(100,200);
-		System.out.println("default constructor");
-	}
-	
-
-	
-
-	public static void main(String[] args) {
-		// create the object
-		Test1 obj = new Test1();
-		
-	}
-}
-
-
-note:
-constructor call must be the first statement inside a constructor 
-otherwise we will get compile time error. 
-
-
- ->eclipse ide
- ->constructor 
- ->types of constructor 
- ->this keyword
- 
-oops principles:
-````````````````
- ->inheritance
- ->polymoprhism
- ->abstraction 
- ->encapsulation 
- 
- 
-inheritance:
-```````````
-inheritane is the process of taking the properties from one class 
-to another class 
-
-
-
-class 
- i have some logic is there
- 
- the same logic i wanted to use in anotehr class.
- 
- if we redefine code duplication will be increased
- 
- memory consumption also gets increased
- 
- performamnce of the application will be degraded
- 
- 
-
-instead of redefining the logic, try to reuse it
-
-
-
-parent class/base class/super class:
-
-it is the class which is giving the properties
-
-child class/sub class/derived class:
-it is the class  which is taking the properties
-
-
-using extends keyword we can achieve the concept of inheritance.
-
-
-note:
-whenever we applied the concept of inheritance, it is highly 
-recommended to create the object for child class not for parent class
-
-if we create the object for parent class, memory locations will be created only for parent class.
-so that , with the parent class object we are allowed to access only 
-parent class properties
-
-whenever we crete the object for child class, memory locations will 
-be created for both parent and child class properties. 
-
-so with this child class object, we are allowed to access 
-both parent and child class proeprties.
-
-what is the primary advanatage of inheritance:
-
- 1.reusability 
- 2.code redundancy will be decreased 
- 3.performance of the application will be improved.
- 
- 
-types of inheritances:
-`````````````````````
-in java, we have 5 types of inheritances
-
-1.single /simple inheritance
-2.multilevel inheritance
-3.multiple inheritance
-4.hierarchical inheritance
-5.hybrid inheritance
-
-single / simple inheritace:
-
-  it is the inheritance which contains
-     -single base class
-	 -single child class
-	 
-	A
-	|
-	B
-
-multilevel inheritance:
-
-it contains 
-
-  single base clas 
-  
-  multiple intermediate base classes 
-  
-  single child class 
-  
-  
-  A
-  |
-  B
-  |
-  C
-
-in one context, B class is acting as sub class or child class 
-
-but in anotehr context, same B class is acting as super class or 
-parent class. 
-
-such kind of classes are known as intermediate parent classe(s).
-
-
-	class A{} class B extends A{} class C extends B{}		  
- 
- 
- 
-multiple inheritance:
-`````````````````````
- 
-   mutliple inhertiance contains 
-   
-   1.1 or more parent classes
-   2.single child class 
-   
-   
-       A B C D ....
-	   
-	       Z
- 
- class Z extends A,B,C,D,...
+ public void getProductDetails()
  {
- }
- in java, through classes multiple inheritance is not possible 
- 
- why?
- 
- class A{
-    sum()
- }
- class B {sum();}
- 
- z obj = new z();
- obj.sum();
- 
- 
- Interface concept -> multiple inheritance.
- 
- 
-hierarchical inheritance:
-
-   single parent class/base
+   System.out.println("Product id: " + productId);
+   System.out.println("Product Name: " + productName);
    
-   mutliple child classe(s)
-   
-    A
-	
-B  C  D E ....
+ }
+ 
+ public static void main(String[] args)
+ {
+	 //create the object for my class (Product)
+	 Product p = new Product();
+	 
+	 //using object we are chanigng the values
+	 p.productId=101;
+	 p.productName="laptop";
+	 
+	 p.getProductDetails();
+	 
+	 
+ }
+ 
+}
+  
+  
 
-class A
+
+
+
+
+define Student class with stid, stname and update the values 
+with your own name using object?
+
+
+
+we can create multiple objects for a single class, where each object is having their own address.
+
+example:
+````````
+class Product
 {
-}
-class B extends A
-{}
-class C extends A{}
-class D extends A{}
-....
-
-
-hybrid inheritance:
-````````````````````
-it is the combination of any two possible inheritance 
-types.
-
-
- A
- |
- B
- |
-C  D  E
-  
- SINGLE + HIERARCHICAL = HYBRID INHERITANCE 
+ int productId = 100;
+ String productName ="soap";
  
- 
- class A{}
- class B extends A{}
- class C extends B{}
- class D extends B{}
- class E extends B{}
- 
- 
-assignments:
-do one one program on top of each and every 
-inheritance type.
-
-
- note:
- when you apply inheitance concept, it is 
- highly recommende to create the object for 
- child class. 
- 
- 
-A.java:
-```````
-//parent class cum business logic class
-public class A {
-	public A()
-	{
-		System.out.println(this.hashCode());
-	}
-	public void sum(int x, int y)
-	{
-		System.out.println("sum is : " +  (x+y));
-	}
-
-}
-
-B.java
-````````
-//child class cum business logic class cum executin logic class
-public class B extends A {
-	
-	public void sub(int x, int y)
-	{
-		System.out.println("substraction: " +(x-y));
-	}
-	
-	public static void main(String[] args) {
-		
-		//child class object creation 
-		
-		B obj = new B();
-		
-		obj.sum(2, 3);
-		obj.sub(5, 4);
-		
-	}
-
-}
-
-
-
-polymoprhism:
-````````````
-it is one of the oop principle.
-
-definition: 
-
- poly -> many 
- morphs -> forms.
- 
- so polymoprhism means many forms.
- in java, we have two types of polymorphisms
- are there.
- 
-   1.compile time polymoprhism ->method overloading
-   2.runtime polymorphism-method overriding
+ public void getProductDetails()
+ {
+   System.out.println("Product id: " + productId);
+   System.out.println("Product Name: " + productName);
    
-   
- method overloading:
-```````````````````````
- it is the process of definining 
- the method name as same by changing
- signature as different.
-
-  signature changing
-  -> type of parmaeters 
-  -> no.of parameters
-  -> order of parameters
-
-  
- example of method overloading:
-`````````````````````````````
-
-public class Test2 {
-
-	
-	public void sum(int x, int y)
-	{
-		System.out.println("integer sum is: " +(x+y));
-	}
-	
-	//type of parameters changed
-	public void sum(double x, double y)
-	{
-		System.out.println("double sum is : " + (x+y));
-	}
-	//changed no.of parameters
-	public void sum(int x, int y, int z)
-	{
-	System.out.println("3 integer sum is : " +(x+y+z));	
-	}
-	
-	public static void main(String[] args) {
-		
-		Test2 obj = new Test2();
-		// call the sum()
-	    obj.sum(10,20);
-	    
-	    //call the sum(double x, doubl y)
-	    obj.sum(10.3,45.6);
-	    
-	    //call the sum(int x , int y, int z)
-	    
-	    obj.sum(10,20,30);
-	    
-		
-	}
-	
+ }
+ 
+ public static void main(String[] args)
+ {
+	 //create the object for my class (Product)
+	 Product p1 = new Product();
+	 
+	 Product p2 = new Product();
+	 
+	 Product p3 = new Product();
+	 
+	 System.out.println(p1);
+	 System.out.println(p2);
+	 System.out.println(p3);
+	 
+	 
+ }
+ 
 }
 
+College 
  
-   
-
-
-
-
-
-
-advnatage of method overloading:
-```````````````````````````````
- how method overloading we can consider as the example of 
- 
- compile time polymorphism.
- 
- 
-advantages:
-````````````
-Method overloading increases the readability of the program. 
-
-This provides flexibility to programmers so that they can call the same method for different types of data. 
-
-This makes the code look clean. 
-
-This reduces the execution time because the binding is done in compilation time itself.
-
-
-
-binding:
-
-  obj.sum(10,20);
+  1000 students 
   
-    control will go to sum(int , int) 
-	  this method calling and binding this associatin will happen 
-	  at compile time using reference variable only.
-	  
-	->compile time polymoprhism
-
-note:
-when the method binding happens at compiletime using reference variable 
-this kind of polymoprhism is called as compile time polymorphism 
+     1 object is not enough to store 1000 students information 
+	 1000 objects are required
+	 
 
 
- in the concept of method overloading .
- 
- 
-method overriding:
-``````````````````
- method overridng is the process of 
-  defining method name as same and body/logic is different 
-  from one class to anotehr class. 
-  
-  
-note:
-to perform method overriding, we require minimum two classes with 
-parent child relation .
-
-
-
-A.java:
-```````
-//parent class cum business logic class
-public class A {
-	
-	public void sum(int x, int y)
-	{
-		System.out.println("sum is : " +  (x+y));
-	}
-
-}
-
-B.java:
-````````
-//child class cum business logic class cum executin logic class
-public class B extends A {
-	
-	@Override
-	public void sum(int x, int y)
-	{
-		System.out.println("substraction: " +(x-y));
-	}
-	
-	public static void main(String[] args) {
-		
-		B obj = new B();
-		obj.sum(4, 3);
-		
-	}
-
-}
- 
- 
 note:
 `````
-The @Override annotation indicates that the child class method is over-writing its base class method. 
 
-It extracts a warning from the compiler if the annotated method doesn't actually override anything. 
+object name is always must be unique, you can't declare multiple 
+objects with the same name.
 
-It can improve the readability of the source code.
+example:
+`````````
+class Employee
+{
+	
+	//variables
+   int empId=100;
+    String empName="rama";
+   double empSalary=9878.87;
+   
+   //method 
+   public  void getEmpDetails()
+   {
+	   System.out.println("====================");
+    System.out.println("employee id  is: " + empId);
+	System.out.println("employee name is : " + empName);
+	System.out.println("employee salary is: " + empSalary);
+   }
 
+  //main method
+   public static void main(String[] args)
+   {
+     
+	//create the object for the Employee class
+	Employee obj1 = new Employee();
+	 
+	//create the object for the Employee class
+	Employee obj2 = new Employee();
+	
+	System.out.println(obj1);
+	System.out.println(obj2);
+}
+}
+
+using object name, i want to change the values?
+
+is it possible or not?
+
+
+
+yes it is possible, please observe below program 
+
+
+class Employee
+{
+	
+	//variables
+   int empId=100;
+    String empName="rama";
+   double empSalary=9878.87;
+   
+   //method 
+   public  void getEmpDetails()
+   {
+	   System.out.println("====================");
+    System.out.println("employee id  is: " + empId);
+	System.out.println("employee name is : " + empName);
+	System.out.println("employee salary is: " + empSalary);
+   }
+
+  //main method
+   public static void main(String[] args)
+   {
+     
+	//create the object for the Employee class
+	Employee obj1 = new Employee();
+	 
+	//change the values using object name
+	
+	obj1.empId=101;
+	obj1.empName="manik";
+	obj1.empSalary=8989.99;
+	
+	//call the method
+	obj1.getEmpDetails();
+ 
+   }
+}
+
+instance(non static) vs static:
+`````````````````````````````````
+
+
+ int a;//a is non static variable 
+ 
+ static int a;//a is static variable 
  
  
- method overriding -> runtime polymoprhism
+ public void m1()//non static method or instance method
+ {
+ //instance area
+ }
  
-in case of runtime polymoprhism , method binding will happen at
-runtime based on the object type not based on the reference variable.
+ public static void m1()//static method 
+ {
+    //static area
+ }
+ 
+ by default main method is static or non static?
+ 
+ 
+the area which belongs to non-static method is known 
+as non-static area or instance area
+
+the area which belongs to static method is known as static area.
+
+ 
+by default main method area is also static area 
+
+
+note1:
+``````
+from static area, to access non-static properties using object name  we can access
+
+note2:
+``````
+from static area or non-static area, to access static properties using 
+below way we can access
+
+1.directly we can access
+2.using classname we can access
+
+
+note:
+``````
+whenever we create the object, memory locations will be created for 
+non-static or instance properties not for static properties.
+
+
+q?
+when should we declare any property as static property?
+
+answer: if a property is common to all , then go and declare that 
+property as static 
+
+once we declare any property as static , then memory will be created 
+only once by the classloader subsystem
+it is the sub part of jvm.
+
 
 example:
 ````````
-A.java:
-```````
-//parent class cum business logic class
-public class A {
+class Employee
+{
 	
-	public void sum(int x, int y)
-	{
-		System.out.println("sum is : " +  (x+y));
-	}
-
+	//non-static variables
+   int empId=100;
+   String empName="rama";
+   double empSalary=9878.87;
+   
+   //static property 
+   static String companyName="infosys";
+   
+   //instance method or non-static method 
+   public void getEmployeeDetails()
+   {
+	   //instance area
+	   
+	   System.out.println("-------------------");
+	   System.out.println("employee id : " + empId);
+	   System.out.println("employee name: " + empName);
+	   System.out.println("employee salary: " + empSalary);
+	   System.out.println("employee company name:  " + companyName);
+	   
+	   
+   }
+   
+  //main method
+   public static void main(String[] args)
+   {
+     //static area
+	 Employee obj = new Employee();
+	 System.out.println("employee id: " + obj.empId);
+	 System.out.println("employee name: " + obj.empName);
+	 System.out.println("employee salary:" + obj.empSalary);
+	 
+	 System.out.println("employee company name: " +companyName);
+	 
+	 companyName="TCS";
+	 
+	 System.out.println("employee company name: " +Employee.companyName);
+	 
+	 //call the method using obect name 
+	 
+	 obj.getEmployeeDetails();
+ 
+   }
 }
 
-B.java:
-```````
-//child class cum business logic class cum executin logic class
-public class B extends A {
-	
-	@Override
-	public void sum(int x, int y)
-	{
-		System.out.println("substraction: " +(x-y));
-	}
-	
-	public static void main(String[] args) {
-		
-		/*B obj = new B();
-		obj.sum(4, 3);*/
-		/*A obj = new A();
-		obj.sum(2, 3);*/
-		
-		//runtime polymorphism
-		A obj = new B();
-		obj.sum(4, 3);
-		
-		
-	}
 
-}
+introduce ide:
+integrated development environment 
 
-rules to perform method overriding:
-`````````````````````````````````````
-The access modifier can only allow more access for the overridden method.
+  eclipse is one of the open source ide.
+  
+  myeclipse
+  netbeans
+  intellij
+  etc..
+  
+how to download eclipse and install in your machine?
+````````````````````````````````````````````````````
+linK:
+https://www.eclipse.org/downloads/
 
-A final method does not support method overriding.
-
-A static method cannot be overridden.
-
-Private methods cannot be overridden.
-
-The return type of the overriding method must be the same.
+ctrl+ -> is to increase the font size 
+ctrl - -> is to decrease the font size 
 
 
+how can we create the java project:
 
- polymorphism
-   compile time polymoprhism - method overloading 
-   
-   runtime polymoprhism - method overridng 
-   
-   @Override 
-   
-   rules to perfrom mehtod overriding 
-   
-encapsulation:
-``````````````
-encapsulation is the process of wrapping up of datamembers and 
-member functions into a single unit. 
+click on file
+|
+new
+|
+project
+|
+java project 
 
-ex: class is the best example for encapusulation .
+|
+project name: corejava
+|
+uncheck module-info.java
+|
+click on finish 
+
+once we create the java project define the java class 
+by right click under src folder 
+click on new 
+
+|
+class
+|
+name: Test1
+|
+click on finish 
 
 
-advantage:
-`````````
- data hiding.
+one important advantage of writing the code in eclipse:
+
+  whatever the code we are writing inside eclipse is autocompiled
+  
+  we no need to compile the code separately 
+  
+  
+advantages of writing the code in eclipse:
+````````````````````````````````````````````
+note:
+the code which you are writing inside ide, it is autocompiled 
+code or precompiled code.
+
+
+1. Using IDE will cost you less time and effort .
+
+2.Navigation is made easier.
+
+3.Auto completion- one of the best features , you don’t have to remember all.
+
+4.Refactoring
+
+5.Error debugging is easy , you can easily navigate to Error line.
+
+6.All files can be viewed and managed at same screen.
+
+7.Organizing you imports.
+
+8.Downloading requires packages at ease.
+
+In addition to these specific Eclipse advantages are:
+
+It is free and open source.
+Industrial level of development
+It supports many other languages other than JAVA.
+Framework integration like Junit and TestNG and other plugins can be done easily.
+Since Eclipse tools are open source, they are quickly updated with the latest technology that can be integrated into existing code.
+
  
- make those varialbes as private.
+constructor:
+`````````````
+ example without constructor:
+ ````````````````````````````
  
- 
-advantages of encapsulation:
-
-Encapsulation is a way to restrict the direct access to some components of an object, so users cannot access state values for all of the variables of a particular object. 
-
-
-Encapsulation can be used to hide both data members and data functions or methods associated with an instantiated class or object.
-
-
-how can we make normal class as java encapsulated class:
-````````````````````````````````````````````````````````
-
-1.declare variables as private .
-2.for each and every varaible maintain public settter and getter      methods to set and get the data. 
-
-
-
-Student.java:
-````````````
-
-//encapsulated class
 public class Student {
 	
+	//varaibles declaration 
+	int stid;
+	String stname;
 	
-	 private int stid;
-	 private String stname;
-	 
-	public int getStid() {
-		return stid;
-	}
-	public void setStid(int stid) {
-		this.stid = stid;
-	}
-	public String getStname() {
-		return stname;
-	}
-	public void setStname(String stname) {
-		this.stname = stname;
-	}
- 
 
+	void setValues()
+	{
+		stid=100;
+		stname="Rama";
+		
+	}
+	
+	void display()
+	{
+		System.out.println("student id is : " + stid);
+		System.out.println("Student name is : " + stname);
+	}
+	
+	//defining main method 
+	public static void main(String[] args) {
+		
+		
+		Student obj  = new Student();
+		
+		obj.setValues();
+		obj.display();
+		
+		
+	}
 }
 
+constructor:
+````````````
+constructor is a special member method 
 
-Test3.java:
-``````````````
+->it must be similar to class name 
+->it doesn't return anything even void also.
 
-public class Test3 {
+purpose:
+`````````
+to initialize the object
 
+object ->data
+to initalize the data 
+
+int a;//variable declaration 
+a=100;//assigning the value
+
+int a=100;//variable initialization 
+
+variable initialization= variable declaration + assigning the value.
+
+
+ 
+ in our class, if we don't have any constructor, if you create the object using default constructor then java compiler first check 
+ whether in our class constructors are there or not 
+ if not , java compiler automatically generates one default constructor  known as system generated default constructor.
+ 
+ purpose of system generated default constructor:
+ 
+ it will intilize the default values 
+ based on the datatype we have default values are there 
+ 
+  for integer category datatypes default value is 0
+  for String datatype default value is null
+  
+  for float -> 0.0
+  for character -> single space
+  
+ 
+note:
+whenever we create the object corresponding constructor will be 
+invoked to intilzie the values.
+
+it is not like normal method 
+
+
+example :
+`````````
+
+public class Student {
+	
+	//varaibles declaration 
+	int stid;
+	String stname;
+	
+	//system generated default constructor 
+	//purpose: it will assign the default values
+	
+	/*public Student()
+	{
+	stid=0;
+	stname=null;
+	}*/
+	
+	//user defined default constructor
+	
+	Student()
+	{
+		stid=100;
+		stname="Rama";
+	}
+	
+	public void display()
+	{
+		System.out.println("Student id is : " + stid);
+		System.out.println("Student name is: " + stname);
+	}
+  
+	
+	//defining main method 
 	public static void main(String[] args) {
 		
 		Student obj = new Student();
 		
-		obj.setStid(100);
-		 
-		System.out.println("student id is: " + obj.getStid());
+		obj.display();
 		
-		obj.setStname("rama");
 		
-		System.out.println("student name is: " + obj.getStname());
 	}
 }
 
-note:
-``````
-in the process of encapsulation, we have more control on top of the 
-program since we have public setters and getter methods are there using these methods we can control the data. 
-
-encapsulation is indirectly helping to achieve the concept of 
-abstraction .
-
-
-command line arguments:
+ 
+ 
+ 
+types of constructors:
 `````````````````````````
-java execution starts from main method 
+ ->default constructor 
+ 
+ ->parameterized constructor 
+ 
+ 
+  
+default constructor is again two types 
 
-main method will be called by jvm automatically whenever you execute 
-the java program .
+   1.system defined default constructor
+      -to intilize default values 
+	  
+   2.user defined default constructor
+   
+      -to initliize our own values 
+	  
+	  
+2.parameterized constructor:
+  
+   constructor which takes parameters is known as 
+   parameterized constructor.
+   
+   
+example on parameterized constructor:
+``````````````````````````````````````
 
-main method is taking array of String as an argument 
+public class Student {
+	
+	//varaibles declaration 
+	int stid;
+	String stname;
+	
+	
+	//define parameterized constructor
+	public Student(int x, String y)
+	{
+		stid=x;
+		stname=y;
+		
+	}
+	public void display()
+	{
+		System.out.println("Student id is : " + stid);
+		System.out.println("Student name is: " + stname);
+	}
+  
+	
+	//defining main method 
+	public static void main(String[] args) {
+		
+		Student obj = new Student(100,"rama");
+		
+		obj.display();
+		
+		
+	}
+}
 
 
-for every primitive datatype we do have corresponding wrapper classes 
-are there inside java.lang package.
+advantage of parameterized constructor:
+````````````````````````````````````````
+while we are creating the object only we can initilize the values.
 
-  byte  --> Byte  ->parseByte(String) and returns corresponding datatype
-  it is returning byte as the returntype 
-  
-  short --> Short ->parseShort(String) -> short
-  int   --> Integer 
-  long  --> Long 
-  
-  char -> Character 
-  boolean -> Boolean 
-  
-  float -> Float
-  double -> Double 
-  
-  ctrl + shift + t
-  
-  
+
+can we define both default and parameterized constructor inside 
+a single class?
+
  note:
- whatever the arguments we are passing while we are executing the program , those arguments we call it as command line arguments.
+ default constructor is always availble in only one form 
+ but we can define multiple parameterized constructors
  
- why main() method is taking String as an argument?
+ default constructor we can define only once.
  
-  answer: to handle command line arguments.
-  
-Test4.java:
-``````````
-
-public class Test4 {
-	
-	public static void main(String[] args) {
-		
-		String s1 = args[0];
-		String s2 = args[1];
-		//converting first String argument into integer value
-		int x = Integer.parseInt(s1);
-		
-		//converting second String argument into integer value
-		
-		int y =  Integer.parseInt(s2);
-		
-		int z = x+y;
-		System.out.println("sum is : " +z);
-	}
-
-}
-
-why we are calling these classes as the wrapper classes:
-
-    The wrapper class in Java provides the mechanism to convert primitive into object and object into primitive
-	
-	Integer 
-	
-	   parseInt(String)
-   
-        int -> primitive type (object to primitive)
-		
-		it is also converting primitive type to object type 
-		
-		
-		using toString(int)->String 
-		
-		
-abstraction:
-``````````````
-abstraction is one of the oop principle, it is the process of 
-retrieving the essential/required details by ignoring implementation details.
-
-  send one message from your mobile number to your friend mobile number.
-  
-  whether the message is deliverd or not?
-  
-  
-   if you drive a car, if you press on accelearator, 
-   your focus is whether it increases the car speed or not?
-   
-   
- abstraction is internally hiding the internal 
- implementation details.
-
-
- in java, we have two classes are there
- 
-  1.concrete class:
- it is a class, which contains only defined methods.
-
-  defined method: 
-   it is a method which contains method heading and method body 
-
-   
-  
-  2.abstract class
-  
-  
-  it is a class, which contains both defined and undefined methods
-  note: 
-  it is highly recommended to have atleast one undefined method .
-  
-  
-  undefined method/abstract method:
-  
-  undfined method is the one which contains only method heading 
-  
-  //defined method 
-    public void m1()
-	{
-	  //logic 
-	}
- 
-  public abstract void m1();
-
-note:
-
-using abstract keyword we are making normal methods as 
-abstract methods then only java compiler can recognize your method 
-as abstract method.
-
-
-abstract class Student
-{
-  public void m1()
-  {
-    //logic 
-  }
-  public abstract void m2();
-}
-
- Student obj = new Student();
- 
- obj.m1();
- 
- obj.m2();
-
-note:
-for abstract class, can we create the object or not?
-
- answer: no , we can't create or we can not instantiate the abstract class.
- 
- 
-example:
-``````
-
-abstract class Test1
-{
-   abstract void m1();
-   abstract void m2();
-}
-
-note:
-if a method is common to multiple classes then it is highly recommended
-to declare that method as an abstract method instead of defined method.
-
-   abstract class Bank{
-   public abstract double rateOfInterest();
-   }
-
-//implementation class for Bank abstract class
-class Icici extends Bank
-{
-
-  public double rateOfInterest()
-  {
-    return 6.5;
-  }
-}
-
-//implementation class for Bank abstract class 
-
-class CityBank extends Bank
-{
-   public double rateOfInterest()
-{
-   return 5.5;
-}   
-   
-}
-
-//runtime polymorphism
- Bank obj = new Icici();
- obj.rateOfInterest():
- 
- Bank obj1 = new CityBank();
- 
- obj1.rateOfInterest();
- 
- 
-example:
-`````````
-Test5.java:
-````````````
-
-
-public abstract class Test5 {
-	
-	//undefined method or abstract method
-	public abstract void sum(int x, int y);
-	
-	public abstract void mul(int x, int y);
-	
-	//defined method
-	public void sub(int x, int y)
-	{
-		System.out.println("substraction is: " +(x-y));
-	}
-
-}
-
-
-Test6.java:
-``````````
-
-public  class Test6 extends Test5 {
-
-	@Override
-	public void sum(int x, int y) {
-		System.out.println("sum is : " + (x+y));
-
-	}
-
-	@Override
-	public void mul(int x, int y) {
-		System.out.println("multiplication is: " +(x*y));
-		
-	}
-	
-	public static void main(String[] args) {
-		
-		//runtime polymorphsim 
-		Test5 obj = new Test6();
-		obj.sum(2, 3);
-		obj.sub(5, 4);
-		obj.mul(5, 4);
-		
-	}
-
-}
-
-
-
-
-note:
-`````
-whenever we inherit the abstract class, in the implementation class 
-you should provide the logic for all the abstract methods if you are 
-not providing the logic atleast for one abstract method that implementation class also will become as abstract class.
-
-
-
-constructor should not be inherited.
-
-public class Test1()
-{
-
-  public Test1()
-  {
-  }
-}
-
-public class Test2 extends Test1
-{
-    public Test2()
-	{
-	}
-	
-	public Test1()
-    {
-    }
-
-}
-
-
-why constructor is not inherited from parent class to child class?
-
-if a constructor is inherited from parent class to child class, 
-it is violating the constructor rule saying that constructor name 
-and class name must be same.
-
-
-q:
-
-can we define the constructor inside an abstract class?
-
-we can define the constructor and we can make it execute.
-
-
-note:
-for every constructor java compiler will add one reserved keyword 
-i.e super() which is used to invoke parent class default constructor.
-
- 
- this() -> to call the current class default constructor
- this(..)-> to call the current class parameterized constructor..
- 
- 
- super() -> to call the parent class default constructor
- super(..)-> to call the parent class parameterized cosntructor.
- 
- 
- 
-note:
-to invoke the parent class default constructor writing the super() 
-is optional 
-
-eventhough if we are not adding that super() , that will be added by 
-the java compiler make sure parent class should not have any other 
-constructor.
-
-
-note:
-`````
-writing the super(..) is mandatory to call parent class parameterized 
-cosntructor since parameterized constructor is available in many forms 
-
-but writing the super() is optional to call parent class default constructor since default constructor is available in only one form 
-so that compiler can write that super() automatically.
-
-
-Test5.java:
-```````````
-
-public abstract class Test5 {
-	
-	public Test5(int x)
-	{
-		System.out.println("parent class parameterized constructor");
-	}
-	
-
-}
-
-
-Test6.java:
-```````````
-
-public  class Test6 extends Test5 {
-
-	public Test6()
-	{
-		//call parent class parameterized constructor
-		
-		super(100);
-		System.out.println("child class constructor");
-		
-	}
-	
-	
-	public static void main(String[] args) {
-		
-		//child class object creation 
-		Test6 obj = new Test6();
-		
-		
-	}
-
-}
-
-
-super is java reserved keyword which is referening parent class 
-properties.
-
-
-
-assignments:
-`````````````
-
-super at method level 
-super at variable level 
-
-
-
-abstraction 
-
- we can achieve in java using two concepts 
- 
- 
- 
- 
-  1.abstract class
-  
-  2.how to call parent class constructors using super keyword.
-  
- 2.interface
-  
-  
-  
-final :
-``````
- final is a java reserved keyword, 
- for the purpose of declaring constants .
- we can apply this final keyword on following properties
- 
-  1.variable
-  2.methods
-  3.class
-  
- final variable:
- ``````````````
- once we declare any variable as final variable, we can't change the value in further 
- 
- if we try to change , we will get compile time error.
- 
- example:
- ````````
- 
-public class Test8 {
-	
-	public static void main(String[] args) {
-		
-		
-		final int a =10;
-		System.out.println(a);
-		
-		a = 20;//compile time error
-	
-		
-	}
-
-}
-
-
-
-final method:
-`````````````
-
-->final methods will be inherited from parent class to child class 
-but we can't override.
-
-
-->final methods are not participated in the concept of method overriding.
-
-once we define the method as final, we can't override 
-
-if we try to override final method inside childclass, we will get 
-compile time error.
 
 example:
-`````````
-A.java:
-```````
-//parent class cum business logic class
-public class A {
-	
-	//final method
-	public final void sum(int x, int y)
-	{
-		System.out.println("sum is : " +  (x+y));
-	}
-
-}
-
-B.java:
-```````
-//child class cum business logic class cum executin logic class
-public class B extends A {
-	
-	//compile time error
-	public void sum(int x, int y)
-	{
-		
-	}
-	
-	
-	public static void main(String[] args) {
-		
-		
-	}
-
-}
-
-final class:
-`````````````
-The final class is a class that is declared with the final keyword.
-
- We can restrict class inheritance by making use of the final class.
-
- Final classes cannot be extended or inherited.
-
- If we try to inherit a final class, then the compiler throws an error during compilation
-
-A.java:
 ````````
-//parent class cum business logic class
-public final class A {
+
+public class Student {
 	
-	//final method
-	public final void sum(int x, int y)
+	//user defined default constructor
+	public Student()
 	{
-		System.out.println("sum is : " +  (x+y));
+	 System.out.println("iam user defined default constructor");
 	}
-
-}
-
-B.java:
-```````
-//child class cum business logic class cum executin logic class
-//compile time error
-public class B extends A {
+	
+	//parameterized constructor
+	public Student(int x)
+	{
+		System.out.println("iam single parameterized constructor");
+	}
 	
 	
-	
-	
+	//defining main method 
 	public static void main(String[] args) {
 		
+		//create the object using default constructor
+		
+		Student obj = new Student();
+		
+		//create the object using parameterized cosntructor
+		
+		Student obj1 = new Student(3);
+		
+		
+		
 		
 	}
-
 }
 
 
-interface:
-```````````
-what is interface?
+i have 100 constructors are there inside my class, so to execute 
+these 100 constructors how many objects we have to create?
 
- interface is a collection of 
-    public static final variables and 
-	public abstract methods 
+
+this:
+````
+'this' is a java reserved keyword used for the following 
+two purposes.
+
+
+purpose: 
+it is always pointing to current class object.
+
+1.it is used to differntiate class level variables and method level or 
+cosntructor level when both are same.
+
+example:
+``````````
+
+public class Student {
 	
-note:
-inside interface it contains only abstract methods
+	int stid;
+	String stname;
+	
+	public Student(int stid, String stname)
+	{
+		this.stid=stid;
+		this.stname=stname;
+	}
+	public void display()
+	{
+		System.out.println("student id is: " + this.stid);
+		System.out.println("student name is : " +this.stname);
+	}
+	//defining main method 
+	public static void main(String[] args) {
+		
+		//create the object using parameterized constructor
+		
+		Student obj = new Student(100,"rama");
+		
+		
+		//calling display()
+		obj.display();
+		
+		
+	}
+}
 
-syntax:
-```````
 
-   <interface> <interfacename>
+
+constructor chaining:
+
+ from one constructor if we call another constructor is the concept 
+ of constructor chaining 
+ 
+ it is possible by using following syntax using this keyword.
+ 
+ 
+  this() -> to call current class default constructor 
+  
+  this(...) -> to call current class parameterized constructor
+  
+  
+example:
+````````
+
+public class Student {
+
+   public Student()
+   {
+	   //call the parameterized constructor of the same class
+	   
+	   this(100);
+	   
+	   System.out.println("iam default constructor");
+	   
+   }
+   
+   public Student(int x)
    {
    
-      //constants(public static final variables)
-	  
-	  //abstract methods(public abstract)
+	   System.out.println("iam parameterized cosntructor");
    }
+	
+  //defining main method 
+	public static void main(String[] args) {
+		
+		//create the object for default constructor
+		
+		Student obj = new Student();
+		
+		
+		
+	}
+}
 
-
-by default interfce methods are public abstract we no need to 
-add these public abstract keywords explictly.
-
-can we create the object for an interface?
-
-no we can't instantiate the interface.
-
-using interface, we can achieve 100% abstraction security.
-using abstract class, we can achieve partial abstraction.
-
-
-
-
-if you want to bring properties from class to class or interface to interface  which keyword 
-we have to use?
-  extends
-  
-if you want to bring properties from interface to class which keyword
-we have to use?
-
-  implements keyword
-  
   
 note:
-creating the object for interface or abstract class is nothing but 
-creating the objects of it's implementation classes.
+cosntructor call must be the first executable statement inside a  
+constructor otherwise we will get compile time error. 
+
+note:
+if we keep on calling the constructors we will get compile time error 
+saying that recursive constructor invocation is not possible. 
 
 
-Test7.java:
-``````````
 
-public interface Test7 {
-	//declare the method 
-    void sum(int x, int y);
-}
+when we have 3 constructors:
 
 
-Test8.java:
-```````````
+public class Student {
 
-public class Test8 implements Test7 {
-
-	@Override
-	public void sum(int x, int y) {
-		System.out.println("sum is : " +(x+y));
-		
-	}
-
+   public Student()
+   {
+	   //call the double paramterized constructor
+	   
+	   this(100,200);
+	  System.out.println("iam default constructor");
+   
+   }
+  public Student(int x)
+   {
 	
-}
-
-Test9.java:
-```````````
-
-public class Test9 implements Test7 {
-
-	@Override
-	public void sum(int x, int y) {
-		System.out.println("substraction: "+(x-y));
-
-	}
-
-}
-
-Demo.java:
-````````````
-
-public class Demo {
+	   System.out.println("iam parameterized cosntructor");
+   }
+  
+  public Student(int x, int y)
+  {
+	  //call the single paramterized constructor
+	  
+	  this(100);
+	  System.out.println("iam double parameterized constructor");
+  }
 	
+  //defining main method 
 	public static void main(String[] args) {
 		
-		//runtime polymorphism
-		Test7 obj = new Test8();
-		obj.sum(6, 7);
+		//create the object for default constructor
 		
-		Test7 obj1 = new Test9();
-		obj1.sum(5, 4);
+		Student obj = new Student();
+		
 		
 		
 	}
-
 }
 
- 
-example:
-```````
-one class can be implemented from more than one interface also 
-is the concept of multiple inheritance.
+note:
 
-Test7.java:
-````````````
-public interface Test7 {
-	//declare the method 
-    void sum(int x, int y);
-}
+constructor call always must be the top to bottom but execution 
+happen from bottom to top.
 
 
 
-Test8.java:
-```````````
-public interface Test8 {
-	
-	void sub(int x, int y);
-
-}
-
-Test9.java:
-``````````
-//implementation class
-public class Test9 implements Test7,Test8 {
-
-	@Override
-	public void sub(int x, int y) {
-		System.out.println("substraction: " +(x-y));
-		 
-		
-	}
-
-	@Override
-	public void sum(int x, int y) {
-		System.out.println("sum is: " +(x+y));
-		
-	}
-
-	
-
-	
-
-}
-
-Demo.java:
-````````````
 
 
-public class Demo {
-	
-	public static void main(String[] args) {
-		
-		//Test7 obj = new Test7();
-		//Test8 obj1 = new Test8();
-		
-		Test7 obj = new Test9();
-		obj.sum(2, 3);
-		//obj.sub(6,5);
-		
-		Test8 obj1 = new Test9();
-		obj1.sub(5, 4);
-		//compile time error:obj1.sum(6,7);
-		
-		Test9 obj2 = new Test9();
-		obj2.sum(3, 4);
-		obj2.sub(7, 6);
-		
-	}
-
-}
-
-->final keyword
-->interface 
 
 control statements/conditional statements
 ``````````````````````````````````````````
@@ -2701,7 +1963,7 @@ There are two types of decision making statemetns in java, i.e
    
 if statement:
 ``````````````
-this staement is used to evoluate a boolean condition.
+this staement is used to evoluate a condition.
 
 the condition of the if statement gives a boolean value either true 
 or false.
@@ -2710,7 +1972,7 @@ in java, there are four types of if statements
 
  1.simple if statement
  2.if-else statement
- 3.if-else-if ladder
+ 3.if-elseif ladder
  4.nested if statement 
  
  
@@ -2753,7 +2015,7 @@ a block is a concept of in between { and }
 if else staement is an extension of if statement, which uses 
 another block of code. i.e catch block.
 
-The else block is executed if the condition of the if block is 
+The catch block is executed if the condition of the if block is 
 evlouated as false.
 
 
@@ -2766,7 +2028,7 @@ syntax:
 	   statement2 ;//executes when condition is false.
 	 }
 
- 
+
 example:
 `````````
 
@@ -2814,7 +2076,6 @@ it contains
   {
     statement3;//executes when conditio3 is true
   }
-  ...
   else
   {
     statement4;//executes when all the condistions are false.
@@ -2899,8 +2160,6 @@ public class Student {
 }
 
 
-
-
 switch statement:
 ````````````````
 
@@ -2942,9 +2201,6 @@ syntax:
    
  
  }
-
-
-}
 
 
  
@@ -3092,8 +2348,6 @@ public class Test1 {
 	}
 }
 
-assignment:
-```````````
 display odd numbers from 1 to 10 using for loop and if statement?
 
 
@@ -3118,7 +2372,6 @@ public class Test1 {
 	   
 	}
 }
-
 
 nested for loop:
 ````````````````
@@ -3203,18 +2456,6 @@ public class Test3 {
 	}
 }
 
-output:
-```````
-*
-* *
-* * * 
-* * * *
-* * * * * 
-
-
-
-
-
 
 output:
 ````````
@@ -3224,9 +2465,7 @@ output:
 * * * 
 * * 
 *
-   do this program as an assignment?
-   
-   
+
 
 
 
@@ -3272,12 +2511,12 @@ because array index starts from 0 th location
 
 syntax of foreach loop:
 ````````````````````````
-it consists of datatype with the varaible followed by a colon (:) , then array or collection varaible.
+it consistes of datatype with the varaible followed by a colon (:) , then array or collection varaible.
 
   for(datatype variable:actualvaraible)
   {
   
-     //body of for each loop
+     /body of for each loop
   }
 
 
@@ -3344,8 +2583,6 @@ public class Test5 {
 
 }
 
- 
- 
 
 java labelled for loop:
 ```````````````````````
@@ -3395,10 +2632,6 @@ public class Test2 {
 2 1
 */
 
-
-
-  
-
 java while loop:
 `````````````````
 the java while loop is used to iterate a part of the program 
@@ -3407,12 +2640,11 @@ repeatedly until the specified condition is true.
 as soon as the condition becomes false, the loop automatically stops.
 
 the while loop is considered as a repeating if statement. 
-if the number of iternation is not fixed, it is recommended to use the  while loop.
+if the number of iternation is not fixed, it is recommended to used the  while loop.
 
 
 syntax:
 ```````    
-   //intialize the value;
     while(condition)
 	{
 	  //code to be executed;
@@ -3503,18 +2735,6 @@ public class Test7 {
 
 }
 
-for loop v/s while loop v/s do-while loop:
-``````````````````````````````````````````
-
- if the no.of iteration is  fixed, then it is recommended to use 
-  for loop 
-  
- if the no.of iteration is not fixed, then it is recommended to use
- while loop 
- 
-  if the no.of iteration is not fixed and you must execute the statement atleast once then we should use do while loop.
-  
-  
 jump statements:
 ````````````````
 Jump statements are one of the types of control statements in Java that directs the flow of execution in a program.
@@ -3717,6 +2937,9 @@ use continue statement in labelled for loop?
 use continue statement in while loop?
 use continue staetment in do while loop?
 
+	 
+
+
 
 type casting in java:
 `````````````````````
@@ -3733,18 +2956,17 @@ in both ways
  
  there are two types of type castings 
  
-   1.widening type casting / implicit type conversion 
-   2.narrowing type casting  / explicit type conversion 
-   
+   1.widening type casting 
+   2.narrowing type casting 
    
 1.widening type casting:
 
 converting a lower data type into a higher datatype is called
 widening type casting.
 
-it is also known as implicit conversion.
+it is also known as implicity conversion.
 
-it is done automatically by the java compiler.
+it is done automatically.
 
 it is safe because there is no chance to lose the data. 
 
@@ -3778,7 +3000,7 @@ public class Test9 {
 
 
 
-narrowing type casting:
+narrwoing type casting:
 ```````````````````````````
 
 note:
@@ -3825,6 +3047,1785 @@ public class Test9 {
 	}
 
 }
+
+oops principles:
+````````````````
+ ->inheritance
+ ->polymoprhism
+ ->abstraction 
+ ->encapsulation 
+ 
+ 
+inheritance:
+```````````
+inheritane is the process of taking the properties from one class 
+to another class 
+
+
+
+class 
+ i have some logic is there
+ 
+ the same logic if i wanted to use in anotehr class.?
+ 
+ if we redefine code duplication/redundancy will be increased
+ 
+ memory consumption also gets increased
+ 
+ performamnce of the application will be degraded
+ 
+ 
+
+instead of redefining the logic, try to reuse it
+
+
+
+parent class/base class/super class:
+
+it is the class which is giving the properties
+
+child class/sub class/derived class:
+it is the class  which is taking the properties
+
+
+using "extends" keyword we can achieve the concept of inheritance.
+
+
+note:
+whenever we applied the concept of inheritance, it is highly 
+recommended to create the object for child class not for parent class
+
+if we create the object for parent class, memory locations will be created only for parent class properties.
+
+so that , with the parent class object we are allowed to access only 
+parent class properties
+
+whenever we crete the object for child class, memory locations will 
+be created for both parent and child class properties. 
+
+so with this child class object, we are allowed to access 
+both parent and child class proeprties.
+
+what is the primary advanatage of inheritance:
+
+ 1.reusability 
+ 2.code redundancy will be decreased 
+ 3.performance of the application will be improved.
+ 
+ 
+types of inheritances:
+`````````````````````
+in java, we have 5 types of inheritances
+
+1.single /simple inheritance
+2.multilevel inheritance
+3.multiple inheritance
+4.hierarchical inheritance
+5.hybrid inheritance
+
+single / simple inheritace:
+
+  it is the inheritance which contains
+     -single base class/parent class
+	 -single child class
+	 
+	A
+	|
+	B
+
+multilevel inheritance:
+
+it contains 
+
+  single parent clas 
+  
+  multiple intermediate base classes 
+  
+  single child class 
+  
+  
+  A
+  |
+  B
+  |
+  C
+
+hierarchy:
+````````` 
+  class A
+  {
+  }
+  class B extends A
+  {
+  }
+  class C extends B
+  {
+  }
+  
+
+in one context, B class is acting as sub class or child class 
+
+but in anotehr context, same B class is acting as super class or 
+parent class. 
+
+such kind of classes are known as intermediate parent classe(s).
+
+multiple inheritance:
+`````````````````````
+ 
+   mutliple inhertiance contains 
+   
+   1.multiple parent classes
+   2.single child class 
+   
+   
+       A B C D ....
+	   
+	       Z
+ 
+hierarchy:
+```````````
+ class Z extends A,B,C,D,...
+ {
+ }
+ in java, through classes multiple inheritance is not possible 
+ 
+ why?
+ 
+ class A{
+    sum()
+ }
+ class B {sum();}
+ 
+ z obj = new z();
+ obj.sum();
+ 
+ 
+ Interface concept -> multiple inheritance.
+ 
+ 
+hierarchical inheritance:
+
+   single parent class/base
+   
+   mutliple child classe(s)
+   
+    A
+	
+B  C  D E ....
+
+hierarchy:
+`````````
+class A
+{
+}
+class B extends A
+{}
+class C extends A{}
+class D extends A{}
+....
+
+
+hybrid inheritance:
+````````````````````
+it is the combination of any two possible inheritance 
+types.
+
+
+ A
+ |
+ B
+ |
+C  D  E
+  
+ SINGLE + HIERARCHICAL = HYBRID INHERITANCE 
+ 
+hierarchy:
+``````````
+ 
+ class A{}
+ class B extends A{}
+ class C extends B{}
+ class D extends B{}
+ class E extends B{}
+ 
+ 
+assignments:
+do one one program on top of each and every 
+inheritance type.
+
+
+ note:
+ when you apply inheitance concept, it is 
+ highly recommende to create the object for 
+ child class. 
+ 
+ 
+A.java:
+```````
+//parent class cum business logic class
+public class A {
+	public A()
+	{
+		System.out.println(this.hashCode());
+	}
+	public void sum(int x, int y)
+	{
+		System.out.println("sum is : " +  (x+y));
+	}
+
+}
+
+B.java
+````````
+//child class cum business logic class cum executin logic class
+public class B extends A {
+	
+	public void sub(int x, int y)
+	{
+		System.out.println("substraction: " +(x-y));
+	}
+	
+	public static void main(String[] args) {
+		
+		//child class object creation 
+		
+		B obj = new B();
+		
+		obj.sum(2, 3);
+		obj.sub(5, 4);
+		
+	}
+
+}
+note:
+using extends keyword, we are allowed to extend from single class 
+to single class only not from more than 1 parent class,if we try for that, we will get compile time error. 
+
+
+polymoprhism:
+`````````````
+ 
+ one of the oop principle.
+ 
+ defintion: 
+
+Polymorphism is one of the core concepts of object-oriented programming (OOP) and describes situations in which something occurs in several different forms. 
+
+
+In computer science, it describes the concept that you can access objects of different types through the same interface
+
+  
+  polymoprhism -> many forms
+
+how can we achieve this polymoprhism:
+
+we have two conecpts , 
+
+  1.method overloading
+  2.method overriding
+  
+  
+method overloading:
+```````````````````
+method name is same
+but signature is different
+
+signature:
+
+    chanigng type of parameters
+	changing in no.of parameters
+	changin in order of parameters atleast
+	
+	
+	void sum(int x, float y)
+	{
+	}
+	
+	void sum(float x, int y)
+	{
+	}
+	void sum(double x, double y)
+	{
+	}
+	
+	void sum(int x, int y , int z)
+	{
+	}
+	
+how can we overload the method?
+
+  by defining the method name as same 
+  and by changing signature.
+  
+  
+advantage:
+
+ readability of the code improves.
+
+ Method overloading increases the readability of the program. 
+ 
+ This provides flexibility to programmers so that they can call the same method for different types of data.
+ 
+
+example:
+`````````
+
+public class Demo1 {
+	
+	public void sum(int x, int y)
+	{
+		System.out.println("integer sum is : "  +(x+y));
+	}
+	public void sum(double x, double y)
+	{
+		System.out.println("double sum is : " +(x+y));
+	
+	}
+	public static void main(String[] args) {
+		Demo1 obj = new Demo1();
+		
+		obj.sum(10,20);
+		
+		obj.sum(2.3,3.4);
+		
+		
+		
+	}
+
+}
+
+note:
+to achieve the concept of method overloading one class is enough.
+
+we don't require more than one class.
+
+assignment:
+
+rewrite the above program or overload sum() method by changing 
+
+  -no.of parameters
+  -order of parameters
+  
+  
+method overriding:
+````````````````````
+
+method name is same
+
+but logic is different from parent class to child class. 
+
+
+
+note:
+to achieve the concept of method overriding minimum we require
+two classes with parent-child relation.
+
+
+note:
+why should we go for this method overriding?
+
+answer:
+
+if i don't want to use existing logic or original logic which is available inside parent class, 
+then i should go for method overriding because inside the child class 
+we will get a chance to override the exisitng logic 
+
+                 or
+if i want my own logic then i can go for method overriding.
+
+
+what is @Override annotation?
+
+
+The @Override annotation denotes that the child class method overrides the base class method.
+
+ For two reasons, the @Override annotation is useful.
+
+ If the annotated method does not actually override anything, the compiler issues a warning. 
+ 
+ It can help to make the source code more readable.
+ 
+ 
+A.java:
+````````
+//PARENT CLASS
+public class A {
+	
+	 public void sum(int x, int y)
+	 {
+		 System.out.println("sum is : " + (x+y));
+	 }
+
+}
+
+B.java:
+```````
+
+//child class
+public class B extends A{
+	
+	@Override
+	public void sum(int x, int y)
+	{
+		System.out.println("substraction: " +(x-y));
+	}
+	
+	public static void main(String[] args) {
+		
+	B obj = new B();
+	obj.sum(4, 3);
+	}
+
+}
+
+
+polymorphism 
+
+  method overloading
+  method overriding 
+  
+  
+  
+
+  in java, we have two types of polymoprhisms
+  
+   1.compiletime polymoprhism
+   
+     ->polymorphism can be decided at compiletime is known as
+	 compiletime polymoprhism
+	 
+	 ->method calling is binded or associated with specific method at compiletime by using reference varaible only not based on the 
+	 object type.
+	 
+	 ->method overloading is the best example to achieve the concept 
+	 of compiletime polymoprhism.
+	 
+example:
+````````
+
+public class Demo1 {
+	
+	public void sum(int x, int y)
+	{
+		System.out.println("integer sum is : "  +(x+y));
+	}
+	public void sum(double x, double y)
+	{
+		System.out.println("double sum is : " +(x+y));
+	}
+	public static void main(String[] args) {
+		
+		//object declaration 
+		Demo1 obj ;//available at compiletime
+		
+		/*
+		 * object referencing:
+		 * the address of the memory location
+		 *  where the object is allocated)	 * 
+		 */
+		obj= new Demo1();//available at runtime
+		
+		obj.sum(10,20);
+		
+		obj.sum(2.3,3.4);
+		
+		
+		
+	}
+
+}
+
+	 
+	 
+	 
+	 
+	 ->using method overloading , we are achieveing the concept of 
+	 compile time polymoprhism
+	 
+	 
+	 
+   2.runtime polymoprhism
+   
+   ->the polymoprhism can be decided at runtime based on the object type not based on the reference varaible. 
+   
+   ->method overriding is the best example to achieve the concept of
+    runtime polymoprhism.
+	
+   ->method calling is associated to a particular method based on the 
+   object type not based on the reference variable.
+   
+   
+note:
+whenever we call any method, if that method is not available inside 
+child class, automatically control will look for that method inside 
+parent class this is the behaviour.
+
+note:
+````
+which class object we are creating, that class method will be executing is the concept of runtime polymoprhism.
+
+A.java:
+```````
+//PARENT CLASS
+public class A {
+	
+	 public void sum(int x, int y)
+	 {
+		 System.out.println("sum is : " + (x+y));
+	 }
+
+}
+
+B.java:
+```````
+
+//child class
+public class B extends A{
+	
+	@Override
+	public void sum(int x, int y)
+	{
+		System.out.println("substraction: " +(x-y));
+	}
+	
+	public static void main(String[] args) {
+		
+	   //case 1:A obj = new A();
+	   //obj.sum(2, 3);
+		
+		//case 2: B obj = new B();
+		//obj.sum(4, 3);
+		
+		//case:3
+		//child object type to parent object type conversion 
+		//automatic conversion 
+		//upcasting
+		//obj is of A type
+		A obj;//obj is available at compiletime
+		
+		//obj is pointing to B class object
+		obj= new B();
+		
+		obj.sum(4, 3);
+	
+	   
+	}
+
+}
+
+what is debugging:
+`````````````````
+Debugging is the process of finding and resolving defects 
+or problems with in a computer program that prevent correct
+operation of computer software or a system.
+
+It's a must have skill for any developer because it helps to find bugs that are not visible during code reviews or that only happens when a specific condition occurs.
+
+Debugging helps the developers in control flow analysis, 
+unit testing, integration testing, monitoring at the application execution flow etc..
+
+
+abstraction:
+````````````
+
+abstraction is one of the object oriented programming principle.
+
+
+it is the process of retrieving the required details 
+by ignoring irrelevant details.
+
+
+
+advantage:
+   using this we can achieve the concept of security 
+   
+
+->abstract class
+->interface 
+
+
+abstract class:
+
+it is a java class which contains atleast one abstract method
+undefined method 
+unimplemented method 
+no body method 
+
+it contains only method heading 
+no method body/logic.
+
+
+  abstract class Test{
+  
+     //method declaration -only method heading 
+	 //abstract method/undefined method /unimplemeented method
+     public abstract void sum(int x, int y);
+	
+  }
+  
+
+ 
+ purpose:
+ `````````
+ Java Abstract class is used to provide common method implementation to all the subclasses or to provide default implementation
+
+which method is recommended to declare as an abstract method:
+
+
+ can we create the object for an abstract class?
+ 
+ no we can't create the object for an abstract class.
+ 
+ 
+ where should we define the logic for an abstract method?
+ inside implementation class 
+ 
+  
+  
+Demo1.java:
+``````````
+//abstract class
+public abstract class Demo1 {
+  public abstract void sum(int x, int y);
+
+}
+
+Demo2.java:
+`````````````
+
+
+//implementation class or sub class
+public class Demo2 extends Demo1{
+
+	@Override
+	public void sum(int x, int y) {
+		System.out.println("sum is: " +(x+y));
+		
+	}
+	
+	
+}
+
+Demo3.java:
+```````````
+//implementaion class of Demo1
+public class Demo3 extends Demo1 {
+
+	@Override
+	public void sum(int x, int y) {
+		System.out.println("substraction is: " +(x-y));
+
+	}
+
+}
+
+Demo4.java(execution logic class):
+``````````````````````````````````
+//execution logic class
+public class Demo4 {
+	
+	public static void main(String[] args) {
+		//runtime polymorphism
+		Demo1 obj = new Demo3();
+		
+		obj.sum(3, 4);
+		
+	}
+
+}
+
+
+note:
+``````
+when we inherit the abstract class, in the implemenation class we
+have to implement all the abstract methods,if we didn't provide 
+atleast for one abstract method our implemenation class also 
+will become abstract class.
+
+
+can we define the constructor inside an abstract class?
+
+yes we can define and we can make it execute also by using super()
+syntax.
+
+
+ super:
+```````
+super is oen of the java reserved keyword 
+
+ super is pointing always parent class properties
+ 
+
+we can use super keyword at three levels
+
+ 1.super at variable level 
+ 2.super at method level 
+ 3.super at constructor level
+ 
+super at variable level:
+`````````````````````````
+//parent class
+public  class Demo1 {
+ 
+  int x=100;
+  
+}
+
+//child class
+//Demo2.java
+
+
+//child or sub class
+public class Demo2 extends Demo1{
+int x = 200;
+
+public void display()
+{
+	System.out.println(x);
+	System.out.println(super.x);
+}
+}
+
+//Demo3.java
+//execution logic class
+public class Demo3 {
+	
+	public static void main(String[] args) {
+		
+		Demo2 obj = new Demo2();
+		
+		obj.display();
+		
+	}
+
+}
+
+
+super at method level:
+```````````````````````
+//parent class
+public  class Demo1 {
+ 
+  public void display()
+  {
+	  System.out.println("superclass-display");
+  }
+  
+}
+
+//Demo2.java:
+``````````````
+
+
+//child or sub class
+public class Demo2 extends Demo1{
+
+public void display()
+{
+	System.out.println("child class-display");
+	
+	//call the parent class method using following syntax
+	
+	super.display();
+}
+}
+
+Demo3.java:
+```````````
+//execution logic class
+public class Demo3 {
+	
+	public static void main(String[] args) {
+		
+		Demo2 obj = new Demo2();
+		
+		obj.display();
+		
+	}
+
+}
+
+
+super at constructor level:
+````````````````````````````
+super -> to refer the parent class proeprties from the child class 
+context.
+
+->constructor should not be inherited.
+
+->constructor and class name must be same.
+
+class A
+{
+  public A()
+  {
+  }
+}
+class B extends A
+{
+ public B()
+ {
+ }
+  
+}
+
+If we inherit the constructor, we are violating the rule saying 
+that constructor name and class name must be same.
+
+
+this() -> is used to call current class default constructor 
+super() -> is used to call parent class default constructor 
+
+
+this(..) -> is used to call current class parameterized constructor 
+super(..) -> is used to call parent class parameterized constructor.
+
+
+note:
+writing the super() is optional to call the parent class 
+default constructor.
+
+writing the super(..) is mandatory to call the parent class 
+parameterized constructor.
+
+
+Demo1.java:
+```````````
+//parent class
+public  class Demo1 {
+ //user defined default constructor
+ public Demo1()
+ {
+	
+	 System.out.println("iam default const-Demo1");
+ }
+  
+}
+
+Demo2.java:
+````````````
+
+
+//child or sub class
+public class Demo2 extends Demo1{
+
+ public Demo2()
+ {
+	 
+	 //call the super class default constructor 
+	 //super();
+	 System.out.println("default constructor -Demo2");
+ }
+
+}
+
+note:
+for every constructor , java compiler will add super() as a first 
+statement.
+
+
+writing the super keyword is mandatory to invoke parent class 
+parameterized constructor if parent class doesn't contains any 
+default constructor.
+
+Demo1.java:
+````````````
+//parent class
+public  class Demo1 {
+ public Demo1(int x)
+ {
+	 System.out.println("parameterized constructor-Demo1");
+ }
+  
+ 
+}
+
+Demo2.java:
+```````````
+
+
+//child or sub class
+public class Demo2 extends Demo1{
+
+	//user defined default constructor
+ public Demo2()
+ {
+	 
+	 //call the super class parameterized constructor 
+	 super(100);
+	 System.out.println("default constructor -Demo2");
+ }
+
+}
+
+Demo3.java:
+```````````
+//execution logic class
+public class Demo3 {
+	
+	public static void main(String[] args) {
+		
+		//create the object for child class - Demo2
+		
+		Demo2 obj = new Demo2();
+		
+		
+	}
+
+}
+
+
+
+interface:
+``````````
+interface is a collection of only abstract methods.
+
+using interface , we can achieve 100% abstraction.
+
+syntax:
+
+   interface <interfacename>
+   {
+     //abstract methods;
+   }
+   
+when can you define any method as an abstract method?
+
+answer: if that method is common to all , then it is recommended to make 
+that method as abstract method.
+
+
+note:
+by default interface methods are public abstract, we no need to use 
+these keywords explicitly.
+
+by default interface variables are public static final.
+
+
+
+how can we take the properties from class to class ?
+
+ using extends keyword
+ 
+how can we take the properties from interface to class?
+
+ using 'implements' keyword.
+ 
+q: can we create the object for interface?
+
+  we can't create the object for interface.
+  
+
+Bank.java:
+```````````
+
+public interface Bank {
+	
+	//method declaration
+	double getRateOfInterest();
+	
+
+}
+
+
+Icici.java:
+````````````
+
+public class Icici implements Bank{
+
+	@Override
+	public double getRateOfInterest() {
+		// TODO Auto-generated method stub
+		return 6.5;
+	}
+
+}
+
+CityBank.java:
+`````````````
+
+public class CityBank implements Bank {
+
+	@Override
+	public double getRateOfInterest() {
+		// TODO Auto-generated method stub
+		return 5.5;
+	}
+
+}
+
+Demo3.java:
+``````````
+//execution logic class
+public class Demo3 {
+	
+	public static void main(String[] args) {
+		
+		//runtime polymorphism
+		Bank obj = new Icici();
+		System.out.println("icici rateof interest is : " + obj.getRateOfInterest());
+		
+		Bank obj1 = new CityBank();
+		System.out.println("citybank rate of interst is : " + obj1.getRateOfInterest());
+	}
+
+}
+
+
+to take the properties from either class to class or interface to 
+interface we are using extends keyword
+
+to take the proeperties from interface to class 
+we have to use implements keyword.
+
+
+inside the interface , can we define the constructor?
+
+  no, we can't define the constructor inside the interface.
+  
+note:
+
+if the method is not available inside child class, then immediately 
+java compiler will look for that particular method inside parent class.
+
+
+
+
+
+
+
+Object class is acting as super class in java for every class 
+whether it is predefined or userdefined class.
+
+what are the different methods we have inside Object class?
+
+11 methods 
+   clone()
+   finalize()
+   hashCode()
+   equals()
+   toString()
+   getClass()
+   wait()(3)
+   notify()
+   notifyAll()
+ 
+
+every class in java, is an example of what type of inheritance?
+
+ single/simple inheritance
+
+class Test1 
+{
+}
+ 
+note:
+if you are just displaying any java class object internally it invokes
+toString() accordingly we will get the output.
+
+toString() of Object class is giving you 
+
+classname@hexa value of hashCode
+
+
+example:
+````````
+package com.infotech.object;
+//example on Object class few methods
+public class Test1 {
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		Test1 obj1 = new Test1();
+		
+		
+		
+		//toString()-returns string reprsentation of the Object
+		System.out.println(obj.toString());//com.infotech.object.Test1@515f550a
+		//ctrl+shift+t
+		
+		System.out.println(obj);
+		
+		System.out.println(obj.hashCode());
+		System.out.println(obj1.hashCode());
+		
+		System.out.println(obj.getClass());
+		
+        System.out.println(obj.equals(obj1));
+		
+		
+		
+	}
+
+}
+
+
+note:
+``````
+for every new object, hashcode value is different
+
+
+encapsulation:
+``````````````
+it is the process of wrapping up of variables and methods into a
+single unit. 
+
+purpose: to achieve the concept of data hiding .
+
+
+by declaring my variables inside the class as private.
+
+
+how can we make normal class as an encapsulated class?
+
+ ->we have to declare private variables 
+ ->we have to define public setters and getters methods for each and   every variable.
+ 
+ 
+ setter method purpose is to set the data into an object
+ or to update the existing data.
+ 
+ getter method purpose is to get the data from the object 
+ 
+ make sure these two methods must be public.
+ 
+ 
+Student.java:
+``````````````
+
+//encapsulated class
+public class Student {
+//private variables
+
+	private int stid;
+	private String stname;
+
+	public int getStid() {
+		return stid;
+	}
+
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+
+	public String getStname() {
+		return stname;
+	}
+
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+
+}
+
+Test10.java:
+````````````
+
+public class Test10 {
+	
+	public static void main(String[] args) {
+		
+		Student st = new Student();
+		
+		
+		//set the student id and student name value into my student object
+		//by calling setter methods
+		
+		st.setStid(100);
+		st.setStname("Ram");
+		
+		//by calling getter methods we are able to access the stid & stname
+		System.out.println("student id is : " + st.getStid());
+		System.out.println("student name is : " +st.getStname());
+	}
+
+}
+
+
+overriding toString() method to get the desired result:
+
+Student.java:
+``````````````
+package com.infotech.object;
+
+public class Student {
+
+	
+	
+	private int stid;
+	private String stname;
+	
+	
+	public int getStid() {
+		return stid;
+	}
+	
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+	public String getStname() {
+		return stname;
+	}
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return stid + " " +stname;
+		
+	}
+	
+}
+
+Test2.java:
+```````````
+package com.infotech.object;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		Student obj1 = new Student();
+		obj1.setStid(100);
+		obj1.setStname("khan");
+		
+		System.out.println(obj1);
+		
+	}
+
+}
+
+note:
+`````
+whenever we display any java class object, internally it invokes 
+toString() , if we override toString() inside our class then it will be executed otherwise Object class toString() gets executed which gives 
+classname@hashcode value.
+
+
+
+
+
+
+exception handling:
+```````````````````
+if you make any mistakes in java syntactically , what will happen?
+
+ then java compiler gives error, those errors are what we call 
+ compile time errors.
+ 
+ 
+while we are running / executing the java program, jvm is giving us
+some errors those errors are called runtime errors. 
+
+technical name of runtime error is known as exception.
+
+why are we getting the exceptions?
+
+because of logical mistakes.
+ 
+  division of two numbers 
+  
+    100/20 if you pass valid input - valid output
+	
+	 100/0 -> error (logical mistake) ->
+
+
+if you pass any invalid input -> jvm won't process 
+->error -> exceptions
+
+
+
+when we get the exception what will happen?
+
+
+->control terminated abnormally
+
+->jvm will give system error messages
+
+
+
+ 1000 lines 
+--
+--
+-- int x = 100/0;
+--
+--
+--
+--
+ 997 lines of code won't executed
+ 
+java.lang.ArithmeticException 
+
+we have to avoid the above drawbacks for this what we have to 
+do as a programmer?
+
+
+  we need to handle the exceptions.
+  
+ 
+types of exceptions:
+
+ 
+    pre-defined exceptions 
+	
+	user -defined exceptions
+	
+	100/0 ->ArithmeticException (java.lang) 
+	
+	100 
+	abc -> InputMismatchException(java.lang)
+	
+	IOException (java.io)
+	ClassNotFoundException(java.lang)
+	FileNotFoundException(java.io)
+	InterreputedException(java.lang)
+	
+	...
+	
+
+predefined exceptions:
+
+
+  can be again categorized into two types
+  
+  -asynchronous exceptions-> java.lang.Error
+    due to hardware related failures 
+	
+	OutOfMemoryException 
+	StackOverFlowError
+	VirtualMachineError. 
+	etc..
+	
+	
+  
+  -synchronous exceptions -java.lang.Exception 
+  
+     
+  
+     -due to programatical errors
+	 
+	 
+	   1.un-checked exceptions - java.lang.RuntimeException 
+	   2.checked exception -  java.lang.Exception 
+	   
+checked exceptions:
+````````````````````
+checked exceptions are checked by java compiler	to escape from 
+Runtime erros(exceptions) 
+
+
+
+  ClassNotFoundException
+  IOException 
+  FileNotFoundException 
+  SQLException ... 
+  
+  
+  
+    ssc -> before you are attending public exam 
+	
+	our partents  are worrying more
+	
+	mother/father -> 
+	
+	  checking child is carrying hallticket or not?
+	  
+	        HallTicketNotFoundException 
+			
+	  child is carrying pen or not?
+	  ...
+	        PenNotFoundException 
+			
+			
+  mother/father ->java compiler
+  
+  
+  super class for all the checked exceptions -> java.lang.Exception
+  
+ 
+un-checked exceptions:
+````````````````````````
+unchecked exceptions are checked by jvm only occures because of 
+logical mistakes
+
+ ArithmeticException
+ NumberFormatException 
+ ArrayIndexOutOfBoundsException 
+ etc..
+ 
+ 
+ for all the unchecked exceptions, super class is java.lang.RuntimeException
+ 
+ 
+ hierarchy:
+ `````````
+ class ArithmeticException extends RuntimeException extends Exception extends Throwable extends Object
+ {
+ }
+ 
+	
+
+ class VirtualMachineError 	extends Error extends Throwable extends 
+ Object
+ {
+ }
+ 
+how can we handle the exceptions?
+
+ in java, we have 5 java reserved keywords are there
+ 
+  1.try
+  2.catch
+  3.finally
+  
+  4.throws
+  5.throw
+
+example on without handling the exception:
+``````````````````````````````````````````
+package com.dhaaps.exceptions;
+
+public class Test1 {
+	
+	public static void main(String[] args) {
+		
+		int x=100;
+		int y = 0;
+		int z = x/y;
+		System.out.println("division is : " + z);
+		System.out.println("Rest of the statements");
+		System.out.println("Rest of the statements");
+	}
+
+}
+
+
+try:
+````
+try block is used to keep the problematic statements which are causes 
+problems at runtime.
+
+
+syntax:
+```````
+  try{
+     //problematic statement(s)
+  }
+
+catch:
+`````
+catch block is  used to catch the exception and to provide user friendly 
+message.
+
+
+atm machine 
+ account =5k 
+  withdraw - 6k
+  
+insufficient funds
+
+
+syntax:
+
+
+               catch(exceptionclassname <referencevariablename>)
+			   {
+			     //user friendly message
+			   }
+
+
+
+whenever we get the exception, control terminated abnormally that's why 
+we can't maintain normla flow of the execution, 
+to maintain we have to handle the exceptions
+
+java is robust(strong), meaning that in every case means postive case 
+or negative case our project should be in a postition to give the support
+to the end users otehrwise no one will use our product.
+
+example of exception handling using try and catch along with 
+Scanner class:
+``````````````````````````````````````````````````````````````
+package com.infotech.exceptions;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Test1 {
+	
+	public static void main(String[] args) {
+		try {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("enter the first number");
+		
+		int fno = s.nextInt();
+		System.out.println("enter the second number");
+		int sno = s.nextInt();
+		
+		int division = fno/sno;
+		
+		System.out.println("division is : " + division);
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("don't enter zero as a denominator");
+		}
+		catch(InputMismatchException im)
+		{
+			System.out.println("please pass only numeric values");
+		}
+		catch(InputMismatchException im)
+		{
+			System.out.println("please pass only numeric values");
+		}
+		
+	
+		System.out.println("rest of the statements");
+		System.out.println("rest of the statements");
+		System.out.println("rest of the statements");
+		
+	}
+
+}
+
+
+note:
+`````
+for a single try block, we can define multiple catch block(s) based 
+on the requirement, even we have multiple catch blocks at a time 
+only one catch block gets executed based on the invalid data. 
+
+
+
+finally block:
+``````````````
+finally block is used to keep closing releated logic like 
+closing the file, closing the database connection etc.. 
+
+if you keep that closing related logic, in both valid and invalid case 
+the code gets executed . 
+
+so that data leakage issues won't occur if you keep closing related 
+logic inside finally block.
+
+
+
+note:
+while we are handling the exceptions the order must be from 
+specific to general not from general to specific because if you mention 
+like that code will be unreachable by the java compiler getting compile time error.
+
+example:
+````````
+package com.infotech.exceptions;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Test1 {
+	
+	public static void main(String[] args) {
+		try {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("enter the first number");
+		
+		int fno = s.nextInt();
+		System.out.println("enter the second number");
+		int sno = s.nextInt();
+		
+		int division = fno/sno;
+		
+		System.out.println("division is : " + division);
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println();
+		}
+		catch(RuntimeException re)
+		{
+			System.out.println(re);
+		}
+		
+		
+		//RuntimeException re = new ArithmeticExceptioni();
+		
+		
+		finally
+		{
+			System.out.println("finally block executed always");
+		}
+	
+		System.out.println("rest of the statements");
+		System.out.println("rest of the statements");
+		System.out.println("rest of the statements");
+		
+	}
+
+}
+
+
+throws:
+```````
+throws is a java reserved keyword 
+
+purpose: it will give you the instruction or warning to calling function 
+to keep the called function under try and catch block.
+
+
+example:
+````````
+package com.infotech.exceptions;
+
+//called program
+public class Test2 {
+	
+	//called function
+	public void division() throws ArithmeticException
+	{
+		int z = 100/0;
+		System.out.println("division is: " + z);
+	}
+
+}
+
+Test3.java:
+````````````
+package com.infotech.exceptions;
+//calling program
+public class Test3 {
+	
+	//calling function 
+	public static void main(String[] args) {
+		
+		Test2 obj = new Test2();
+		
+		try {
+		obj.division();
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("please check division method logic");
+		}
+		
+		System.out.println("rest of the statements executed");
+		
+	}
+
+}
+
+
+
+
+
+throw:
+```````
+
+using throw keyword, we can throw an exception explictly.
+
+
+  100/0 
+  
+     ArithmeticException -> jvm->implicitly
+
+based on our condition, if the condition met, if we want to throw 
+any exception explictly then we have to use throw keyword.
+
+syntax:
+
+    throw new <exceptionclassname>();
+	
+note:
+internally whether it is predefined exception or user defined exception 
+it is a java class.
+
+to make normal java class as an exception class, make sure it should be 
+extended from Exception class.
+
+
+	
+	
+
+using throw keyword, we can implmenet our own exceptions 
+or customized exception.
+
+
+   ->ecommerce application 
+
+   ->checking the product based on the product weight
+
+   ->if product weight is > 100 it is valid else < 100 
+   
+     throw the InvalidProductException() .
+
+note:
+every exception in java is a class whether it is predefined exception or 
+user defined exception.
+
+	 
+	 
+	 
+
+Test4.java:
+``````````
+package com.infotech.exceptions;
+//business logic class
+public class Test4 {
+	
+	public void checkProduct(int weight)
+	{
+		if(weight > 100)
+		{
+			System.out.println("product is valid");
+		}
+		else
+		{
+			try {
+			throw new InvalidProductException();
+			}
+			catch(InvalidProductException ip)
+			{
+				System.out.println("product weight must be greater than 100");
+			}
+			
+		}
+	}
+
+}
+
+InvalidProductException.java:
+```````````````````````````````
+package com.infotech.exceptions;
+
+//it is an user defined exception class
+public class InvalidProductException extends Exception {
+
+}
+
+
+Test5.java:
+```````````
+package com.infotech.exceptions;
+
+//execution logic class
+public class Test5 {
+
+	
+	public static void main(String[] args) {
+		
+		
+		Test4 obj = new Test4();
+		
+		obj.checkProduct(20);
+		
+	}
+}
+
 
 
 
@@ -3874,6 +4875,11 @@ list of predefined core java/jse packages:
 all the core java pacakges starts with java.
 
 all the advanced java packages starts with javax.
+
+note:
+by default to every java application one package by default it will be imported that package name is java.lang
+
+
 
 
 java.applet
@@ -4146,13 +5152,23 @@ public class Test3 {
 
 }
 
+
+
+
+
+
+
+
+
+
+
  access modifiers:
  `````````````````
  
  we have 4 access modifiers in java
  
   1.private
-  2.default
+    2.default
   3.protected
   4.public
   
@@ -4224,6 +5240,8 @@ from other packages, we are not able to access default properties.
 
 if we try for that, we will get compile time error saying that 
 property not visible.
+
+
 
 protected access modifier:
 ```````````````````````````
@@ -4351,494 +5369,6 @@ public class Test3  {
 
 }
 
-
-
-note:
-
-if the method is not available inside child class, then immediately 
-java compiler will look for that particular method inside parent class.
-
-
-Object class is acting as super class in java for every class 
-whether it is predefined or userdefined class.
-
-what are the different methods we have inside Object class?
-
-   clone()
-   finalize()
-   hashCode()
-   equals()
-   toString()
-   getClass()
-   wait()(3)
-   notify()
-   notifyAll()
- 
-
-every class in java, is an example of what type of inheritance?
-
- single/simple inheritance
-
-class Test1 
-{
-}
- 
-note:
-if you are just displaying any java class object internally it invokes
-toString() accordingly we will get the output.
-
-
-example:
-````````
-package com.infotech.object;
-//example on Object class few methods
-public class Test1 {
-	
-	public static void main(String[] args) {
-		
-		Test1 obj = new Test1();
-		Test1 obj1 = new Test1();
-		
-		
-		
-		//toString()-returns string reprsentation of the Object
-		System.out.println(obj.toString());//com.infotech.object.Test1@515f550a
-		//ctrl+shift+t
-		
-		System.out.println(obj);
-		
-		System.out.println(obj.hashCode());
-		System.out.println(obj1.hashCode());
-		
-		System.out.println(obj.getClass());
-		
-        System.out.println(obj.equals(obj1));
-		
-		
-		
-	}
-
-}
-
-overriding toString() method to get the desired result:
-
-Student.java:
-``````````````
-package com.infotech.object;
-
-public class Student {
-
-	
-	
-	private int stid;
-	private String stname;
-	
-	
-	public int getStid() {
-		return stid;
-	}
-	
-	public void setStid(int stid) {
-		this.stid = stid;
-	}
-	public String getStname() {
-		return stname;
-	}
-	public void setStname(String stname) {
-		this.stname = stname;
-	}
-	
-	@Override
-	public String toString()
-	{
-		return stid + " " +stname;
-		
-	}
-	
-}
-
-Test2.java:
-```````````
-package com.infotech.object;
-
-public class Test2 {
-	
-	public static void main(String[] args) {
-		
-		Student obj1 = new Student();
-		obj1.setStid(100);
-		obj1.setStname("khan");
-		
-		System.out.println(obj1);
-		
-	}
-
-}
-
-
-exception handling:
-```````````````````
-if you make any mistakes in java syntactically , what will happen?
-
- then java compiler gives error, those errors are what we call 
- compile time errors.
- 
- 
-while we are running / executing the java program, jvm is giving us
-some errors those errors are called runtime errors. 
-technical name of runtime error is known as exception.
-
-why are we getting the exceptions?
-
-because of logical mistakes.
- 
-  division of two numbers 
-  
-    100/20 if you pass valid input - valid output
-	
-	 100/0 -> error (logical mistake) ->
-
-
-if you pass any invalid input -> jvm won't process 
-->error -> exceptions
-
-
-
-when we get the exception what will happen?
-
-
-->control terminated abnormally
-
-->jvm will give system error messages
-
-
-
- 1000 lines 
---
---
--- int x = 100/0;
---
---
---
---
- 997 lines of code won't executed
- 
-java.lang.ArithmeticException 
-
-we have to avoid the above drawbacks for this what we have to 
-do as a programmer?
-
-
-  we need to handle the exceptions.
-  
-  
-how can we handle the exceptions?
-
- in java, we have 5 java reserved keywords are there
- 
-  1.try
-  2.catch
-  3.finally
-  
-  4.throws
-  5.throw
-
-
-try:
-````
-try block is used to keep the problematic statements which are causes 
-problems at runtime.
-
-
-syntax:
-```````
-  try{
-     //problematic statement(s)
-  }
-
-catch:
-`````
-catch block is  used to catch the exception and to provide user friendly 
-message.
-
-
-atm machine 
- account =5k 
-  withdraw - 6k
-  
-insufficient funds
-
-
-syntax:
-
-
-               catch(exceptionclassnaem <referencevariablename>)
-			   {
-			     //user friendly message
-			   }
-
-
-
-whenever we get the exception, control terminated abnormally that's why 
-we can't maintain normla flow of the execution, 
-to maintain we have to handle the exceptions
-
-java is robust(strong), meaning that in every case means postive case 
-or negative case our project should be in a postition to give the support
-to the end users otehrwise no one will use our product.
-
-example of exception handling using try and catch along with 
-Scanner class:
-``````````````````````````````````````````````````````````````
-package com.infotech.exceptions;
-
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
-public class Test1 {
-	
-	public static void main(String[] args) {
-		try {
-		Scanner s = new Scanner(System.in);
-		
-		System.out.println("enter the first number");
-		
-		int fno = s.nextInt();
-		System.out.println("enter the second number");
-		int sno = s.nextInt();
-		
-		int division = fno/sno;
-		
-		System.out.println("division is : " + division);
-		}
-		catch(ArithmeticException ae)
-		{
-			System.out.println("don't enter zero as a denominator");
-		}
-		catch(InputMismatchException im)
-		{
-			System.out.println("please pass only numeric values");
-		}
-	
-		System.out.println("rest of the statements");
-		System.out.println("rest of the statements");
-		System.out.println("rest of the statements");
-		
-	}
-
-}
-
-finally block:
-``````````````
-finally block is used to keep closing releated logic like 
-closing the file, closign the database connection etc.. 
-
-if you keep that closing related logic, in both valid and invalid case 
-the code gets executed . 
-
-so that data leakage issues won't occure if you keep closing related 
-logic inside finally block.
-
-note:
-while we are handling the exceptions the order must be from 
-specific to general not from general to specific because if you mention 
-like that code will be unreachable by the java compiler getting compile time error.
-
-example:
-````````
-package com.infotech.exceptions;
-
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
-public class Test1 {
-	
-	public static void main(String[] args) {
-		try {
-		Scanner s = new Scanner(System.in);
-		
-		System.out.println("enter the first number");
-		
-		int fno = s.nextInt();
-		System.out.println("enter the second number");
-		int sno = s.nextInt();
-		
-		int division = fno/sno;
-		
-		System.out.println("division is : " + division);
-		}
-		catch(ArithmeticException ae)
-		{
-			System.out.println();
-		}
-		catch(RuntimeException re)
-		{
-			System.out.println(re);
-		}
-		
-		
-		//RuntimeException re = new ArithmeticExceptioni();
-		
-		
-		finally
-		{
-			System.out.println("finally block executed always");
-		}
-	
-		System.out.println("rest of the statements");
-		System.out.println("rest of the statements");
-		System.out.println("rest of the statements");
-		
-	}
-
-}
-
-
-throws:
-```````
-throws is a java reserved keyword 
-
-purpose: it will give you the instruction or warning to calling function 
-to keep the called function under try and catch block.
-
-
-example:
-````````
-package com.infotech.exceptions;
-
-//called program
-public class Test2 {
-	
-	//called function
-	public void division() throws ArithmeticException
-	{
-		int z = 100/0;
-		System.out.println("division is: " + z);
-	}
-
-}
-
-Test3.java:
-````````````
-package com.infotech.exceptions;
-//calling program
-public class Test3 {
-	
-	//calling function 
-	public static void main(String[] args) {
-		
-		Test2 obj = new Test2();
-		
-		try {
-		obj.division();
-		}
-		catch(ArithmeticException ae)
-		{
-			System.out.println("please check division method logic");
-		}
-		
-		System.out.println("rest of the statements executed");
-		
-	}
-
-}
-
-throw:
-```````
-
-using throw keyword, we can throw an exception explictly.
-
-
-  100/0 
-  
-     ArithmeticException -> jvm->implicitly
-
-based on our condition, if the condition met, if we want to throw 
-any exception explictly then we have to use throw keyword.
-
-syntax:
-
-    throw new <exceptionclassname>();
-
-using throw keyword, we can implmenet our own exceptions 
-or customized exception.
-
-
-   ->ecommerce application 
-
-   ->checking the product based on the product weight
-
-   ->if product weight is < 100 it is valid else < 100 
-     throw the InvalidProductException .
-
-note:
-every exception in java is a class whether it is predefined exception or 
-user defined exception.
-
-	 
-	 
-	 
-
-Test4.java:
-``````````
-package com.infotech.exceptions;
-//business logic class
-public class Test4 {
-	
-	public void checkProduct(int weight)
-	{
-		if(weight > 100)
-		{
-			System.out.println("product is valid");
-		}
-		else
-		{
-			try {
-			throw new InvalidProductException();
-			}
-			catch(InvalidProductException ip)
-			{
-				System.out.println("product weight must be greater than 100");
-			}
-			
-		}
-	}
-
-}
-
-InvalidProductException.java:
-```````````````````````````````
-package com.infotech.exceptions;
-
-//it is an user defined exception class
-public class InvalidProductException extends Exception {
-
-}
-
-
-Test5.java:
-```````````
-package com.infotech.exceptions;
-
-//execution logic class
-public class Test5 {
-
-	
-	public static void main(String[] args) {
-		
-		
-		Test4 obj = new Test4();
-		
-		obj.checkProduct(20);
-		
-	}
-}
-
-
-
-
-
-
 FileHandling/iostreams:
 ```````````````````````
 
@@ -4924,7 +5454,7 @@ are available in java.
  if the data flow in the form byte by byte - bytestream 
  if the data flow in the form of character by character - character stream 
 
-in java, io package we have different classes which belongs to 
+in java.io package we have different classes which belongs to 
 byte stream, character stream 
 
 
@@ -5025,7 +5555,7 @@ that's why we will go from FileWriter to BufferedWriter
 
 BufferedWriter:
 ```````````````
-whiel we are creating the object of BufferedWriter , we have to pass the 
+while we are creating the object of BufferedWriter , we have to pass the 
 object of Writer class implemenation class object. 
 
  BufferedWriter bw = new BufferedWriter(Writer w);
@@ -5064,7 +5594,7 @@ public class Test3 {
 
 
 drawaback:
-we can't write differnt types of data but we can achieve the line separator problme by using a new method newLine() of BufferedWriter class.
+we can't write differnt types of data but we can achieve the line separator problem by using a new method newLine() of BufferedWriter class.
 which will work in any operating systems because it got implemented in java language.
 
 to avoid the above problem, we have to move from BufferedWriter class 
@@ -5121,7 +5651,8 @@ read operation:
   
 FileReader
 
-   read() 
+   read() which returns int value.
+   
    
    
 example on FileReader:
@@ -5257,6 +5788,9 @@ public class Test7 {
 	}
 
 }
+
+
+
 
 
 serialization & desererialization 
@@ -5416,16 +5950,12 @@ saying that java.io.NotSerialziable
  
 transient keyword:
 ```````````````````
-transient is a variables modifier used in serialization. At the time of serialization, if we don't want to save value of a particular variable in a file, then we use transient keyword. When JVM comes across transient keyword, it ignores original value of the variable and save default value of that variable data type
- 
- 
- 
- 
- 
- 
- 
- 
- 
+transient is a variables modifier used in serialization. At the time of serialization, if we don't want to save value of a particular variable in a file, then we use transient keyword.
+
+ When JVM comes across transient keyword, it ignores original value of the variable and save default value of that variable data type
+
+
+
 Collection framework:
 `````````````````````
 collection framework :
@@ -5470,1596 +6000,58 @@ Array:
  
   ->java.util package
   
- 
-
- 
- few interfaces and few implementation clases
-
-                 1 Collection 
-   
-2.List          3.Queue                 4.Set
-
-                                        5.SortedSet
-          
-                            
-
-
-interface SortedSet extends Set extends Collection 
-{
-}
-
-
-
-
- 
-
-Collection:
-```````````
-
-if we want to group similar objects and diffrent objects as a single entity 
-then we should go for Collection .
-
-note:
-Collection is the root interface for all the remaining interface(s)
-there is no direct implementation class for this Collection interface.
-
-
-add()-to add an object
-
-addAll(Collection)
-
-remove()
-removeAll()
-
-
-List:
-`````
-
-  always working based on index
   
-List is the predefined interface avaialble in java.util package
-
--> it allows both homogenious and heterogenous object(s)
--> insertion order is preserved
--> duplicates are allowed
--> null insertion is possible 
-
-note:
- collection supports only object data.
- 
- 
- For List interface, sunmicrosyste people provided few implemenation classes
- 
- 1.ArrayList
- 2.LinkedList
- 3.Vector
- 4.Stack
- 
- 
- List l = new ArrayList();
- 
-
-example:
-``````````
-package com.jse.cfw;
-
-import java.util.ArrayList;
-import java.util.List;
+  example:
+  ````````
+package com.dhaaps.cfw;
 
 public class Test1 {
-
-	public static void main(String[] args) {
-		
-		//create the object for List
-		
-		List l = new ArrayList();
-		
-		//add the object
-		l.add(Integer.valueOf(100));
-		l.add(Integer.valueOf(200));
-		l.add(new String("rama"));
-		l.add(Boolean.valueOf(true));
-		l.add(Integer.valueOf(100));
-		l.add(null);
-		
-		System.out.println(l);//[100, 200, rama, true, 100, null]
-		 		
-		
-		l.add(300);
-		System.out.println(l);//[100, 200, rama, true, 100, null, 300]
-		
-		l.add(1, Integer.valueOf(300));
-		
-		System.out.println(l);//[100, 300, 200, rama, true, 100, null, 300]
-	
-		System.out.println(l.remove(1));
-		
-		System.out.println(l);//[100, 200, rama, true, 100, null, 300]
-		
-		l.remove(Integer.valueOf(100));
-		
-		System.out.println(l);//[200, rama, true, 100, null, 300]
-		
-		System.out.println("size of the collection : " + l.size());
-		
-		System.out.println(l.get(1));//rama
-		
-		System.out.println(l);//[200, rama, true, 100, null, 300]
-		
-		List l1 = new ArrayList();
-		l1.add(500);
-		l1.add(400);
-		l1.add(600);
-		
-		l.addAll(l1);
-		
-		System.out.println(l);//[200, rama, true, 100, null, 300, 500, 400, 600]
-		
-		l.removeAll(l1);
-		
-		System.out.println(l);//[200, rama, true, 100, null, 300]
-		
-		
-		System.out.println(l.contains(200));
-		
-		System.out.println(l.isEmpty());
-		
-		l.clear();
-		System.out.println(l.isEmpty());
-		
-		System.out.println(l);//[]
-		
-		
-	}
-}
-
-ArrayList hierarchy:
-``````````````````````
-class ArrayList implements List extends Collection 
-{
-}
-
-
-
-
-assignment:
-do the same program w.r.to LinkedList
-
-
-Collection 
-List
-   ArrayList
-   LinkedList
-   Stack
-   Vector
-   
-   
-  
-
-
-  
-day-21:
-```````
-eventhough we are passing primitive data internally it is getting converted into object format.
-
-autoboxing and autounboxing
-`````````````````````````````
-
-Autoboxing is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes. 
-
-For example, converting an int to an Integer, a double to a Double, and so on. If the conversion goes the other way, this is called unboxing.
-
-java compiler:
-
-autoboxing: primitive type to object type
-autounboxing: object type to primitive type
-
-this feature is available from jdk 1.5 version onwards.
-
-
-
-difference between ArrayList and LinkedList:
-
-ArrayList internally follows dynamic array algorithm to store the elements 
-and if our frequent operation is accessing / retrieval then it is highly 
-recommended to use this ArrayList.
-
-   ArrayList implements RandomAccess
-   {
-   }
-
-
-LinkedList internally follows doubly linkedlist algorithm where the data 
-is getting stored based on the node wise. 
-that's why if our frequent operation is insertion/deletion/updation we can 
-go for LinkedList because no shift operations are happend like ArrayList.
-
-
-
-Stack
-Vector 
-do the programs on top of above two classes?
-
-
-
-
-
-
-
-Queue:
-```````
-
-Queue is also sub interface of Collection 
-
-->if we want to represent a group of individual objects prior to processing then we should go for Queue and Queue follow First In First Out algorithm.
-
-
-
-  
-  
-
-  Queue
-  
-   -ArrayDeque
-   -LinkedList
-   -PriorityQueue
-   
-   
-boolean offer(Object obj)
-Object poll()
-Objet remove()
-Object peek()-will give you head element->null
-Object element()-will give you head element ->exception 
-
-...
-
-in case of ArrayDeque and LinkedList 
-
-  -it allows both homogenious and heterogenous data
-  -duplicates are allowed
-  -insertion order is preserved
-  -null insertion is possible only if implementation class is LinkedList
-   in case of ArrayDeque it gives you NullPointerException
-
-in case of PriorityQueue 
-
-  -it allows only homogenious data
-  -insertion order is not preserved
-  -duplicates are allowed
-  -null insertion is not possible if you try for that it gives you 
-   NullPointerException 
-   
-   
-
-example:
-````````
-package com.jse.cfw;
-
-import java.util.ArrayDeque;
-import java.util.LinkedList;
-import java.util.Queue;
-
-public class Test4 {
-	
-	public static void main(String[] args) {
-		
-		Queue obj = new LinkedList();
-		
-		obj.offer("rama");
-		obj.offer("freejava");
-		obj.offer("benny");
-		obj.offer("shekhar");
-		obj.offer("shekhar");
-		obj.offer(null);
-		
-		
-		
-		
-		
-		
-		System.out.println(obj);
-		
-		System.out.println(obj.poll());
-		
-		
-		System.out.println("head: " +obj.element());
-		
-		System.out.println("head:" + obj.peek());
-		
-		obj.clear();
-		
-		//System.out.println(obj.element());//NoSuchElementException
-		
-	    System.out.println(obj.peek());
-		
-	}
-
-}
-
-
-
-day-22:
-````````
-
-Set extends Collection 
-
-SortedSet extends Set extends Collection 
-
-
-Set:
-````
-
-Set is the predefined interface available in java.util package
-
-
- ->it supports both homogenious and heterogenous data
- ->duplicates are not allowed 
- ->insertion order is not preserved.
- ->null insertion is possible but only for one time.
- 
-   Set obj = new Set();//invalid
-   
-
-->HashSet
-->LinkedHashSet
-
-
-insertion order is preserved in case of LinkedHashSet but it is not 
-in the case of HashSet.
-
-example:
-```````
-package com.jse.cfw;
-
-import java.util.LinkedHashSet;
-import java.util.Set;
-
-public class Test5 {
 	
 	public static void main(String[] args) {
 		
 		
-		Set s = new LinkedHashSet();
+		//declare the array
 		
-		s.add("abc");
-		s.add(null);
-		s.add(123);
-		s.add(true);
-		s.add(123);
+		//int[] x;
 		
-		System.out.println(s);
-	}
-
-}
-
-
-
-if you knew in advance only my collection class allows only particular type 
-of data then i can create the collection object by specifying that data type.
-
-
-
-using generics concept we are getting two advantages
-
-1.compile time errors we will get rather than runtime errors and these compile time errrors are far better than runtime errors.
-
-2.we no need to perform type casting when you apply generics concept.
-
-  
-
-example:
-``````````
-package com.jse.cfw;
-
-import java.util.LinkedHashSet;
-import java.util.Set;
-
-public class Test5 {
-	
-	public static void main(String[] args) {
+		//create the memory sizes
 		
-		//generics concept
-		Set<Integer> s = new LinkedHashSet();
+		//x = new int[3];
 		
-	    for(int i=1;i<=10;i++)
-	    {
-	    	s.add(i);
-	    	
-	    }
+		//assigning the values
 		
-	    
-	    
-		//for each loop
+		/*x[0]=10;
+		x[1]=20;
+		x[2]=30;
+		*/
+		int x[] = {10,20,30};
 		
-		for(Integer o:s) {
-			
-			
-			if(o%2==0)
-			{
-				System.out.println(o);
-			}
-			
-		}
-	}
-
-}
-
-
-how to add user defined object to any colelction class:
-````````````````````````````````````````````````````````
-package com.jse.cfw;
-
-import java.util.ArrayList;
-
-public class Test2 {
-	
-	public static void main(String[] args) {
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+		System.out.println(x[2]);
 		
-		ArrayList<Student> al = new ArrayList();
-		
-		
-		al.add(new Student(100,"Rama"));
-		al.add(new Student(101,"pavan"));
-		al.add(new Student(102,"praveen"));
-	
-		
-	     //foreach loop
-		for(Student s:al)
+		//display the values using for loop
+		System.out.println("==============");
+		for(int i=0;i<x.length;i++)
 		{
-			if(s.getStname().startsWith("p"))
-			{
-				System.out.println(s);
-			}
-				
+			System.out.println(x[i]);
 		}
 		
-	}
-
-}
-
-
-
-
-SortedSet:
-`````````
-
-->it supports only homogenious data.
-
-->duplicates are not allowed
-
-->the order we can predict (it will sort the data )
-  natural sorting technique -> alphabetical order, ascending 
-  
-
-->null insertion is not possible (NullPointerException)
-
-
-SortedSet is the sub interface of Set interface , it is the sub interface 
-of Collection 
-
-
-SortedSet is maintaining some specific new methods 
-
-
-  first()
-  last()
-  headSet()
-  tailSet()
-  subSet()
-  
-  
-
-
-for this SortedSet interface 
-
-   ->TreeSet
-   
-   
- package com.jse.cfw;
-
-import java.util.TreeSet;
-
-public class Test6 {
-
-	public static void main(String[] args) {
-
-		TreeSet<Integer> s = new TreeSet();
-
-		s.add(123);
-		s.add(876);
-		s.add(98);
-		s.add(67);
-		s.add(1000);
-
-		/*
-		 * s.add("rama"); s.add("praveen"); s.add("harish"); s.add("john");
-		 */
-
-		System.out.println(s);
-		
-		System.out.println(s.first());
-		System.out.println(s.last());
-		System.out.println(s.headSet(123));
-		System.out.println(s.tailSet(123));
-		System.out.println(s.subSet(98, 1000));
-	}
-
-}
-  
-
-
-
-
-day-23:
-````````
-
-how to add user defined objects to the TreeSet:
-```````````````````````````````````````````````
-package com.jse.cfw;
-
-public class Student implements Comparable<Student> {
-
-	private int stid;
-	private String stname;
-
-	public int getStid() {
-		return stid;
-	}
-
-	public void setStid(int stid) {
-		this.stid = stid;
-	}
-
-	public String getStname() {
-		return stname;
-	}
-
-	public void setStname(String stname) {
-		this.stname = stname;
-	}
-
-	public Student() {
-
-	}
-
-	public Student(int stid, String stname) {
-		this.stid = stid;
-		this.stname = stname;
-
-	}
-
-	public String toString() {
-		return stid + " " + stname;
-	}
-
-
-
 	
-
-	@Override
-	public int compareTo(Student o) {
+		//display the values using for-each loop or enhanced for loop
 		
-		if(stid>o.getStid())
+		System.out.println("================");
+		for(int a:x)
 		{
-			return -1;
+			System.out.println(a);
 		}
-		else if(stid<o.getStid())
-		{
-			return 1;
-		}
-		else
-		{
-			return 0;
-		}
-	}
-
-
-
-	
-}
-
-
-
-Test6.java:
-````````````
-package com.jse.cfw;
-
-import java.util.TreeSet;
-
-public class Test6 {
-
-	public static void main(String[] args) {
-
-		TreeSet<Student> s = new TreeSet();
-
-		Student st1 = new Student(10,"chenna");
-		Student st2 = new Student(8,"venkat");
-		
-		s.add(st1);
-		s.add(st2);
-		
-		System.out.println(s);
-		
-	}
-
-}
-
-note:
-To add any object to TreeSet it should be homogenious and Comparable objects
-otherwise we will get java.lang.ClassCastException.
-
-example on overriding equals() and hashCode():
-```````````````````````````````````````````````
-
-Student.java:
-``````````````
-package com.jse.cfw;
-
-public class Student  {
-
-	private int stid;
-	private String stname;
-
-	public int getStid() {
-		return stid;
-	}
-
-	public void setStid(int stid) {
-		this.stid = stid;
-	}
-
-	public String getStname() {
-		return stname;
-	}
-
-	public void setStname(String stname) {
-		this.stname = stname;
-	}
-
-	public Student() {
-
-	}
-
-	public Student(int stid, String stname) {
-		this.stid = stid;
-		this.stname = stname;
-
-	}
-
-	public String toString() {
-		return stid + " " + stname;
-	}
-
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + stid;
-		result = prime * result + ((stname == null) ? 0 : stname.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Student other = (Student) obj;
-		if (stid != other.stid)
-			return false;
-		if (stname == null) {
-			if (other.stname != null)
-				return false;
-		} else if (!stname.equals(other.stname))
-			return false;
-		return true;
-	}
-	
-	
-}
-
-Test6.java:
-`````````
-package com.jse.cfw;
-
-import java.util.HashSet;
-
-public class Test6 {
-
-	public static void main(String[] args) {
-
-		HashSet<Student> s = new HashSet();
-
-		Student st1 = new Student(10,"chenna");
-		Student st2 = new Student(10,"chenna");
-		
-		s.add(st1);
-		s.add(st2);
-		
-		System.out.println(s);
-		
-	}
-
-}
-
-
-day-24:
-````````
-
-cursors in java
-`````````````````
-cursor -> it is pointing to some element 
-
-
-  Enumeration-outdated 
-  
-     on top of legacy classes 
-	  
-	   Hashtable
-	   Vecotr
-	   Stack...
-	   
-	   
-  Iterator
-  ListIterator
-  
-  
-
-example on Iterator:
-```````````````````
-package com.jse.cfw;
-
-import java.util.HashSet;
-import java.util.Iterator;
-
-public class Test7 {
-	
-	public static void main(String[] args) {
-		
-		HashSet<Integer> hs = new HashSet<Integer>();
-		
-		for(int i=1;i<=10;i++)
-		{
-			hs.add(i);
-			
-		}
-		System.out.println(hs);
-		
-		//foreach method
-		
-		/*
-		 * for(Integer i: hs) { System.out.println(i); }
-		 */
-		
-		Iterator<Integer> iterator = hs.iterator();
-		
-		while(iterator.hasNext())
-		{
-			System.out.println(iterator.next());
-		}
-		
-		iterator.remove();
-		System.out.println("=====================");
-		for(Integer i:hs)
-		{
-			System.out.println(i);
-		}
-		
 		
 		
 		
 	}
 
 }
-//hasNext() - to check whether collection object contains elements or not?
-//next() -> to read the current element
-//remove() -> to remove the elements
 
-
-
-note: Iterator is uni directonal cursor
-using this we are allowed to retrieve the elements only in forward 
-direction.
-
-universal cursor.
-
-
-
-ListIterator:
-``````````````
-ListIterator is the powerfull cursor in entire cfw.
-
- -> we are allowed to retreive the elements in both forward direction 
-    and as well as backward direction.
-
- ->using this we can modify,add, remove the data.
-	
-	
-drawback: we can apply this ListIterator interface only on top of list related implemenataion classes. 
- 
- 
-example on ListIterator:
-```````````````````````
-package com.jse.cfw;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.ListIterator;
-
-public class Test7 {
-
-	public static void main(String[] args) {
-
-		ArrayList<Integer> al = new ArrayList<Integer>();
-
-		for (int i = 1; i <= 10; i++) {
-			al.add(i);
-
-		}
-
-		System.out.println(al);
-		
-		ListIterator<Integer> ltr = al.listIterator();
-		System.out.println("retrieveing the elements in forward direction");
-		while(ltr.hasNext())
-		{
-			System.out.println(ltr.next());
-		}
-		
-		ltr.add(11);
-		
-		System.out.println("retreiving the elements in backward direction");
-		while(ltr.hasPrevious())
-		{
-			System.out.println(ltr.previous());
-		}
-		
-		ltr.set(100);
-		
-		System.out.println(al);
-
-	}
-
-}
-//hasNext() - to check whether collection object contains elements or not?
-//next() -> to read the current element
-//remove() -> to remove the elements
-//hasPrevious()-to check whether previous elements are there or not?
-//previous()- to retrieve the previous element
-
-
-example on Enumeration interface:
-``````````````````````````````````
-package com.jse.cfw;
-
-import java.util.Enumeration;
-import java.util.ListIterator;
-import java.util.Vector;
-
-public class Test7 {
-
-	public static void main(String[] args) {
-
-		Vector<Integer> v = new Vector<Integer>();
-
-		for (int i = 1; i <= 10; i++) {
-			v.addElement(i);
-
-		}
-
-		Enumeration<Integer> enr = v.elements();
-		
-		while(enr.hasMoreElements())
-		{
-			System.out.println(enr.nextElement());
-		}
-		
-	}
-
-}
-//hasNext() - to check whether collection object contains elements or not?
-//next() -> to read the current element
-//remove() -> to remove the elements
-//hasPrevious()-to check whether previous elements are there or not?
-//previous()- to retrieve the previous element
-
-
-
-day-25:
-```````
-Comparable:
-``````````
-   Comparable is meant for default sorting order
-       
-	     numbers -> ascending 
-		 string -> alphabetical order
-		 
-		 
-  all wrapper classes and String class are Comparable objects
-  
-  java.lang package 
-  
-  
-     int compareTo()
-	 
-	 > -> +value
-	 < -> -value
-	 = -> 0
-	 
-	 
-Comparable:
-```````````
-Student.java:
-``````````````
-package com.jse.cfw;
-
-public class Student implements Comparable<Student> {
-
-	private int stid;
-	private String stname;
-
-	public int getStid() {
-		return stid;
-	}
-
-	public void setStid(int stid) {
-		this.stid = stid;
-	}
-
-	public String getStname() {
-		return stname;
-	}
-
-	public void setStname(String stname) {
-		this.stname = stname;
-	}
-
-	public Student() {
-
-	}
-
-	public Student(int stid, String stname) {
-		this.stid = stid;
-		this.stname = stname;
-
-	}
-
-	public String toString() {
-		return stid + " " + stname;
-	}
-
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + stid;
-		result = prime * result + ((stname == null) ? 0 : stname.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Student other = (Student) obj;
-		if (stid != other.stid)
-			return false;
-		if (stname == null) {
-			if (other.stname != null)
-				return false;
-		} else if (!stname.equals(other.stname))
-			return false;
-		return true;
-	}
-
-	@Override
-	public int compareTo(Student o) {
-		
-		if(this.stid>o.getStid()) {
-			return -9;
-		}
-		else if(this.stid<o.getStid())
-		{
-			return +9;
-		}
-		else
-		{
-			return 0;
-		}
-	}
-
-
-	
-	
-}
-
-
-Test8.java:
-```````````
-package com.jse.cfw;
-
-import java.util.TreeSet;
-
-public class Test8 {
-	
-	public static void main(String[] args) {
-		
-		TreeSet<Student> ts = new TreeSet();
-		
-		ts.add(new Student(1000,"Rama"));
-		ts.add(new Student(101,"john"));
-		
-		
-		
-		System.out.println(ts);
-	}
-
-}
-
-
-Student.java:
-````````````
-package com.jse.cfw;
-
-public class Student implements Comparable<Student> {
-
-	private int stid;
-	private String stname;
-
-	public int getStid() {
-		return stid;
-	}
-
-	public void setStid(int stid) {
-		this.stid = stid;
-	}
-
-	public String getStname() {
-		return stname;
-	}
-
-	public void setStname(String stname) {
-		this.stname = stname;
-	}
-
-	public Student() {
-
-	}
-
-	public Student(int stid, String stname) {
-		this.stid = stid;
-		this.stname = stname;
-
-	}
-
-	public String toString() {
-		return stid + " " + stname;
-	}
-
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + stid;
-		result = prime * result + ((stname == null) ? 0 : stname.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Student other = (Student) obj;
-		if (stid != other.stid)
-			return false;
-		if (stname == null) {
-			if (other.stname != null)
-				return false;
-		} else if (!stname.equals(other.stname))
-			return false;
-		return true;
-	}
-
-	@Override
-	public int compareTo(Student o) {
-		
-		return -stname.compareTo(o.getStname());
-		
-	}
-	
-}
-
-Comparator:
-``````````
-Comparator interface available inside java.util pacakge
-
- inside this interface we do have one method
- 
-   compare(T1,T2);
-   
-	 
-Comparator is meant for getting the data in our own order / custom order
-
-
-
-
-
-
-
-
-
-day-26:
-````````
-
-(key,value) pair
-
-Map
-
-   -
-SortedMap
-
-
-A Map doesn't allow duplicate keys, but you can have duplicate values.
-
-A Map can't be traversed
-
-keySet()
-entrySet()
-
-
-HashMap: HashMap is the implementation class of Map, but it doesn't maintain 
-         any order.
-		 
-LinkedHashMap: it is also the implemenataion class of Map, it inherits HashMap class. it maintains insertion order.
-
-
-TreeMap:
- TreeMap is the implementation class of SortedMap, it maintains ascending order
- 
-  put() -> insert any entry in to the map 
-   
-   entry ->(key,value)
-   
-   
-  putAll(Map m) -> it is used to insert the specicied map into the existing map.
-  
-  
-
-Map.Entry:
-``````````
-Entry is the inner interface of Map. so we will be accessed it by Map.Entry name.
-
-it returns a collection view of the map.
-
-
-   getKey() 
-   getValue()
-   
-
-example on HashMap:
-```````````````````
-1.HashMap doesn't allow duplicate key objects but it allows duplicate value objects
-2.it allows null values for both key objects and as well as value objects.
-3.insertion order is not preserved.
-
-example:
-````````
-package com.jse.cfw;
-
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-
-public class Test9 {
-	
-	public static void main(String[] args) {
-		
-		
-		Map m = new HashMap();
-		
-		//adding elements to Map
-		
-		m.put(100, "rama");
-		m.put(200, "amith");
-		m.put(45, "john");
-		m.put(67, "leshvi");
-		m.put(null, null);
-		m.put(67, "charvi");
-		m.put(101, "rama");
-		
-		
-		Set set =m.entrySet();
-		
-		Iterator itr = set.iterator();
-		
-		while(itr.hasNext())
-		{
-			Map.Entry entry = (Map.Entry)itr.next();
-			System.out.println(entry.getKey() + " " + entry.getValue());
-					
-					
-		}
-		
-	}
-
-}
-
-with generics syntax :
-``````````````````````
-package com.jse.cfw;
-
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-
-public class Test9 {
-	
-	public static void main(String[] args) {
-		
-		
-		Map<Integer,String> m = new HashMap<Integer,String>();
-		
-		//adding elements to Map
-		
-		m.put(100, "rama");
-		m.put(200, "amith");
-		m.put(45, "john");
-		m.put(67, "leshvi");
-		m.put(null, null);
-		m.put(67, "charvi");
-		m.put(101, "rama");
-		
-		
-		Set<Entry<Integer, String>> set = m.entrySet();
-		
-		Iterator<Entry<Integer, String>> itr = set.iterator();
-		
-		while(itr.hasNext())
-		{
-	
-	       Entry<Integer, String> entry = itr.next();
-			System.out.println(entry.getKey() + " " + entry.getValue());
-					
-					
-		}
-		
-	}
-
-}
-
-
-using for each loop traversing map elements:
-````````````````````````````````````````````
-package com.jse.cfw;
-
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-
-public class Test9 {
-	
-	public static void main(String[] args) {
-		
-		
-		Map<Integer,String> m = new HashMap<Integer,String>();
-		
-		//adding elements to Map
-		
-		m.put(100, "rama");
-		m.put(200, "amith");
-		m.put(45, "john");
-		m.put(67, "leshvi");
-		m.put(null, null);
-		m.put(67, "charvi");
-		m.put(101, "rama");
-		
-		
-		for(Map.Entry<Integer,String> m1: m.entrySet())	
-		{
-			System.out.println(m1.getKey() + " " + m1.getValue());
-		}
-		
-	}
-
-}
-
-LinkedHashMap vs HashMap
-
-all the properties of HashMap are applicable to LinkedHashMap except LinkedHashMap follows insertion order.
-
-
-SortedMap:
-``````````
-SortedMap is the sub interface of Map interface 
-
- TreeMap is the implementtaion class
- 
- 
-1.TreeMap doesn't allows null keys or null values if you try to add we will get
-  runtime exception saying that java.lang.NullPointerException
-  
-2.duplicate keys are not possible where as duplicate values are possible
-
-3.we will get the data in ascending order based on the key objects.
-
-example on top of TreeMap:
-``````````````````````````
-package com.jse.cfw;
-
-import java.util.Map;
-import java.util.SortedMap;
-import java.util.TreeMap;
-
-public class Test9 {
-	
-	public static void main(String[] args) {
-		
-		
-		SortedMap<Integer,String> m = new TreeMap<Integer,String>();
-		
-		//adding elements to Map
-		
-		m.put(100, "rama");
-		m.put(200, "amith");
-		m.put(45, "john");
-		m.put(67, "leshvi");
-		
-		m.put(67, "charvi");
-		m.put(101, "rama");
-		
-		
-		for(Map.Entry<Integer,String> m1: m.entrySet())	
-		{
-			System.out.println(m1.getKey() + " " + m1.getValue());
-		}
-		
-	}
-
-}
-
-
-example:
-````````
-package com.jse.cfw;
-
-import java.util.Map;
-import java.util.SortedMap;
-import java.util.TreeMap;
-
-public class Test9 {
-	
-	public static void main(String[] args) {
-		
-		
-		SortedMap<Integer,String> m = new TreeMap<Integer,String>();
-		
-		//adding elements to Map
-		
-		m.put(100, "rama");
-		m.put(200, "amith");
-		m.put(45, "john");
-		m.put(67, "leshvi");
-		
-		m.put(67, "charvi");
-		m.put(101, "rama");
-		
-		
-		for(Map.Entry<Integer,String> m1: m.entrySet())	
-		{
-			System.out.println(m1.getKey() + " " + m1.getValue());
-		}
-		
-		System.out.println("===========================");
-		
-		System.out.println(m.firstKey());
-		System.out.println(m.lastKey());
-		System.out.println(m.headMap(100));//{45=john, 67=charvi}
-		System.out.println(m.tailMap(100));//{100=rama, 101=rama, 200=amith}
-		System.out.println(m.subMap(45, 101));//{45=john, 67=charvi, 100=rama}
-		
-		
-	}
-
-}
-
-
-adding user defined object as a value object to the TreeMap:
-```````````````````````````````````````````````````````````
-package com.jse.cfw;
-
-import java.util.Map;
-import java.util.SortedMap;
-import java.util.TreeMap;
-
-public class Test9 {
-	
-	public static void main(String[] args) {
-		
-		
-		SortedMap<Integer,Book> m = new TreeMap<Integer,Book>();
-		
-		//create Book Object
-		
-		Book b1 = new Book(1,"java");
-		Book b2 = new Book(2,"angular");
-		Book b3 = new Book(3,"spring");
-		
-		//adding elements to Map
-		
-		
-		
-		m.put(400,b1);
-		m.put(101, b2);
-		m.put(300, b3);
-		
-		
-		for(Map.Entry<Integer,Book> m1: m.entrySet())	
-		{
-			System.out.println(m1.getKey() + " " + m1.getValue());
-		}
-		
-	
-	}
-
-}
-
-
-
-sorting the data in our customized order:
-``````````````````````````````````````````
-package com.jse.cfw;
-
-import java.util.Map;
-import java.util.SortedMap;
-import java.util.TreeMap;
-
-public class Test9 {
-	
-	public static void main(String[] args) {
-		
-		
-		SortedMap<Book,Integer> m = new TreeMap<Book,Integer>(new BookNameComparator());
-		
-		//create Book Object
-		
-		Book b1 = new Book(1,"java");
-		Book b2 = new Book(2,"angular");
-		Book b3 = new Book(3,"spring");
-		
-		//adding elements to Map
-	
-		m.put(b1,400);
-		m.put(b2,101);
-		m.put(b3,300);
-		
-		for(Map.Entry<Book,Integer> m1: m.entrySet())	
-		{
-			System.out.println(m1.getKey() + " " + m1.getValue());
-		}
-		
-	
-	}
-
-}
-
-
-note:
-````
-this sorting happens based on the key object only not based on the value object
-that is the reason your user defined object also must be the key object.
-
-MyCompartor.java:
-`````````````````
-package com.jse.cfw;
-
-import java.util.Comparator;
-
-public class MyComparator implements Comparator<Integer> {
-
-	@Override
-	public int compare(Integer o1, Integer  o2) {
-		
-		return -o1.compareTo(o2);
-	}
-
-}
-
-BookNameComparator.java:
-````````````````````````
-package com.jse.cfw;
-
-import java.util.Comparator;
-
-public class BookNameComparator implements Comparator<Book> {
-
-	@Override
-	public int compare(Book o1, Book o2) {
-		return -o1.getBookName().compareTo(o2.getBookName());
-	}
-
-}
-
-Book.java:
-```````````
-package com.jse.cfw;
-
-public class Book {
-	
-	private int bookId;
-	private String bookName;
-	public int getBookId() {
-		return bookId;
-	}
-	public void setBookId(int bookId) {
-		this.bookId = bookId;
-	}
-	public String getBookName() {
-		return bookName;
-	}
-	public void setBookName(String bookName) {
-		this.bookName = bookName;
-	}
-	public Book(int bookId, String bookName) {
-		super();
-		this.bookId = bookId;
-		this.bookName = bookName;
-	}
-	
-	public Book()
-	{
-		
-	}
-	@Override
-	public String toString() {
-		return bookId + " " + bookName;
-	}
-	
-	
-
-}
-
-
-assignment:
-````````````
-refer about Hashtable and do one program
-
-
-  
-   
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-  
   
 
 
@@ -7067,6 +6059,4 @@ refer about Hashtable and do one program
 
 
 
-
-
-
+  
