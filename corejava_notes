@@ -6054,6 +6054,212 @@ public class Test1 {
 
   
 
+ few interfaces and few implementation clases
+
+                 1 Collection 
+   
+2.List          3.Queue                 4.Set
+
+                                        5.SortedSet
+          
+                            
+
+
+interface SortedSet extends Set extends Collection 
+{
+}
+
+
+
+
+ 
+
+Collection:
+```````````
+
+if we want to group similar objects and diffrent objects as a single entity 
+then we should go for Collection .
+
+note:
+Collection is the root interface for all the remaining interface(s)
+there is no direct implementation class for this Collection interface.
+
+
+add()-to add an object
+
+addAll(Collection)
+
+remove()
+removeAll()
+
+
+List:
+`````
+
+  always working based on index
+  
+List is the predefined interface avaialble in java.util package
+
+-> it allows both homogenious and heterogenous object(s)
+-> insertion order is preserved
+-> duplicates are allowed
+-> null insertion is possible 
+
+note:
+ collection object supports only object data.
+ 
+ 
+ For List interface, sunmicrosystem people provided few implemenation classes
+ 
+ 1.ArrayList
+ 2.LinkedList
+ 3.Vector
+ 4.Stack
+ 
+ 
+ List l = new ArrayList();
+ 
+
+example:
+``````````
+package com.jse.cfw;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+		//create the object for List
+		
+		List l = new ArrayList();
+		
+		//add the object
+		l.add(Integer.valueOf(100));
+		l.add(Integer.valueOf(200));
+		l.add(new String("rama"));
+		l.add(Boolean.valueOf(true));
+		l.add(Integer.valueOf(100));
+		l.add(null);
+		
+		System.out.println(l);//[100, 200, rama, true, 100, null]
+		 		
+		
+		l.add(300);
+		System.out.println(l);//[100, 200, rama, true, 100, null, 300]
+		
+		l.add(1, Integer.valueOf(300));
+		
+		System.out.println(l);//[100, 300, 200, rama, true, 100, null, 300]
+	
+		System.out.println(l.remove(1));
+		
+		System.out.println(l);//[100, 200, rama, true, 100, null, 300]
+		
+		l.remove(Integer.valueOf(100));
+		
+		System.out.println(l);//[200, rama, true, 100, null, 300]
+		
+		System.out.println("size of the collection : " + l.size());
+		
+		System.out.println(l.get(1));//rama
+		
+		System.out.println(l);//[200, rama, true, 100, null, 300]
+		
+		List l1 = new ArrayList();
+		l1.add(500);
+		l1.add(400);
+		l1.add(600);
+		
+		l.addAll(l1);
+		
+		System.out.println(l);//[200, rama, true, 100, null, 300, 500, 400, 600]
+		
+		l.removeAll(l1);
+		
+		System.out.println(l);//[200, rama, true, 100, null, 300]
+		
+		
+		System.out.println(l.contains(200));
+		
+		System.out.println(l.isEmpty());
+		
+		l.clear();
+		System.out.println(l.isEmpty());
+		
+		System.out.println(l);//[]
+		
+		
+	}
+}
+
+ArrayList hierarchy:
+``````````````````````
+class ArrayList implements List extends Collection 
+{
+}
+
+
+
+
+assignment:
+do the same program w.r.to LinkedList
+
+
+Collection 
+List
+   ArrayList
+   LinkedList
+   Stack
+   Vector
+   
+   
+  
+
+
+
+eventhough we are passing primitive data internally it is getting converted into object format.
+
+autoboxing and autounboxing
+`````````````````````````````
+
+Autoboxing is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes. 
+
+For example, converting an int to an Integer, a double to a Double, and so on. If the conversion goes the other way, this is called unboxing.
+
+java compiler:
+
+autoboxing: primitive type to object type
+autounboxing: object type to primitive type
+
+this feature is available from jdk 1.5 version onwards.
+
+
+
+difference between ArrayList and LinkedList:
+
+ArrayList internally follows dynamic array algorithm to store the elements 
+and if our frequent operation is accessing / retrieval then it is highly 
+recommended to use this ArrayList.
+
+   ArrayList implements RandomAccess
+   {
+   }
+
+
+LinkedList internally follows doubly linkedlist algorithm where the data 
+is getting stored based on the node wise. 
+that's why if our frequent operation is insertion/deletion/updation we can go for LinkedList because no shift operations are happend like ArrayList.
+
+
+
+Stack
+Vector 
+do the programs on top of above two classes?
+
+
+
 
 
 
