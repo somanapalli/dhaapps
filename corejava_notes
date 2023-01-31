@@ -6259,6 +6259,412 @@ Vector
 do the programs on top of above two classes?
 
 
+Queue:
+```````
+
+Queue is also sub interface of Collection 
+
+->if we want to represent a group of individual objects prior to processing then we should go for Queue and Queue follow First In First Out algorithm.
+
+
+
+  
+  
+
+  Queue
+  
+   -ArrayDeque
+   -LinkedList
+   -PriorityQueue
+   
+   
+boolean offer(Object obj)
+Object poll()
+Objet remove()
+Object peek()-will give you head element->null
+Object element()-will give you head element ->exception 
+
+...
+
+in case of ArrayDeque and LinkedList 
+
+  -it allows both homogenious and heterogenous data
+  -duplicates are allowed
+  -insertion order is preserved
+  -null insertion is possible only if implementation class is LinkedList
+   in case of ArrayDeque it gives you NullPointerException
+
+in case of PriorityQueue 
+
+  -it allows only homogenious data
+  -insertion order is not preserved
+  -duplicates are allowed
+  -null insertion is not possible if you try for that it gives you 
+   NullPointerException 
+   
+   
+
+example:
+````````
+package com.jse.cfw;
+
+import java.util.ArrayDeque;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		Queue obj = new LinkedList();
+		
+		obj.offer("rama");
+		obj.offer("freejava");
+		obj.offer("benny");
+		obj.offer("shekhar");
+		obj.offer("shekhar");
+		obj.offer(null);
+		
+		
+		
+		
+		
+		
+		System.out.println(obj);
+		
+		System.out.println(obj.poll());
+		
+		
+		System.out.println("head: " +obj.element());
+		
+		System.out.println("head:" + obj.peek());
+		
+		obj.clear();
+		
+		//System.out.println(obj.element());//NoSuchElementException
+		
+	    System.out.println(obj.peek());
+		
+	}
+
+}
+
+
+
+
+
+Set extends Collection 
+
+SortedSet extends Set extends Collection 
+
+
+Set:
+````
+
+Set is the predefined interface available in java.util package
+
+
+ ->it supports both homogenious and heterogenous data
+ ->duplicates are not allowed 
+ ->insertion order is not preserved.
+ ->null insertion is possible but only for one time.
+ 
+   Set obj = new Set();//invalid
+   
+
+->HashSet
+->LinkedHashSet
+
+
+insertion order is preserved in case of LinkedHashSet but it is not 
+in the case of HashSet.
+
+example:
+```````
+package com.jse.cfw;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class Test5 {
+	
+	public static void main(String[] args) {
+		
+		
+		Set s = new LinkedHashSet();
+		
+		s.add("abc");
+		s.add(null);
+		s.add(123);
+		s.add(true);
+		s.add(123);
+		
+		System.out.println(s);
+	}
+
+}
+
+
+
+if you knew in advance  my collection class allows only particular type 
+of data then i can create the collection object by specifying that data type.
+
+
+
+using generics concept we are getting two advantages
+
+1.compile time errors we will get rather than runtime errors and these compile time errrors are far better than runtime errors.
+
+2.we no need to perform type casting when you apply generics concept.
+
+  
+
+example:
+``````````
+package com.jse.cfw;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class Test5 {
+	
+	public static void main(String[] args) {
+		
+		//generics concept
+		Set<Integer> s = new LinkedHashSet();
+		
+	    for(int i=1;i<=10;i++)
+	    {
+	    	s.add(i);
+	    	
+	    }
+		
+	    
+	    
+		//for each loop
+		
+		for(Integer o:s) {
+			
+			
+			if(o%2==0)
+			{
+				System.out.println(o);
+			}
+			
+		}
+	}
+
+}
+
+
+
+
+how to add user defined object to any colelction class:
+````````````````````````````````````````````````````````
+package com.jse.cfw;
+
+import java.util.ArrayList;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Student> al = new ArrayList();
+		
+		
+		al.add(new Student(100,"Rama"));
+		al.add(new Student(101,"pavan"));
+		al.add(new Student(102,"praveen"));
+	
+		
+	     //foreach loop
+		for(Student s:al)
+		{
+			if(s.getStname().startsWith("p"))
+			{
+				System.out.println(s);
+			}
+				
+		}
+		
+	}
+
+}
+
+
+
+
+SortedSet:
+`````````
+
+->it supports only homogenious data.
+
+->duplicates are not allowed
+
+->the order we can predict (it will sort the data )
+  natural sorting technique -> alphabetical order, ascending 
+  
+
+->null insertion is not possible (NullPointerException)
+
+
+SortedSet is the sub interface of Set interface , it is the sub interface 
+of Collection 
+
+
+SortedSet is maintaining some specific new methods 
+
+
+  first()
+  last()
+  headSet()
+  tailSet()
+  subSet()
+  
+  
+
+
+for this SortedSet interface 
+
+   ->TreeSet
+   
+   
+ package com.jse.cfw;
+
+import java.util.TreeSet;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+
+		TreeSet<Integer> s = new TreeSet();
+
+		s.add(123);
+		s.add(876);
+		s.add(98);
+		s.add(67);
+		s.add(1000);
+
+		/*
+		 * s.add("rama"); s.add("praveen"); s.add("harish"); s.add("john");
+		 */
+
+		System.out.println(s);
+		
+		System.out.println(s.first());
+		System.out.println(s.last());
+		System.out.println(s.headSet(123));
+		System.out.println(s.tailSet(123));
+		System.out.println(s.subSet(98, 1000));
+	}
+
+}
+  
+
+
+
+
+
+
+how to add user defined objects to the TreeSet:
+```````````````````````````````````````````````
+package com.jse.cfw;
+
+public class Student implements Comparable<Student> {
+
+	private int stid;
+	private String stname;
+
+	public int getStid() {
+		return stid;
+	}
+
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+
+	public String getStname() {
+		return stname;
+	}
+
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+
+	public Student() {
+
+	}
+
+	public Student(int stid, String stname) {
+		this.stid = stid;
+		this.stname = stname;
+
+	}
+
+	public String toString() {
+		return stid + " " + stname;
+	}
+
+
+
+	
+
+	@Override
+	public int compareTo(Student o) {
+		
+		if(stid>o.getStid())
+		{
+		{
+			return -1;
+		}
+		else if(stid<o.getStid())
+		{
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+
+
+
+	
+}
+
+
+
+Test6.java:
+````````````
+package com.jse.cfw;
+
+import java.util.TreeSet;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+
+		TreeSet<Student> s = new TreeSet();
+
+		Student st1 = new Student(10,"chenna");
+		Student st2 = new Student(8,"venkat");
+		
+		s.add(st1);
+		s.add(st2);
+		
+		System.out.println(s);
+		
+	}
+
+}
+
+note:
+To add any object to TreeSet it should be homogenious and Comparable objects
+otherwise we will get java.lang.ClassCastException.
+
+
+
+
 
 
 
