@@ -6405,8 +6405,45 @@ public class Test5 {
 }
 
 
+example on collection without generics:
+````````````````````````````````````````
+package com.dhaaps.cfw;
 
-if you knew in advance  my collection class allows only particular type 
+import java.util.HashSet;
+
+public class Test6 {
+	
+	public static void main(String[] args) {
+		
+		//generics introduced from jdk 1.5 version onwards
+		HashSet<Integer> obj = new HashSet();
+		for(int i=1;i<=10;i++)
+		{
+			obj.add(i);
+		}
+		
+		//runtime error: obj.add("ram");
+		
+		
+		
+		for(Object o: obj)
+		{
+			//converting Object type (parent type) to Integer type(child type)
+			//downcasting
+			Integer i = (Integer)o;
+			if(i%2!=0)
+			{
+				System.out.println(i);
+			}
+		}
+		
+	}
+
+}
+
+
+
+if you knew in advance ,my collection object allows only particular type 
 of data then i can create the collection object by specifying that data type.
 
 
@@ -6461,36 +6498,79 @@ public class Test5 {
 
 how to add user defined object to any colelction class:
 ````````````````````````````````````````````````````````
-package com.jse.cfw;
+package com.dhaaps.cfw;
 
 import java.util.ArrayList;
 
-public class Test2 {
+public class Test7 {
 	
 	public static void main(String[] args) {
 		
 		ArrayList<Student> al = new ArrayList();
 		
+		Student st1 = new Student(100,"Rama");
+		Student st2 = new Student(101,"sitha");
+		Student st3 = new Student(102,"hanuma");
 		
-		al.add(new Student(100,"Rama"));
-		al.add(new Student(101,"pavan"));
-		al.add(new Student(102,"praveen"));
-	
+		al.add(st1);
+		al.add(st2);
+		al.add(st3);
 		
-	     //foreach loop
-		for(Student s:al)
+		for(Student st:al)
 		{
-			if(s.getStname().startsWith("p"))
+			if(st.getStid()==100)
 			{
-				System.out.println(s);
+				System.out.println(st.getStname());
 			}
-				
 		}
+		
 		
 	}
 
 }
 
+Student.java:
+```````````````
+package com.dhaaps.cfw;
+//pojo class or plain old java object class
+public class Student {
+	
+	private int stid;
+	private String stname;
+	
+	
+	public int getStid() {
+		return stid;
+	}
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+	public String getStname() {
+		return stname;
+	}
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+	
+	
+	public Student(int stid, String stname) {
+		super();
+		this.stid = stid;
+		this.stname = stname;
+	}
+	
+	public Student()
+	{
+		
+	}
+	
+	@Override
+	public String toString()
+	{
+		return stid +  " " + stname;
+	}
+
+}
 
 
 
@@ -6663,6 +6743,11 @@ To add any object to TreeSet it should be homogenious and Comparable objects
 otherwise we will get java.lang.ClassCastException.
 
 
+
+assignment:
+
+do the same program and sort the student object in ascending order only 
+by using stname property.
 
 
 
