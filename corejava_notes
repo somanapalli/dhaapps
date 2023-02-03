@@ -6749,6 +6749,255 @@ assignment:
 do the same program and sort the student object in ascending order only 
 by using stname property.
 
+Comparator:
+```````````
+Comparator is the predefined interface available in java.util package
+for the purpose of sorting the data based on our requirement.
+
+  inside this interface we have one predefined abstract method i.e .
+  
+   compare(T1,T2);
+   
+   
+StudentIdComparator.java:
+``````````````````````````
+
+package com.dhaaps.cfw;
+
+import java.util.Comparator;
+
+public class StudentIdComparator implements Comparator<Student> {
+
+	@Override
+	public int compare(Student o1, Student o2) {
+		
+		return o2.compareTo(o1);
+		
+	}
+
+}
+
+
+StudentNameComparator.java:
+```````````````````````````
+
+package com.dhaaps.cfw;
+
+import java.util.Comparator;
+
+public class StudentNameComparator implements Comparator<Student> {
+
+	@Override
+	public int compare(Student o1, Student o2) {
+		return -o2.getStname().compareTo(o1.getStname());
+	}
+
+}
+
+
+Test7.java:
+```````````
+package com.dhaaps.cfw;
+
+import java.util.TreeSet;
+
+public class Test7 {
+	
+	public static void main(String[] args) {
+		
+		TreeSet<Student> al = new TreeSet<Student>(new StudentNameComparator());
+		
+		//TreeSet<Student> al = new TreeSet<Student>(new StudentIdComparator());
+		
+		Student st2 = new Student(3,"sitha");
+		Student st1 = new Student(100,"rama");
+		
+		Student st3 = new Student(62,"hanuma");
+		
+		al.add(st1);
+		al.add(st2);
+		al.add(st3);
+		
+		System.out.println(al);
+		
+	}
+
+}
+
+
+
+
+Map:
+```
+Map interface is available inside the java.util package 
+
+why Map?
+
+  to organize the data in the form of (key,value) pair.
+  
+  where key is objec & value is alos object.
+  
+  
+  Map 
+     -HashMap 
+	 -LinkedHashMap
+	 
+
+HashMap:
+````````
+ HashMap is the implemenation class of Map interface
+
+1.HashMap doesn't allow duplicate key objects but it allows duplicate value objects
+2.it allows null values for both key objects and as well as value objects.
+3.insertion order is not preserved.
+
+
+ package com.dhaaps.cfw;
+
+import java.util.LinkedHashMap;
+
+public class Test8 {
+	
+	public static void main(String[] args) {
+		
+		
+		LinkedHashMap<Integer,String> hm = new LinkedHashMap();
+		
+		//HashMap<Integer,String> hm = new HashMap();
+		
+		hm.put(100, "rama");
+		
+		hm.put(101, "krishna");
+		hm.put(101, "sitha");
+		
+		hm.put(null, null);
+		
+		System.out.println(hm);
+		
+		
+		
+	}
+
+}
+
+
+
+using for each loop traversing map elements:
+````````````````````````````````````````````
+package com.jse.cfw;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class Test9 {
+	
+	public static void main(String[] args) {
+		
+		
+		Map<Integer,String> m = new HashMap<Integer,String>();
+		
+		//adding elements to Map
+		
+		m.put(100, "rama");
+		m.put(200, "amith");
+		m.put(45, "john");
+		m.put(67, "leshvi");
+		m.put(null, null);
+		m.put(67, "charvi");
+		m.put(101, "rama");
+		
+		
+		for(Map.Entry<Integer,String> m1: m.entrySet())	
+		{
+			System.out.println(m1.getKey() + " " + m1.getValue());
+		}
+		
+	}
+
+}
+
+LinkedHashMap vs HashMap
+
+all the properties of HashMap are applicable to LinkedHashMap except LinkedHashMap follows insertion order.
+
+SortedMap:
+``````````
+SortedMap is the sub interface of Map interface 
+
+ TreeMap is the implementtaion class
+ 
+ 
+1.TreeMap doesn't allows null keys or null values if you try to add we will get runtime exception saying that java.lang.NullPointerException
+  
+2.duplicate keys are not possible where as duplicate values are possible
+
+3.we will get the data in ascending order based on the key objects
+by default.
+
+
+example on TreeMap:
+````````````````````
+package com.dhaaps.cfw;
+
+import java.util.TreeMap;
+
+public class Test9 {
+
+	
+	public static void main(String[] args) {
+		
+		//create the object of SortedMap -TreeMap
+		
+		TreeMap<Integer,String> tm = new TreeMap();
+		
+		tm.put(10, "rama");
+		//tm.put(null, null);
+		tm.put(8, "krishna");
+		tm.put(67, "sitha");
+		tm.put(78, "hanuma");
+		tm.put(9, "lakshman");
+		
+		//new methods of SortedMap
+		System.out.println(tm.headMap(67));
+		
+		System.out.println(tm.tailMap(10));
+		
+		System.out.println(tm.subMap(9, 78));
+		
+		System.out.println(tm.firstKey());
+		
+		System.out.println(tm.lastKey());
+		
+	}
+}
+
+
+assignment:
+````````````
+from the above program, add Student object as the key object and 
+String object as the value object and sort the data based on 
+studentname in descending order?
+
+
+  
+
+Multithreading:
+`````````````````
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
