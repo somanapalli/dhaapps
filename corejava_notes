@@ -6987,11 +6987,273 @@ studentname in descending order?
 Multithreading:
 `````````````````
 
+  multitasking which is the concept of o.s
+  
+  
+ features of java:
+ 
+   ->why java is multithreaded?
+   
+   ->what are the advanatages we will get using this multithreading?
+   
+   
+   thread: task
+   
+   multithreding -> multiple threads are executed simultaneously.
+   
+   
+    10 days-1 thread
+	1 day - 10 threds
+	
+	
+   
+   
+   
 
 
 
 
+Simultaneous and fully symmetric use of multiple processors for computation and I/O.
 
+Superior application responsiveness. ...
+
+Improved server responsiveness. ...
+
+Minimized system resource usage. ...
+
+Program structure simplification. ...
+
+Better communication
+
+
+Note:
+`````
+Multithreading allows many parts of a program to run simultaneously. These parts are referred to as threads, and they are lightweight processes that are available within the process. As a result, multithreading increases CPU utilization through multitasking.
+
+
+
+how can we create a thread:
+`````````````````````````
+we can create thread in two ways.
+
+ 1.by extends Thread class
+ 2.by implements Runnable interface 
+ 
+ 
+  Thread 
+  Runnable  - > java.lang package 
+  
+  
+
+Thread is maintaining different states
+
+
+-new state
+-runnable state
+-running state
+-blocked state(non-runnable state)
+-terminated state
+
+
+threads can be executed by whom?
+
+ ThreadScheduler can select the thread based on some predefined 
+ algorithms timeslicing etc.. 
+ 
+
+basic example on Thread creation by extends Thread class:
+`````````````````````````````````````````````````````````
+package com.dhaaps.multithreading;
+
+//Thread class subclass
+public class Test1 extends Thread {
+	
+	public void run()
+	{
+		System.out.println("thread name: " + Thread.currentThread().getName());
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		System.out.println("thread name:" + Thread.currentThread().getName());
+		//create the object for Thread class 
+		
+		Test1 obj = new Test1();//new state
+		obj.setName("ram");
+		
+		obj.start();
+		
+	}
+
+}
+
+note:
+thread logic can always write inside the run() of Thread class 
+and we shouldn't call run() directly, if we call start(), it inturns calls
+run().
+
+
+package com.dhaaps.multithreading;
+
+//Thread class subclass
+public class Test1 extends Thread {
+	
+	public void run()
+	{
+		//logic of run() method can be executed by our own user defined threads
+		System.out.println("thread name: " + Thread.currentThread().getName());
+	}
+	
+	public static void main(String[] args) {
+		//logic of main() method can be executed by main thread 
+		
+		System.out.println("thread name:" + Thread.currentThread().getName());
+		//create the object for Thread class 
+		
+		Test1 obj = new Test1();//new state
+		obj.setName("ram");
+		
+		Test1 obj1 = new Test1();
+		obj1.setName("pavan");
+		
+		obj1.start();
+		
+		obj.start();
+		
+		
+	}
+
+}
+
+
+example on sleep():
+````````````````````
+package com.dhaaps.multithreading;
+
+//Thread class subclass
+public class Test1 extends Thread {
+	
+	public void run()  
+	{
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(Thread.currentThread().getName() + "-" + i);
+			
+			try {
+			Thread.sleep(1000);
+			}
+			catch(InterruptedException ie)
+			{
+				System.out.println(ie);
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		Test1 obj = new Test1();//new state
+		obj.setName("Ram");
+	
+		obj.start();
+		
+		Test1 obj1 = new Test1();
+		obj1.setName("Vamshi");
+		obj1.start();
+	}
+
+}
+
+from the above program , we can conclude that multiple threads are 
+executed simultaneously or parallely 
+
+exaple on creating thread by implmenting Runnable interface:
+````````````````````````````````````````````````````````````
+package com.dhaaps.multithreading;
+
+//Thread class subclass
+public class Test1 implements Runnable{
+	
+	public void run()  
+	{
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(Thread.currentThread().getName() + "-" + i);
+			
+			try {
+			Thread.sleep(1000);
+			}
+			catch(InterruptedException ie)
+			{
+				System.out.println(ie);
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		//Runnable object
+		Test1 ob = new Test1();//new state
+		//converting Runnable object into Thread object 
+		
+		Thread obj = new Thread(ob);
+		
+		obj.setName("Ram");
+	
+		obj.start();
+		
+		Test1 ob1 = new Test1();
+		Thread obj1 = new Thread(ob1);
+		
+		obj1.setName("Vamshi");
+		obj1.start();
+	}
+
+}
+
+
+
+hyderabad to chennai 
+
+  
+  
+  n no.of people can check -for search operation 
+  
+  11window seat-for booking operation 
+  
+  
+   Vamshi - 11window
+   Ram    - 11 window 
+   
+   this seat can be alloted to Vamshi and me also.
+   
+   
+  can we give the allowness to these multiple threads?
+   we shouldn't give.
+   
+ eventhough multiple threads are trying to access the resource
+ but we have to give the chance or allowness to only one thread at 
+ a time this concept is called synchrnization in java.
+
+
+ if we shouldn't go for synchrnization
+ 
+ inconsistent result we may get 
+
+ 
+ Synchronization in java is the capability to control the access of multiple threads to any shared resource. 
+ 
+ 
+ In the Multithreading concept, multiple threads try to access the shared resources at a time to produce inconsistent results. 
+ 
+ 
+ The synchronization is necessary for reliable communication between threads.
+
+ 
+
+how can we practically we can implement:
+```````````````````````````````````````````
 
 
 
