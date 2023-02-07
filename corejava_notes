@@ -7253,7 +7253,110 @@ hyderabad to chennai
  
 
 how can we practically we can implement:
-```````````````````````````````````````````
+````````````````````````````````````````
+
+synchronization in java is the capability to control the access of 
+multiple threads to any shared resource.
+
+->java synchronization is the better option where we want to allow 
+only one thread to access the shared resource.
+
+
+Table.java:
+```````````
+package com.dhaaps.multithreading;
+
+public class Table {
+	
+	//shared resource
+	synchronized void printTable(int n)
+	{
+		for(int i=1;i<=5;i++)
+		{
+			System.out.println(n*i);
+			try {
+			Thread.sleep(1000);
+			}
+			catch(InterruptedException ie)
+			{
+				System.out.println(ie);
+			}
+		}
+	}
+
+}
+
+MyThread1.java:
+``````````````
+package com.dhaaps.multithreading;
+
+public class MyThread1 extends Thread {
+	
+  Table t;
+  
+  public MyThread1(Table t)
+  {
+	  this.t=t;
+  }
+  
+  public void run()
+  {
+	  t.printTable(5);
+  }
+	
+
+}
+
+MyThread2.java:
+````````````````
+package com.dhaaps.multithreading;
+
+public class MyThread2 extends Thread {
+	
+	Table t;
+	
+	public MyThread2(Table t)
+	{
+		this.t=t;
+	}
+	public void run()
+	{
+		t.printTable(100);
+	}
+
+}
+
+Test2.java:
+````````````
+package com.dhaaps.multithreading;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		//create the object for Table class
+		
+		Table obj = new Table();
+		
+		//one thread created
+		MyThread1 t1 = new MyThread1(obj);
+		
+		//one more thread created
+		
+		MyThread2 t2 = new MyThread2(obj);
+		
+		t1.start();
+		t2.start();
+	}
+
+}
+
+note:
+to make the normal method as synchrnized method we have to use 
+one predefined java reserved keyword i.e synchronized.
+
+
+
 
 
 
